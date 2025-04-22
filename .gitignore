@@ -1,6 +1,5 @@
 # output filetypes
 *.csv
-*.json
 
 # Python gitignore
 __pycache__/
