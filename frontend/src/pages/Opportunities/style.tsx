@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Field = styled.p`
   font-size: 1rem;
@@ -72,5 +72,25 @@ export const LearnMoreLink = styled.a`
 
   &:hover {
     text-decoration: underline;
+  }
+`;
+
+export const PaginationContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+`;
+
+export const PageButton = styled.button`
+  padding: 0.5rem 1rem;
+  background-color: ${(props) => (props.disabled ? "#ccc" : "#007bff")};
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
+
+  &:hover {
+    background-color: ${(props) => (props.disabled ? "#ccc" : "#0056b3")};
   }
 `;
