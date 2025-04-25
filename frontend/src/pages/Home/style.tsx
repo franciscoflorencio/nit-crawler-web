@@ -34,24 +34,87 @@ export const Header = styled.header`
   }
 `;
 
-// Seção principal
-export const Section = styled.section`
-  max-width: 1200px;
+export const Upper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4rem 9rem;
+  gap: 5rem;
+`;
+
+export const BigText = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 1.5rem;
+`;
+
+export const Title = styled.h1`
+  width: 37rem;
+  height: 7rem;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 4rem;
+
+  color: #4d4d4d;
+`;
+
+export const SubTitle = styled.h2`
+  width: 30rem;
+  height: 3.5rem;
+  margin-top: 0.5rem;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2rem;
+`;
+
+export const TitleAndSub = styled.div`
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
   width: 100%;
-  margin: 2rem auto;
+  height: 100%;
+`;
+
+export const Image = styled.img`
+  border-radius: 10px;
+`;
+
+export const Patterns = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 67rem;
+`;
+
+export const SubSubTitle = styled.h3`
+  width: 48.25rem;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
   text-align: center;
+  color: #4d4d4d;
+`;
 
-  h2 {
-    font-size: 2rem;
-    color: ${SECONDARY_COLOR};
-    margin-bottom: 1rem;
-  }
+export const Description = styled.p`
+  width: 24rem;
 
-  p {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.6;
-  }
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #717171;
 `;
 
 // Botão estilizado
@@ -67,28 +130,6 @@ export const Button = styled.button`
 
   &:hover {
     background-color: #e68a0f; // Escurece o laranja ao passar o mouse
-  }
-`;
-
-// Card para informações
-export const Card = styled.div`
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin: 1rem 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-  h3 {
-    font-size: 1.5rem;
-    color: ${SECONDARY_COLOR};
-    margin-bottom: 0.5rem;
-  }
-
-  p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
   }
 `;
 

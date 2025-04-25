@@ -1,8 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Opportunities from "./pages/Opportunities";
 import { GlobalStyle } from "./GlobalStyle";
+import Articles from "./pages/Articles";
+import Projects from "./pages/Projects";
+import AboutUs from "./pages/About";
 
 function App() {
   return (
@@ -14,8 +18,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/opportunities" element={<Opportunities />} />
+            <Route path="/articles" element={<Articles />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/about" element={<AboutUs />} />
           </Routes>
         </div>
+        <Footer />
       </Router>
     </>
   );
