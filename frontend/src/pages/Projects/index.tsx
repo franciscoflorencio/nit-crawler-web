@@ -22,6 +22,7 @@ const Projects: React.FC = () => {
           key={project.id}
           title={project.title}
           content={project.description}
+          url={project.url}
           image={project.image}
         />
       ))}

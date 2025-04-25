@@ -133,18 +133,31 @@ export const Button = styled.button`
   }
 `;
 
-// Footer
-export const Footer = styled.footer`
+export const ImagesContainer = styled.div`
   display: flex;
-  bottom: 0;
-  text-align: center;
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: ${SECONDARY_COLOR};
-  color: white;
-  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
 
-  p {
-    font-size: 0.9rem;
+  overflow-x: auto; // Permite rolagem horizontal
+  gap: 1rem; // Espaçamento entre as imagens
+  padding: 1rem 0;
+
+  &::-webkit-scrollbar {
+    height: 8px; // Altura da barra de rolagem
   }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #ccc; // Cor da barra de rolagem
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent; // Fundo da barra de rolagem
+  }
+`;
+
+export const SmallImage = styled.img`
+  width: 10%;
+  height: 10%;
 `;

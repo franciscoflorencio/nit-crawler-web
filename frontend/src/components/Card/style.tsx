@@ -23,6 +23,11 @@ export const Content = styled.p`
   line-height: 1.6;
 `;
 
+export const Url = styled.a`
+  font-size: 1rem;
+  color: #555;
+`;
+
 export const Image = styled.img`
   width: 100%;
   height: auto;

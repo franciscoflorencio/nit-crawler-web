@@ -22,6 +22,7 @@ const Articles: React.FC = () => {
           key={article.id}
           title={article.title}
           content={article.content}
+          url={article.url}
           image={article.image}
         />
       ))}
