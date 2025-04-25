@@ -22,3 +22,10 @@ export const Content = styled.p`
   color: #555;
   line-height: 1.6;
 `;
+
+export const Image = styled.img`
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+`;

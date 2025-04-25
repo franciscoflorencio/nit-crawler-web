@@ -1,35 +1,31 @@
-import React from "react";
-import Card from "../../components/Card";
+import React, { useEffect, useState } from "react";
 import { Container, Title } from "./style";
-
-const articles = [
-  {
-    id: 1,
-    title: "Innovation in Health",
-    content:
-      "Discover how technological advancements are transforming healthcare.",
-  },
-  {
-    id: 2,
-    title: "Sustainable Practices",
-    content: "Learn about sustainable practices in pharmaceutical production.",
-  },
-];
+import Card from "../../components/Card";
+import { fetchArticles } from "../../utils/api";
 
 const Articles: React.FC = () => {
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    const loadArticles = async () => {
+      const data = await fetchArticles();
+      setArticles(data);
+    };
+    loadArticles();
+  }, []);
+
   return (
-    <>
-      <Container>
-        <Title>Articles</Title>
-        {articles.map((article) => (
-          <Card
-            key={article.id}
-            title={article.title}
-            content={article.content}
-          />
-        ))}
-      </Container>
-    </>
+    <Container>
+      <Title>Articles</Title>
+      {articles.map((article: any) => (
+        <Card
+          key={article.id}
+          title={article.title}
+          content={article.content}
+          image={article.image}
+        />
+      ))}
+    </Container>
   );
 };
 

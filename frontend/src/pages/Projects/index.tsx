@@ -1,34 +1,31 @@
-import React from "react";
-import Card from "../../components/Card";
+import React, { useEffect, useState } from "react";
 import { Container, Title } from "./style";
-
-const projects = [
-  {
-    id: 1,
-    title: "Health Innovation Hub",
-    content: "A platform for fostering innovation in healthcare technologies.",
-  },
-  {
-    id: 2,
-    title: "Medicine Production",
-    content: "Efforts to improve the production of essential medicines.",
-  },
-];
+import Card from "../../components/Card";
+import { fetchProjects } from "../../utils/api";
 
 const Projects: React.FC = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    const loadProjects = async () => {
+      const data = await fetchProjects();
+      setProjects(data);
+    };
+    loadProjects();
+  }, []);
+
   return (
-    <>
-      <Container>
-        <Title>Projects</Title>
-        {projects.map((project) => (
-          <Card
-            key={project.id}
-            title={project.title}
-            content={project.content}
-          />
-        ))}
-      </Container>
-    </>
+    <Container>
+      <Title>Projects</Title>
+      {projects.map((project: any) => (
+        <Card
+          key={project.id}
+          title={project.title}
+          content={project.description}
+          image={project.image}
+        />
+      ))}
+    </Container>
   );
 };
 
