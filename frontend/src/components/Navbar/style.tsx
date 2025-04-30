@@ -8,44 +8,40 @@ export const BACKGROUND_COLOR = "#ffffff"; // Branco
 
 export const NavContainer = styled.nav`
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 2rem 4rem;
-  gap: 2.5rem;
-
-  position: relative;
-  width: 100%;
-  height: 2rem;
-  left: 0px;
-  top: 0px;
-  right: 0px;
+  justify-content: space-between; /* Garante que o logo e os links fiquem alinhados */
+  padding-right: 1rem;
   background: ${BACKGROUND_COLOR};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative; /* Fixa a navbar no topo da página */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Garante que a navbar esteja sempre acima do conteúdo */
 `;
 
 export const Logo = styled.img`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 5.57px;
   width: 9rem;
-  height: 6rem;
+  height: auto;
+  cursor: pointer;
 `;
 
 export const NavLinks = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
-  gap: 5rem;
-  padding: 0px;
-  width: auto;
-  margin-left: auto;
+  gap: 2rem; /* Reduzido o espaçamento entre os links */
+  font-size: 1.25rem;
 
   @media (max-width: 768px) {
-    gap: 1rem;
     flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 100%; /* Posiciona abaixo da navbar */
+    right: 0;
+    background: ${BACKGROUND_COLOR};
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    border-radius: 4px;
   }
 `;
 
@@ -58,14 +54,14 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   color: #333;
   font-weight: bold;
-  margin-right: 1.5rem; // Add spacing between links
+  transition: color 0.3s ease;
 
   &:hover {
     color: ${SECONDARY_COLOR};
   }
 
   &:last-child {
-    margin-right: 0; // Remove margin from the last link
+    margin-right: 0; /* Remove margem do último link */
   }
 `;
 
@@ -95,6 +91,10 @@ export const DropdownContent = styled.div`
     color: ${PRIMARY_COLOR};
     padding: 0.5rem 1rem;
     font-size: 1rem;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+
     &:hover {
       background-color: ${SECONDARY_COLOR};
       color: ${BACKGROUND_COLOR};

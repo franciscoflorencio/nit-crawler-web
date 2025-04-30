@@ -7,11 +7,11 @@ export const Container = styled.div`
   justify-content: center;
   padding: 2rem;
   min-height: 80vh;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
 `;
 
 export const Title = styled.h1`
   font-size: 2rem;
-  color: #f7981a;
+  color: #02715f;
   margin-bottom: 2rem;
 `;
