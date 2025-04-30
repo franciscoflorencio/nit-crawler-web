@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Title } from "./style";
-import Card from "../../components/Card";
+import Card from "../../components/DefaultCard";
 import { fetchArticles } from "../../utils/api";
 
 const Articles: React.FC = () => {
