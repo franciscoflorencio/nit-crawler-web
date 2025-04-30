@@ -80,6 +80,8 @@ export const PaginationContainer = styled.div`
   justify-content: center;
   margin-top: 1rem;
   gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const PageButton = styled.button`
