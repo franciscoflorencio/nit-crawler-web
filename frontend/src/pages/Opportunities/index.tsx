@@ -95,7 +95,7 @@ const Opportunities = () => {
 
   return (
     <OpportunitiesContainer>
-      <Title>Funding Opportunities</Title>
+      <Title>Bolsas de Oportunidade</Title>
 
       <FilterContainer>
         <Label htmlFor="source-filter">Filter by Source:</Label>
