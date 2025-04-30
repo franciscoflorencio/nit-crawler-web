@@ -5,12 +5,16 @@ import { Container, Title, Content, Image } from "./style";
 
 const ProjectDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const [project, setProject] = useState(null);
+  const [project, setProject] = useState<any>(null);
 
   useEffect(() => {
     const loadProject = async () => {
-      const data = await fetchProjectById(id);
-      setProject(data);
+      try {
+        const data = await fetchProjectById(id);
+        setProject(data);
+      } catch (error) {
+        console.error("Error fetching project details:", error);
+      }
     };
     loadProject();
   }, [id]);
@@ -21,8 +25,13 @@ const ProjectDetail: React.FC = () => {
 
   return (
     <Container>
+      {/* Title */}
       <Title>{project.title}</Title>
-      <Image src={project.image} alt={project.title} />
+
+      {/* Optional Image */}
+      {project.image && <Image src={project.image} alt={project.title} />}
+
+      {/* Description */}
       <Content>{project.description}</Content>
     </Container>
   );

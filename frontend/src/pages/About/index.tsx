@@ -4,7 +4,7 @@ import { Container, Title, Content } from "./style";
 const AboutUs: React.FC = () => {
   return (
     <Container>
-      <Title>About Us</Title>
+      <Title>Sobre nós</Title>
       <Content>
         <p>
           O NIT-Far (Núcleo de Inovação Tecnológica de Farmanguinhos) é o

@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
 
   return (
     <Container>
-      <Title>Projects</Title>
+      <Title>Projetos</Title>
       {projects.map((project: any) => (
         <Card
           key={project.id}
