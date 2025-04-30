@@ -7,14 +7,14 @@ const AboutUs: React.FC = () => {
       <Title>About Us</Title>
       <Content>
         <p>
-          The NIT-Far (Núcleo de Inovação Tecnológica de Farmanguinhos) is the
-          department responsible for technological innovation at Fiocruz
-          Farmanguinhos.
+          O NIT-Far (Núcleo de Inovação Tecnológica de Farmanguinhos) é o
+          departamento responsável por inovação tecnológica da Fiocruz
+          Farmanguinhos.{" "}
         </p>
         <p>
-          Its functions include protecting intellectual property, prospecting
-          and monitoring partnerships, transferring technology, and promoting
-          innovation in health.
+          Suas funções incluem proteger a propriedade intelectual, prospectar e
+          monitorar parcerias, transferir tecnologia e promover a inovação em
+          saúde.{" "}
         </p>
       </Content>
     </Container>

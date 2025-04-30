@@ -16,7 +16,7 @@ const Articles: React.FC = () => {
 
   return (
     <Container>
-      <Title>Articles</Title>
+      <Title>Artigos</Title>
       {articles.map((article: any) => (
         <Card
           key={article.id}

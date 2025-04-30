@@ -38,7 +38,7 @@ export const NavLinks = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  gap: 2rem; // Increased gap between links
+  gap: 5rem;
   padding: 0px;
   width: auto;
   margin-left: auto;
@@ -66,5 +66,44 @@ export const NavLink = styled(Link)`
 
   &:last-child {
     margin-right: 0; // Remove margin from the last link
+  }
+`;
+
+export const Dropdown = styled.div`
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const DropdownContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: ${BACKGROUND_COLOR};
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  z-index: 1000;
+
+  a {
+    text-decoration: none;
+    color: ${PRIMARY_COLOR};
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    &:hover {
+      background-color: ${SECONDARY_COLOR};
+      color: ${BACKGROUND_COLOR};
+    }
+  }
+
+  p {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: ${SECONDARY_COLOR};
   }
 `;
