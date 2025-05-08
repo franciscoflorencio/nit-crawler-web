@@ -3,7 +3,6 @@ import styled from "styled-components";
 // Cores oficiais
 export const PRIMARY_COLOR = "#f7981a"; // Laranja
 export const SECONDARY_COLOR = "#02714f"; // Verde
-export const BACKGROUND_COLOR = "#ffffff"; // Branco
 
 // Container principal
 export const HomePageContainer = styled.div`
@@ -11,7 +10,6 @@ export const HomePageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: ${BACKGROUND_COLOR};
   color: #333;
   min-height: 100vh;
   font-family: Arial, sans-serif;
@@ -54,7 +52,7 @@ export const Title = styled.h1`
   width: 37rem;
   height: 7rem;
 
-  font-family: "Inter";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 3rem;
@@ -68,7 +66,6 @@ export const SubTitle = styled.h2`
   height: 3.5rem;
   margin-top: 0.5rem;
 
-  font-family: "Inter";
   font-style: normal;
   font-weight: 300;
   font-size: 1.5rem;
@@ -98,7 +95,6 @@ export const Patterns = styled.div`
 export const SubSubTitle = styled.h3`
   width: 48.25rem;
 
-  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 2rem;
@@ -109,7 +105,6 @@ export const SubSubTitle = styled.h3`
 export const Description = styled.p`
   width: 24rem;
 
-  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 0.75rem;
@@ -138,6 +133,7 @@ export const ImagesContainer = styled.div`
   align-items: center;
   flex-direction: row;
   justify-content: center;
+  z-index: 100;
 
   overflow-x: auto; // Permite rolagem horizontal
   gap: 1rem; // Espaçamento entre as imagens

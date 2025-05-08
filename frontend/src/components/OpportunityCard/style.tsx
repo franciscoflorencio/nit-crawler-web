@@ -46,6 +46,10 @@ export const OpportunityList = styled.ul`
 `;
 
 export const OpportunityItem = styled.li`
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-direction: column;
   background-color: #f9f9f9;
   padding: 1rem;
   margin-bottom: 1rem;

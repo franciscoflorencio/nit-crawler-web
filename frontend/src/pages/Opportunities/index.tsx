@@ -1,20 +1,10 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import {
-  Field,
-  Select,
-  FilterContainer,
-  Label,
-  OpportunitiesContainer,
-  PaginationContainer,
-  PageButton,
-  Title,
-  OpportunityList,
-} from "./style";
-import OpportunityCard from "../../components/OpportunityCard/"; // Import the new component
+import { Select, Pagination } from "antd";
+import OpportunityCard from "../../components/OpportunityCard/";
+import { motion } from "framer-motion";
 
 const Opportunities = () => {
-  // State variables
   const [opportunities, setOpportunities] = useState([]);
   const [filterSource, setFilterSource] = useState("");
   const [pagination, setPagination] = useState({
@@ -26,7 +16,6 @@ const Opportunities = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [uniqueSources, setUniqueSources] = useState<string[]>([]);
 
-  // Fetch unique sources from the backend
   useEffect(() => {
     const fetchUniqueSources = async () => {
       try {
@@ -45,7 +34,6 @@ const Opportunities = () => {
     fetchUniqueSources();
   }, []);
 
-  // Fetch opportunities with pagination and filtering
   useEffect(() => {
     const fetchOpportunities = async () => {
       setIsLoading(true);
@@ -76,73 +64,104 @@ const Opportunities = () => {
     fetchOpportunities();
   }, [currentPage, filterSource]);
 
-  // Handle navigation to the next page
-  const handleNextPage = () => {
-    if (pagination.next) {
-      setCurrentPage((prevPage) => prevPage + 1);
-    }
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
   };
 
-  // Handle navigation to the previous page
-  const handlePreviousPage = () => {
-    if (pagination.previous) {
-      setCurrentPage((prevPage) => prevPage - 1);
-    }
-  };
-
-  const PAGE_SIZE = 10; // Match this with your backend's PAGE_SIZE setting
+  const PAGE_SIZE = 10;
   const totalPages = Math.ceil(pagination.count / PAGE_SIZE);
 
   return (
-    <OpportunitiesContainer>
-      <Title>Bolsas de Oportunidade</Title>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      style={{ padding: "2rem" }}
+    >
+      <motion.h1
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        Bolsas de Oportunidade
+      </motion.h1>
 
-      <FilterContainer>
-        <Label htmlFor="source-filter">Filter by Source:</Label>
+      <motion.div
+        initial={{ scale: 0.9, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 0.2 }}
+        style={{ marginBottom: "1rem" }}
+      >
+        <label
+          htmlFor="source-filter"
+          style={{ marginRight: "0.5rem", fontWeight: "bold" }}
+        >
+          Filter by Source:
+        </label>
         <Select
           id="source-filter"
           value={filterSource}
-          onChange={(e) => {
-            setFilterSource(e.target.value);
+          onChange={(value) => {
+            setFilterSource(value);
             setCurrentPage(1);
           }}
+          style={{ width: "200px" }}
+          placeholder="Select Source"
         >
-          <option value="">All Sources</option>
+          <Select.Option value="">All Sources</Select.Option>
           {uniqueSources.map((source, index) => (
-            <option key={index} value={source}>
+            <Select.Option key={index} value={source}>
               {source}
-            </option>
+            </Select.Option>
           ))}
         </Select>
-      </FilterContainer>
+      </motion.div>
 
-      {isLoading && <p>Loading...</p>}
+      {isLoading && <motion.p>Loading...</motion.p>}
 
-      <OpportunityList>
-        {opportunities.length > 0 ? (
-          opportunities.map((opportunity: any) => (
-            <OpportunityCard key={opportunity.id} opportunity={opportunity} />
-          ))
-        ) : (
-          <p>No opportunities available.</p>
-        )}
-      </OpportunityList>
-
-      <PaginationContainer>
-        <span>
-          Page {currentPage} of {totalPages}
-        </span>
-        <PageButton
-          onClick={handlePreviousPage}
-          disabled={!pagination.previous}
+      {opportunities.length > 0 ? (
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.1 } },
+          }}
         >
-          Previous
-        </PageButton>
-        <PageButton onClick={handleNextPage} disabled={!pagination.next}>
-          Next
-        </PageButton>
-      </PaginationContainer>
-    </OpportunitiesContainer>
+          {opportunities.map((opportunity: any) => (
+            <motion.div
+              key={opportunity.id}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <OpportunityCard opportunity={opportunity} />
+            </motion.div>
+          ))}
+        </motion.div>
+      ) : (
+        <motion.p>No opportunities available.</motion.p>
+      )}
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5 }}
+        style={{
+          marginTop: "1rem",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <Pagination
+          current={currentPage}
+          pageSize={PAGE_SIZE}
+          total={pagination.count}
+          onChange={handlePageChange}
+          showSizeChanger={false}
+        />
+      </motion.div>
+    </motion.div>
   );
 };
 
