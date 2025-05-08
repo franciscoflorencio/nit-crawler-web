@@ -9,7 +9,7 @@ export const NavContainer = styled.nav`
   display: flex;
   align-items: center;
   right: 0;
-  background-color: rgba(106, 196, 220);
+  background-color: ${SECONDARY_COLOR}; /* Navbar background color */
 
   justify-content: space-between; /* Garante que o logo e os links fiquem alinhados */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -27,7 +27,7 @@ export const Logo = styled.img`
 export const NavLinks = styled.div`
   display: flex;
   align-items: center;
-  gap: 2rem; /* Reduzido o espaçamento entre os links */
+  gap: 2rem; /* Espaçamento entre os links */
   font-size: 1.25rem;
 
   @media (max-width: 768px) {
@@ -36,7 +36,7 @@ export const NavLinks = styled.div`
     position: absolute;
     top: 100%; /* Posiciona abaixo da navbar */
     right: 0;
-    background-color: rgba(106, 196, 220);
+    background-color: ${SECONDARY_COLOR}; /* Same as navbar background */
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 1rem;
@@ -56,11 +56,11 @@ export const NavLink = styled(Link)`
   transition: color 0.3s ease;
 
   &:hover {
-    color: ${SECONDARY_COLOR};
+    color: ${PRIMARY_COLOR}; /* Change hover to orange */
   }
 
   &:last-child {
-    margin-right: 0; /* Remove margem do último link */
+    margin-right: 0; /* Remove margin from the last link */
   }
 `;
 
@@ -79,6 +79,7 @@ export const DropdownContent = styled.div`
   position: absolute;
   top: 100%;
   left: 0;
+  background-color: ${SECONDARY_COLOR}; /* Same as navbar background */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   padding: 0.5rem 0;
@@ -86,7 +87,7 @@ export const DropdownContent = styled.div`
 
   a {
     text-decoration: none;
-    color: ${PRIMARY_COLOR};
+    color: #fff; /* Default text color for dropdown links */
     padding: 0.5rem 1rem;
     font-size: 1rem;
     transition:
@@ -94,13 +95,14 @@ export const DropdownContent = styled.div`
       color 0.3s ease;
 
     &:hover {
-      background-color: ${SECONDARY_COLOR};
+      background-color: ${PRIMARY_COLOR}; /* Orange background on hover */
+      color: #fff; /* White text on hover */
     }
   }
 
   p {
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    color: ${SECONDARY_COLOR};
+    color: #fff; /* Default text color for empty dropdown message */
   }
 `;
