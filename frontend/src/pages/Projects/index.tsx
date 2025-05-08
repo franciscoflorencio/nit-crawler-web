@@ -45,7 +45,10 @@ const Projects: React.FC = () => {
             },
           }}
         >
-          <Link to="/opportunities">
+          <Link
+            style={{ color: "inherit", textDecoration: "none" }}
+            to="/opportunities"
+          >
             <Card
               title="Nit Crawler Result"
               content=""
