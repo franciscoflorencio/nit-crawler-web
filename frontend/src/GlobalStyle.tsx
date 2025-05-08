@@ -14,9 +14,14 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* Example background color */
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #f0f0f0;
+
   }
+
+  h1, h2, h3{
+    font-family: 'Montserrat', sans-serif;
+} 
 
   #root {
     width: 100%;

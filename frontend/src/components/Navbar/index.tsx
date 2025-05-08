@@ -33,10 +33,10 @@ const Navbar = () => {
 
   return (
     <NavContainer>
-      <ImageLink to="/">
+      <ImageLink style={{ marginLeft: "4rem" }} to="/">
         <Logo src={Nit} alt="Logo" />
       </ImageLink>
-      <NavLinks>
+      <NavLinks style={{ marginRight: "4rem" }}>
         <NavLink to="/articles">Artigos</NavLink>
 
         <Dropdown onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>

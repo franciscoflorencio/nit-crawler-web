@@ -1,61 +1,138 @@
 import React from "react";
-import {
-  ContactContainer,
-  ContactTitle,
-  ContactForm,
-  FormLabel,
-  FormInput,
-  FormTextarea,
-  SubmitButton,
-} from "./style";
+import { Form, Input, Button } from "antd";
+import { motion } from "framer-motion";
+import { ContactContainer, ContactTitle } from "./style";
 
 const Contact: React.FC = () => {
-  // Função para lidar com o envio do formulário via mailto
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const [form] = Form.useForm();
 
-    // Capturar os valores dos campos do formulário
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-    const name = formData.get("name") as string;
-    const email = formData.get("email") as string;
-    const subject = formData.get("subject") as string;
-    const message = formData.get("message") as string;
+  const onFinish = (values: any) => {
+    console.log("Form values:", values);
 
-    // Construir o corpo do e-mail
+    const { name, email, subject, message } = values;
+
     const mailtoLink = `mailto:fa017066@gmail.com?subject=${encodeURIComponent(
       subject,
     )}&body=${encodeURIComponent(
       `Nome: ${name}\nE-mail: ${email}\n\nMensagem:\n${message}`,
     )}`;
 
-    // Abrir o cliente de e-mail padrão
     window.location.href = mailtoLink;
+  };
+
+  const onFinishFailed = (errorInfo: any) => {
+    console.error("Failed:", errorInfo);
   };
 
   return (
     <ContactContainer>
-      <ContactTitle>Entre em Contato</ContactTitle>
-      <ContactForm onSubmit={handleSubmit}>
-        {/* Nome */}
-        <FormLabel htmlFor="name">Nome:</FormLabel>
-        <FormInput type="text" id="name" name="name" required />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <ContactTitle>Entre em Contato</ContactTitle>
+      </motion.div>
 
-        {/* E-mail */}
-        <FormLabel htmlFor="email">E-mail:</FormLabel>
-        <FormInput type="email" id="email" name="email" required />
+      <motion.div
+        initial={{ scale: 0.9, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        style={{ width: "100%", maxWidth: "500px" }}
+      >
+        <Form
+          form={form}
+          name="contactForm"
+          layout="vertical"
+          onFinish={onFinish}
+          onFinishFailed={onFinishFailed}
+        >
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <Form.Item
+              label="Nome"
+              name="name"
+              rules={[
+                { required: true, message: "Por favor, insira seu nome!" },
+              ]}
+            >
+              <Input placeholder="Digite seu nome" />
+            </Form.Item>
+          </motion.div>
 
-        {/* Assunto */}
-        <FormLabel htmlFor="subject">Assunto:</FormLabel>
-        <FormInput type="text" id="subject" name="subject" required />
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <Form.Item
+              label="E-mail"
+              name="email"
+              rules={[
+                { required: true, message: "Por favor, insira seu e-mail!" },
+                {
+                  type: "email",
+                  message: "Por favor, insira um e-mail válido!",
+                },
+              ]}
+            >
+              <Input placeholder="Digite seu e-mail" />
+            </Form.Item>
+          </motion.div>
 
-        {/* Mensagem */}
-        <FormLabel htmlFor="message">Mensagem:</FormLabel>
-        <FormTextarea id="message" name="message" rows={5} required />
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
+            <Form.Item
+              label="Assunto"
+              name="subject"
+              rules={[
+                { required: true, message: "Por favor, insira o assunto!" },
+              ]}
+            >
+              <Input placeholder="Digite o assunto" />
+            </Form.Item>
+          </motion.div>
 
-        {/* Botão de Envio */}
-        <SubmitButton type="submit">Enviar Mensagem</SubmitButton>
-      </ContactForm>
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
+            <Form.Item
+              label="Mensagem"
+              name="message"
+              rules={[
+                { required: true, message: "Por favor, insira sua mensagem!" },
+              ]}
+            >
+              <Input.TextArea placeholder="Digite sua mensagem" rows={5} />
+            </Form.Item>
+          </motion.div>
+
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.7 }}
+          >
+            <Form.Item>
+              <Button
+                type="primary"
+                htmlType="submit"
+                style={{ width: "100%" }}
+              >
+                Enviar Mensagem
+              </Button>
+            </Form.Item>
+          </motion.div>
+        </Form>
+      </motion.div>
     </ContactContainer>
   );
 };

@@ -11,7 +11,7 @@ interface OpportunityCardProps {
     id: number;
     title: string;
     description?: string;
-    link?: string;
+    link: string;
     opening_date?: string;
     closing_date?: string;
     closing_time?: string;
