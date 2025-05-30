@@ -55,6 +55,16 @@ const Projects: React.FC = () => {
               url="https://github.com/franciscoflorencio/nit-crawler"
             />
           </Link>
+          <Link
+            style={{ color: "inherit", textDecoration: "none" }}
+            to="/crawlai"
+          >
+            <Card
+              title="Crawl AI"
+              content=""
+              url=" https://github.com/franciscoflorencio/nit-crawler"
+            />
+          </Link>
           {projects.map((project: any) => (
             <motion.div
               key={project.id}

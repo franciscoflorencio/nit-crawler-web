@@ -9,6 +9,7 @@ import Projects from "./pages/Projects";
 import AboutUs from "./pages/About";
 import ProjectDetail from "./pages/ProjectDetail";
 import Contact from "./pages/Contact";
+import Crawlai from "./pages/CrawlAi";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/opportunities" element={<Opportunities />} />
+            <Route path="/crawlai" element={<Crawlai />} />
             <Route path="/articles" element={<Articles />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:id" element={<ProjectDetail />} />
