@@ -160,7 +160,7 @@ const CrawlAi = () => {
   const [errorStep2, setErrorStep2] = useState(null);
   const [showStep2, setShowStep2] = useState(false);
 
-  const apiKey = "AIzaSyDQT5IH1dzJXix4xKFDOrCoxfdN4c5YKvI";
+  const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
   const genAIApiUrlBase = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
   const callGemini = async (promptText, temperature, maxTokens) => {
