@@ -39,6 +39,14 @@ const Navbar = () => {
         </a>
       ),
     },
+    {
+      key: "crawlai",
+      label: (
+        <a href="/crawlai" rel="noopener noreferrer">
+          Crawl AI
+        </a>
+      ),
+    },
     ...projectItems,
   ];
 
