@@ -10,8 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/antd": "^0.12.32",
     "@types/react-slick": "^0.23.13",
-    "antd": "^5.24.9",
+    "antd": "^5.25.3",
     "axios": "^1.8.4",
     "dotenv": "^16.5.0",
     "framer-motion": "^12.9.1",

@@ -2,9 +2,9 @@ import { useState } from "react";
 import {
   AppContainer,
   Input,
+  TextArea, // Assuming TextArea is correctly styled as per previous requests
   HelpText,
   Highlight,
-  TextArea,
   ContentBox,
   FormGroup,
   Label,
@@ -21,9 +21,13 @@ const convertMarkdownToHtml = (mdText) => {
   if (!mdText) return "";
   let html = "";
 
-  // Divide o texto em blocos de "grant item"
-  // Um bloco começa com "###" e vai até o próximo "###" ou o final do texto.
-  const grantBlocks = mdText.split(/\n(?=###\s)/);
+  // Adiciona uma etapa para converter links de Markdown para HTML
+  let processedText = mdText.replace(
+    /\[([^\]]+)\]\(([^)]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>',
+  );
+
+  const grantBlocks = processedText.split(/\n(?=###\s)/);
 
   grantBlocks.forEach((grantBlock) => {
     if (!grantBlock.trim()) return;
@@ -31,7 +35,6 @@ const convertMarkdownToHtml = (mdText) => {
     let itemHtml = "";
     const lines = grantBlock.split("\n");
 
-    // Processa o título
     const titleLine = lines.find((line) => line.trim().startsWith("###"));
     if (titleLine) {
       itemHtml += titleLine
@@ -42,12 +45,9 @@ const convertMarkdownToHtml = (mdText) => {
         );
     }
 
-    // Processa os detalhes da bolsa (Fonte, Valor, Descrição)
     itemHtml += '<ul class="prose-custom grant-details-list">\n';
     lines.forEach((line) => {
       const trimmedLine = line.trim();
-      // Procura por linhas que começam com um ou mais asteriscos, seguido por um rótulo em negrito e dois pontos
-      // Ex: * **Fonte de Financiamento:** ... ou ***Fonte de Financiamento:** ...
       const detailMatch = trimmedLine.match(/^\*+\s*\*\*(.*?):\*\*\s*(.*)/);
       if (detailMatch) {
         const label = detailMatch[1].trim();
@@ -57,8 +57,6 @@ const convertMarkdownToHtml = (mdText) => {
         !trimmedLine.startsWith("###") &&
         trimmedLine.startsWith("*")
       ) {
-        // Para linhas que são itens de lista mas não seguem o padrão "Label: Value"
-        // Remove todos os asteriscos e espaços no início
         let content = trimmedLine.replace(/^[\s\*]+/, "").trim();
         if (content) {
           itemHtml += `<li class="prose-custom grant-detail-item">${content}</li>\n`;
@@ -71,7 +69,7 @@ const convertMarkdownToHtml = (mdText) => {
 
   // Se nenhum grant-item foi processado, aplica regras gerais de Markdown (para Passo 2)
   if (!html.includes('class="grant-item"')) {
-    let generalHtml = mdText; // Usar o mdText original para esta seção
+    let generalHtml = processedText; // Usar o processedText (com links já convertidos)
     generalHtml = generalHtml.replace(
       /^###\s*(.*$)/gim,
       '<h4 class="prose-custom">$1</h4>',
@@ -113,7 +111,7 @@ const convertMarkdownToHtml = (mdText) => {
         if (line.trim()) {
           // Evita re-envelopar HTML já existente ou linhas que são parte de um grant-item (pouco provável aqui)
           if (
-            !line.trim().match(/^<(h[1-4]|ul|li|p|strong|em|div)/i) &&
+            !line.trim().match(/^<(h[1-4]|ul|li|p|strong|em|div|a)/i) && // Adiciona 'a' para links
             !line.includes('class="grant-item"')
           ) {
             resultHtml += `<p class="prose-custom">${line.trim()}</p>\n`; // Adiciona classe
@@ -229,28 +227,31 @@ const CrawlAi = () => {
     setErrorStep1(null);
     setShowStep2(false);
     setAiAnswer(null);
+    setErrorStep2(null); // Clear previous Step 2 errors
 
     const prompt = `
-            Você é um assistente de pesquisa de IA especializado em bolsas de desenvolvimento. O usuário está procurando informações sobre "${grantFocus}".
-            Com base no seu conhecimento sobre oportunidades de bolsas típicas, gere uma lista de 3-5 oportunidades de bolsas de *exemplo* que podem ser encontradas na web relacionadas a este foco.
+              Você é um assistente de pesquisa de IA especializado em bolsas de desenvolvimento. O usuário está procurando informações sobre "${grantFocus}".
+              Com base no seu conhecimento sobre oportunidades de bolsas típicas, gere uma lista de 3 - 5 oportunidades de bolsas, desde que a mesmas estejam abertas (MUITO IMPORTANTE), de *exemplo* que podem ser encontradas na web relacionadas a este foco.
 
-            Para cada bolsa de exemplo, forneça:
-            1.  Um Título de Bolsa plausível.
-            2.  Um tipo típico de Fonte de Financiamento (ex: "Agência Governamental," "Fundação Privada," "ONG Internacional," "Programa de RSC Corporativo").
-            3.  Um Valor/Intervalo estimado ou típico (ex: "$10.000 - $50.000," "Até $200.000," "Varia de acordo com o escopo do projeto").
-            4.  Uma breve descrição (1-2 frases) do que a bolsa pode cobrir.
+              Para cada bolsa de exemplo, forneça:
+              1.  Um Título de Bolsa plausível.
+              2.  Um tipo típico de Fonte de Financiamento (ex: "Agência Governamental," "Fundação Privada," "ONG Internacional," "Programa de RSC Corporativo").
+              3.  Um Valor/Intervalo estimado ou típico (ex: "$10.000 - $50.000," "Até $200.000," "Varia de acordo com o escopo do projeto").
+              4.  Uma breve descrição (1-2 frases) do que a bolsa pode cobrir.
+              5.  Um link para a origem da bolsa para que possa ser facilmente acessada.
 
-            Apresente esta informação como uma lista. Use Markdown para formatação. 
-            Para cada bolsa, use um Cabeçalho de Nível 3 (###) para o Título da Bolsa. Em seguida, use marcadores para Fonte, Valor e Descrição, com os rótulos em negrito (ex: * **Fonte de Financiamento:** ...).
+              Apresente esta informação como uma lista. Use Markdown para formatação. 
+              Para cada bolsa, use um Cabeçalho de Nível 3 (###) para o Título da Bolsa. Em seguida, use marcadores para Fonte, Valor e Descrição, com os rótulos em negrito (ex: * **Fonte de Financiamento:** ...).
 
-            Estrutura de exemplo para uma bolsa:
-            ### Título de Bolsa de Exemplo Um
-            * **Fonte de Financiamento:** Fundação Privada XYZ
-            * **Valor/Intervalo:** $25.000 - $75.000
-            * **Descrição:** Esta bolsa apoia projetos piloto inovadores que usam tecnologia para enfrentar desafios ambientais locais.
+              Estrutura de exemplo para uma bolsa:
+              ### Título de Bolsa de Exemplo Um
+              * **Fonte de Financiamento:** Fundação Privada XYZ
+              * **Valor/Intervalo:** $25.000 - $75.000
+              * **Descrição:** Esta bolsa apoia projetos piloto inovadores que usam tecnologia para enfrentar desafios ambientais locais.
+              * **Link:** [Link para a Bolsa Exemplo Um](http://linkdabolsaexemplo1.com)
 
-            Não inclua nenhum preâmbulo conversacional ou observações finais. Apenas forneça a lista de bolsas de exemplo.
-        `;
+              Não inclua nenhum preâmbulo conversacional ou observações finais. Apenas forneça a lista de bolsas de exemplo.
+            `;
 
     try {
       const generatedText = await callGemini(prompt, 0.7, 2048);
@@ -265,6 +266,16 @@ const CrawlAi = () => {
     }
   };
 
+  // Helper function to normalize and tokenize text
+  const tokenizeText = (text) => {
+    if (!text) return [];
+    return text
+      .toLowerCase()
+      .replace(/[^\w\s'-]/gi, " ") // Allow apostrophes and hyphens within words for now, replace other punctuation with space
+      .split(/\s+/) // Split by one or more spaces
+      .filter(Boolean); // Remove empty strings
+  };
+
   const handleGetAnswer = async () => {
     if (!specificQuestion) {
       setErrorStep2("Por favor, insira sua pergunta específica.");
@@ -277,23 +288,41 @@ const CrawlAi = () => {
       return;
     }
 
+    // --- New logic to check for term overlap ---
+    const grantExampleTerms = new Set(tokenizeText(generatedGrantExamplesText));
+    const questionTerms = tokenizeText(specificQuestion);
+
+    const hasOverlappingTerm = questionTerms.some((term) =>
+      grantExampleTerms.has(term),
+    );
+
+    if (!hasOverlappingTerm) {
+      setErrorStep2(
+        "Sua pergunta deve incluir termos que estão presentes nas listagens de bolsas de exemplo acima para que a IA possa fornecer uma resposta relevante. Por favor, reformule sua pergunta ou gere novos exemplos se necessário.",
+      );
+      setAiAnswer(null); // Clear previous answer if any
+      setIsLoadingStep2(false); // Ensure loading state is reset
+      return;
+    }
+    // --- End of new logic ---
+
     setIsLoadingStep2(true);
     setAiAnswer(null);
     setErrorStep2(null);
 
     const prompt = `
-            Você é um assistente de IA. Com base *apenas* nas "Listagens de Bolsas de Exemplo" fornecidas abaixo, responda à pergunta do usuário.
-            Se a informação não estiver presente nas listagens fornecidas, declare claramente que a resposta não pode ser determinada a partir dos exemplos dados. Não use conhecimento externo nem invente informações.
+              Você é um assistente de IA. Com base *apenas* nas "Listagens de Bolsas de Exemplo" fornecidas abaixo, responda à pergunta do usuário.
+              Se a informação não estiver presente nas listagens fornecidas, declare claramente que a resposta não pode ser determinada a partir dos exemplos dados. Não use conhecimento externo nem invente informações.
 
-            Listagens de Bolsas de Exemplo:
-            ---
-            ${generatedGrantExamplesText}
-            ---
+              Listagens de Bolsas de Exemplo:
+              ---
+              ${generatedGrantExamplesText}
+              ---
 
-            Pergunta do Usuário: "${specificQuestion}"
+              Pergunta do Usuário: "${specificQuestion}"
 
-            Formate sua resposta claramente usando Markdown.
-        `;
+              Formate sua resposta claramente usando Markdown.
+            `;
 
     try {
       const generatedAnswerText = await callGemini(prompt, 0.2, 1024);
@@ -369,7 +398,6 @@ const CrawlAi = () => {
               </Label>
               <TextArea
                 id="specificQuestionInput"
-                rows={3}
                 placeholder="Ex: Qual dessas bolsas parece adequada para uma pequena ONG?"
                 value={specificQuestion}
                 onChange={(e) => setSpecificQuestion(e.target.value)}
