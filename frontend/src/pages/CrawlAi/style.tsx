@@ -90,14 +90,16 @@ export const Input = styled.input`
 `;
 
 export const TextArea = styled.textarea`
-  width: 100%;
+  width: 96%;
   padding: 0.75rem; /* p-3 */
+  height: 3rem;
   border: 1px solid #d1d5db; /* border-gray-300 */
   border-radius: 0.5rem; /* rounded-lg */
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
   transition:
     border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;
+  resize: none;
   &:focus {
     outline: none;
     border-color: #2563eb; /* focus:border-blue-500 (ajustado) */

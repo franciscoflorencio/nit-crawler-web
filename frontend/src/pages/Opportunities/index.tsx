@@ -1,12 +1,18 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import axios from "axios";
-import { Select, Pagination } from "antd";
+import { Select, Pagination, Input } from "antd";
 import OpportunityCard from "../../components/OpportunityCard/";
 import { motion } from "framer-motion";
+import { ControlsRow, FilterGroup, FilterControl, Label } from "./style";
 
 const Opportunities = () => {
   const [opportunities, setOpportunities] = useState([]);
-  const [filterSource, setFilterSource] = useState("");
+  const [filters, setFilters] = useState<Record<string, string>>({});
+  const [uniqueValues, setUniqueValues] = useState<Record<string, string[]>>(
+    {},
+  );
+  const [searchInput, setSearchInput] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
   const [pagination, setPagination] = useState({
     count: 0,
     next: null,
@@ -14,40 +20,51 @@ const Opportunities = () => {
   });
   const [currentPage, setCurrentPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
-  const [uniqueSources, setUniqueSources] = useState<string[]>([]);
+  const debounceTimeout = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    const fetchUniqueSources = async () => {
+    const fetchFilterData = async () => {
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/unique-sources/",
+          "http://127.0.0.1:8000/api/filterable-fields/",
         );
-        const sources = response.data.map(
-          (item: { source: string }) => item.source,
+        const filterData = response.data;
+        setUniqueValues(filterData);
+        const initialFilters = Object.keys(filterData).reduce(
+          (acc, key) => {
+            acc[key] = "";
+            return acc;
+          },
+          {} as Record<string, string>,
         );
-        setUniqueSources(sources || []);
+        setFilters(initialFilters);
       } catch (error) {
-        console.error("Error fetching unique sources:", error);
+        console.error("Error fetching filter data:", error);
       }
     };
-
-    fetchUniqueSources();
+    fetchFilterData();
   }, []);
 
   useEffect(() => {
     const fetchOpportunities = async () => {
       setIsLoading(true);
       try {
-        let url = `http://127.0.0.1:8000/api/opportunities/?page=${currentPage}`;
-        if (filterSource) {
-          url += `&source=${encodeURIComponent(filterSource)}`;
+        const params = new URLSearchParams({
+          page: String(currentPage),
+        });
+        if (searchQuery) {
+          params.append("search", searchQuery);
         }
+        Object.entries(filters).forEach(([key, value]) => {
+          if (value) {
+            params.append(key, value);
+          }
+        });
+        const url = `http://127.0.0.1:8000/api/opportunities/?${params.toString()}`;
         const response = await axios.get(url);
-
         if (!response.data || !Array.isArray(response.data.results)) {
           throw new Error("Invalid API response");
         }
-
         setOpportunities(response.data.results);
         setPagination({
           count: response.data.count || 0,
@@ -60,16 +77,37 @@ const Opportunities = () => {
         setIsLoading(false);
       }
     };
-
     fetchOpportunities();
-  }, [currentPage, filterSource]);
+  }, [currentPage, filters, searchQuery]);
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setSearchInput(value);
+    if (debounceTimeout.current) {
+      clearTimeout(debounceTimeout.current);
+    }
+    debounceTimeout.current = setTimeout(() => {
+      setSearchQuery(value);
+      setCurrentPage(1);
+    }, 400);
+  };
+
+  const handleFilterChange = (field: string, value: string) => {
+    setFilters((prev) => ({ ...prev, [field]: value || "" }));
+    setCurrentPage(1);
+  };
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
   };
 
+  const formatLabel = (str: string) => {
+    return str
+      .replace(/_/g, " ")
+      .replace(/\b\w/g, (char) => char.toUpperCase());
+  };
+
   const PAGE_SIZE = 10;
-  const totalPages = Math.ceil(pagination.count / PAGE_SIZE);
 
   return (
     <motion.div
@@ -86,36 +124,37 @@ const Opportunities = () => {
         Bolsas de Oportunidade
       </motion.h1>
 
-      <motion.div
-        initial={{ scale: 0.9, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ delay: 0.2 }}
-        style={{ marginBottom: "1rem" }}
-      >
-        <label
-          htmlFor="source-filter"
-          style={{ marginRight: "0.5rem", fontWeight: "bold" }}
-        >
-          Filter by Source:
-        </label>
-        <Select
-          id="source-filter"
-          value={filterSource}
-          onChange={(value) => {
-            setFilterSource(value);
-            setCurrentPage(1);
-          }}
-          style={{ width: "200px" }}
-          placeholder="Select Source"
-        >
-          <Select.Option value="">All Sources</Select.Option>
-          {uniqueSources.map((source, index) => (
-            <Select.Option key={index} value={source}>
-              {source}
-            </Select.Option>
+      <ControlsRow>
+        <FilterGroup>
+          {Object.keys(uniqueValues).map((field) => (
+            <FilterControl key={field}>
+              <Label htmlFor={`${field}-filter`}>{formatLabel(field)}:</Label>
+              <Select
+                id={`${field}-filter`}
+                value={filters[field]}
+                onChange={(value) => handleFilterChange(field, value)}
+                style={{ width: "200px" }}
+                placeholder={`Select ${formatLabel(field)}`}
+                allowClear
+              >
+                <Select.Option value="">All</Select.Option>
+                {uniqueValues[field]?.map((value, index) => (
+                  <Select.Option key={index} value={value}>
+                    {value}
+                  </Select.Option>
+                ))}
+              </Select>
+            </FilterControl>
           ))}
-        </Select>
-      </motion.div>
+        </FilterGroup>
+        <Input
+          placeholder="Search in all fields"
+          value={searchInput}
+          onChange={handleSearchChange}
+          style={{ minWidth: 250, flexShrink: 0 }}
+          allowClear
+        />
+      </ControlsRow>
 
       {isLoading && <motion.p>Loading...</motion.p>}
 
@@ -125,7 +164,11 @@ const Opportunities = () => {
           animate="visible"
           variants={{
             hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.1 } },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { staggerChildren: 0.1 },
+            },
           }}
         >
           {opportunities.map((opportunity: any) => (
@@ -140,7 +183,7 @@ const Opportunities = () => {
           ))}
         </motion.div>
       ) : (
-        <motion.p>No opportunities available.</motion.p>
+        !isLoading && <motion.p>No opportunities available.</motion.p>
       )}
 
       <motion.div

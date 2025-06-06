@@ -1,30 +1,29 @@
 from django.db import models
 
-# Create your models here.
+
 class FundingOpportunity(models.Model):
-    # Common Fields
-    title = models.CharField(max_length=500)
-    description = models.TextField(null=True, blank=True)
-    link = models.URLField(null=True, blank=True)
-    opening_date = models.TextField(null=True, blank=True)
-    closing_date = models.TextField(null=True, blank=True)
+    title = models.CharField(max_length=255, blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
+    link = models.URLField(max_length=1024, blank=True, null=True)
+    opening_date = models.CharField(max_length=255, blank=True, null=True)
+    closing_date = models.CharField(max_length=255, blank=True, null=True)
+    closing_time = models.CharField(max_length=255, blank=True, null=True)
+    opportunity_status = models.CharField(max_length=100, blank=True, null=True)
+    funders = models.CharField(max_length=255, blank=True, null=True)
+    funders_url = models.URLField(max_length=1024, blank=True, null=True)
+    funding_type = models.CharField(max_length=100, blank=True, null=True)
+    total_fund = models.CharField(max_length=100, blank=True, null=True)
+    award_range = models.CharField(max_length=100, blank=True, null=True)
+    publication_date = models.CharField(max_length=255, blank=True, null=True)
+    observation = models.TextField(blank=True, null=True)
+    institution = models.CharField(max_length=255, blank=True, null=True)
+    city = models.CharField(max_length=100, blank=True, null=True)
+    date = models.CharField(max_length=255, blank=True, null=True)
+    source = models.CharField(max_length=100, blank=True, null=True)
 
-    # Optional Fields
-    closing_time = models.TextField(null=True, blank=True)
-    opportunity_status = models.CharField(max_length=100, null=True, blank=True)
-    funders = models.CharField(max_length=500, null=True, blank=True)
-    funders_url = models.URLField(null=True, blank=True)
-    funding_type = models.CharField(max_length=100, null=True, blank=True)
-    total_fund = models.DecimalField(max_digits=15, decimal_places=2, null=True, blank=True)
-    award_range = models.CharField(max_length=200, null=True, blank=True)
-    publication_date = models.TextField(null=True, blank=True)
-    observation = models.TextField(null=True, blank=True)
-    institution = models.CharField(max_length=200, null=True, blank=True)
-    city = models.CharField(max_length=100, null=True, blank=True)
-    date = models.TextField(null=True, blank=True)
-
-    source = models.CharField(max_length=100, null=True, blank=True)
+    class Meta:
+        verbose_name = "Funding Opportunity"
+        verbose_name_plural = "Funding Opportunities"
 
     def __str__(self):
-        return self.title
-
+        return self.title if self.title else "Unnamed Opportunity"

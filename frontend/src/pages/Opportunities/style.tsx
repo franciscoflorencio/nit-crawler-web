@@ -96,3 +96,25 @@ export const PageButton = styled.button`
     background-color: ${(props) => (props.disabled ? "#ccc" : "#0056b3")};
   }
 `;
+
+export const ControlsRow = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+`;
+
+export const FilterGroup = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+`;
+
+export const FilterControl = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
