@@ -8,9 +8,7 @@ import { ControlsRow, FilterGroup, FilterControl, Label } from "./style";
 const Opportunities = () => {
   const [opportunities, setOpportunities] = useState([]);
   const [filters, setFilters] = useState<Record<string, string>>({});
-  const [uniqueValues, setUniqueValues] = useState<Record<string, string[]>>(
-    {},
-  );
+  const [uniqueValues, setUniqueValues] = useState<Record<string, string[]>>({});
   const [searchInput, setSearchInput] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [pagination, setPagination] = useState({
@@ -25,12 +23,18 @@ const Opportunities = () => {
   useEffect(() => {
     const fetchFilterData = async () => {
       try {
-        const response = await axios.get(
-          "http://127.0.0.1:8000/api/filterable-fields/",
-        );
+        const response = await axios.get("http://127.0.0.1:8000/api/filterable-fields/");
         const filterData = response.data;
-        setUniqueValues(filterData);
-        const initialFilters = Object.keys(filterData).reduce(
+        
+        // Remove duplicates from each filter field
+        const deduplicatedData = Object.keys(filterData).reduce((acc, key) => {
+          acc[key] = Array.from(new Set(filterData[key].filter(Boolean))); // Also removes empty values
+          return acc;
+        }, {} as Record<string, string[]>);
+        
+        setUniqueValues(deduplicatedData);
+        
+        const initialFilters = Object.keys(deduplicatedData).reduce(
           (acc, key) => {
             acc[key] = "";
             return acc;
@@ -39,7 +43,7 @@ const Opportunities = () => {
         );
         setFilters(initialFilters);
       } catch (error) {
-        console.error("Error fetching filter data:", error);
+        console.error("Erro ao buscar dados de filtro:", error);
       }
     };
     fetchFilterData();
@@ -63,7 +67,7 @@ const Opportunities = () => {
         const url = `http://127.0.0.1:8000/api/opportunities/?${params.toString()}`;
         const response = await axios.get(url);
         if (!response.data || !Array.isArray(response.data.results)) {
-          throw new Error("Invalid API response");
+          throw new Error("Resposta inválida da API");
         }
         setOpportunities(response.data.results);
         setPagination({
@@ -72,7 +76,7 @@ const Opportunities = () => {
           previous: response.data.previous || null,
         });
       } catch (error) {
-        console.error("Error fetching opportunities:", error);
+        console.error("Erro ao buscar oportunidades:", error);
       } finally {
         setIsLoading(false);
       }
@@ -101,10 +105,18 @@ const Opportunities = () => {
     setCurrentPage(page);
   };
 
-  const formatLabel = (str: string) => {
-    return str
+  const translateFieldName = (field: string) => {
+    const lowerField = field.toLowerCase();
+    
+    if (lowerField.includes('source')) return "Origem";
+    if (lowerField.includes('status')) return "Status da Oportunidade";
+    if (lowerField.includes('funding')) return "Tipo de Financiamento";
+    if (lowerField.includes('institu')) return "Instituição";
+    if (lowerField.includes('city')) return "Cidade";
+    
+    return field
       .replace(/_/g, " ")
-      .replace(/\b\w/g, (char) => char.toUpperCase());
+      .replace(/(?:^|\s)\S/g, (char) => char.toUpperCase());
   };
 
   const PAGE_SIZE = 10;
@@ -128,18 +140,24 @@ const Opportunities = () => {
         <FilterGroup>
           {Object.keys(uniqueValues).map((field) => (
             <FilterControl key={field}>
-              <Label htmlFor={`${field}-filter`}>{formatLabel(field)}:</Label>
+              <Label htmlFor={`${field}-filter`}>
+                {translateFieldName(field)}:
+              </Label>
               <Select
                 id={`${field}-filter`}
                 value={filters[field]}
                 onChange={(value) => handleFilterChange(field, value)}
                 style={{ width: "200px" }}
-                placeholder={`Select ${formatLabel(field)}`}
+                placeholder={`Selecione ${translateFieldName(field)}`}
                 allowClear
+                showSearch
+                filterOption={(input, option) =>
+                  (option?.children ?? '').toLowerCase().includes(input.toLowerCase())
+                }
               >
-                <Select.Option value="">All</Select.Option>
+                <Select.Option value="">Todos</Select.Option>
                 {uniqueValues[field]?.map((value, index) => (
-                  <Select.Option key={index} value={value}>
+                  <Select.Option key={`${field}-${value}-${index}`} value={value}>
                     {value}
                   </Select.Option>
                 ))}
@@ -148,7 +166,7 @@ const Opportunities = () => {
           ))}
         </FilterGroup>
         <Input
-          placeholder="Search in all fields"
+          placeholder="Pesquisar em todos os campos"
           value={searchInput}
           onChange={handleSearchChange}
           style={{ minWidth: 250, flexShrink: 0 }}
@@ -156,7 +174,7 @@ const Opportunities = () => {
         />
       </ControlsRow>
 
-      {isLoading && <motion.p>Loading...</motion.p>}
+      {isLoading && <motion.p>Carregando...</motion.p>}
 
       {opportunities.length > 0 ? (
         <motion.div
@@ -183,7 +201,7 @@ const Opportunities = () => {
           ))}
         </motion.div>
       ) : (
-        !isLoading && <motion.p>No opportunities available.</motion.p>
+        !isLoading && <motion.p>Sem oportunidades disponíveis.</motion.p>
       )}
 
       <motion.div
