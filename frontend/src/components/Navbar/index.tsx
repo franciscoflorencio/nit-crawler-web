@@ -24,7 +24,7 @@ const Navbar = () => {
   const projectItems = projects.map((project: any) => ({
     key: project.id,
     label: (
-      <a href={`/projects/${project.id}`} rel="noopener noreferrer">
+      <a href={`/project/${project.id}`} rel="noopener noreferrer">
         {project.title}
       </a>
     ),
@@ -35,7 +35,7 @@ const Navbar = () => {
       key: "opportunities",
       label: (
         <a href="/opportunities" rel="noopener noreferrer">
-          Nit Crawler Result
+          Resultado Nit Crawler
         </a>
       ),
     },

@@ -45,40 +45,24 @@ const Projects: React.FC = () => {
             },
           }}
         >
-          <Link
-            style={{ color: "inherit", textDecoration: "none" }}
-            to="/opportunities"
-          >
-            <Card
-              title="Nit Crawler Result"
-              content=""
-              url="https://github.com/franciscoflorencio/nit-crawler"
-            />
-          </Link>
-          <Link
-            style={{ color: "inherit", textDecoration: "none" }}
-            to="/crawlai"
-          >
-            <Card
-              title="Crawl AI"
-              content=""
-              url=" https://github.com/franciscoflorencio/nit-crawler"
-            />
-          </Link>
           {projects.map((project: any) => (
-            <motion.div
+            <Link
               key={project.id}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3 }}
+              style={{ color: "inherit", textDecoration: "none" }}
+              to={`/project/${project.id}`}
             >
-              <Card
-                title={project.title}
-                content={project.content}
-                url={project.url}
-                image={project.image}
-              />
-            </motion.div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Card
+                  title={project.title}
+                  content={project.content}
+                  image={project.image}
+                />
+              </motion.div>
+            </Link>
           ))}
         </motion.div>
       </motion.div>
