@@ -1,9 +1,13 @@
 #!/bin/bash
+set -e
 
-echo "Waiting for database to be ready..."
-# while ! nc -z db 5432; do # Exemplo para PostgreSQL, onde 'db' é o nome do serviço no docker-compose e 5432 a porta
-#   sleep 0.1
-# done
+DB_HOST=${DB_HOST:-db}
+DB_PORT=${DB_PORT:-5432}
+
+echo "Waiting for database at ${DB_HOST}:${DB_PORT}..."
+until nc -z "${DB_HOST}" "${DB_PORT}"; do
+	sleep 0.5
+done
 echo "Database is ready!"
 
 echo "Running makemigrations..."
