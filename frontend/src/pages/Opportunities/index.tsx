@@ -1,9 +1,12 @@
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api";
 import { Select, Pagination, Input } from "antd";
 import OpportunityCard from "../../components/OpportunityCard/";
 import { motion } from "framer-motion";
 import { ControlsRow, FilterGroup, FilterControl, Label } from "./style";
+const AnySelect: any = Select;
+const AnyInput: any = Input;
 
 const Opportunities = () => {
   const [opportunities, setOpportunities] = useState([]);
@@ -18,22 +21,22 @@ const Opportunities = () => {
   });
   const [currentPage, setCurrentPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
-  const debounceTimeout = useRef<NodeJS.Timeout | null>(null);
+  const debounceTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const fetchFilterData = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/api/filterable-fields/");
+  const response = await axios.get(`${BASE_URL}/filterable-fields/`);
         const filterData = response.data;
-        
+
         // Remove duplicates from each filter field
         const deduplicatedData = Object.keys(filterData).reduce((acc, key) => {
           acc[key] = Array.from(new Set(filterData[key].filter(Boolean))); // Also removes empty values
           return acc;
         }, {} as Record<string, string[]>);
-        
+
         setUniqueValues(deduplicatedData);
-        
+
         const initialFilters = Object.keys(deduplicatedData).reduce(
           (acc, key) => {
             acc[key] = "";
@@ -64,7 +67,7 @@ const Opportunities = () => {
             params.append(key, value);
           }
         });
-        const url = `http://127.0.0.1:8000/api/opportunities/?${params.toString()}`;
+  const url = `${BASE_URL}/opportunities/?${params.toString()}`;
         const response = await axios.get(url);
         if (!response.data || !Array.isArray(response.data.results)) {
           throw new Error("Resposta inválida da API");
@@ -107,13 +110,13 @@ const Opportunities = () => {
 
   const translateFieldName = (field: string) => {
     const lowerField = field.toLowerCase();
-    
+
     if (lowerField.includes('source')) return "Origem";
     if (lowerField.includes('status')) return "Status da Oportunidade";
     if (lowerField.includes('funding')) return "Tipo de Financiamento";
     if (lowerField.includes('institu')) return "Instituição";
     if (lowerField.includes('city')) return "Cidade";
-    
+
     return field
       .replace(/_/g, " ")
       .replace(/(?:^|\s)\S/g, (char) => char.toUpperCase());
@@ -143,29 +146,25 @@ const Opportunities = () => {
               <Label htmlFor={`${field}-filter`}>
                 {translateFieldName(field)}:
               </Label>
-              <Select
-                id={`${field}-filter`}
+              <AnySelect
                 value={filters[field]}
-                onChange={(value) => handleFilterChange(field, value)}
+                onChange={(value: string) => handleFilterChange(field, value)}
                 style={{ width: "200px" }}
                 placeholder={`Selecione ${translateFieldName(field)}`}
                 allowClear
                 showSearch
-                filterOption={(input, option) =>
-                  (option?.children ?? '').toLowerCase().includes(input.toLowerCase())
+                options={[
+                  { label: "Todos", value: "" },
+                  ...(uniqueValues[field] || []).map((v) => ({ label: v, value: v })),
+                ]}
+                filterOption={(input: string, option?: { label: string; value: string }) =>
+                  (option?.label as string)?.toLowerCase().includes(input.toLowerCase())
                 }
-              >
-                <Select.Option value="">Todos</Select.Option>
-                {uniqueValues[field]?.map((value, index) => (
-                  <Select.Option key={`${field}-${value}-${index}`} value={value}>
-                    {value}
-                  </Select.Option>
-                ))}
-              </Select>
+              />
             </FilterControl>
           ))}
         </FilterGroup>
-        <Input
+        <AnyInput
           placeholder="Pesquisar em todos os campos"
           value={searchInput}
           onChange={handleSearchChange}
