@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8000/api"; // URL do backend
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api"; // URL do backend
 
 export const fetchArticles = async () => {
   const response = await axios.get(`${BASE_URL}/articles/`);
