@@ -19,6 +19,8 @@ services:
     build: ./backend
     env_file:
       - ./backend/.env
+    volumes:
+      - ./scrapy_output:/data/scrapy_output:ro
     environment:
       DB_ENGINE: django.db.backends.postgresql
       DB_HOST: db
