@@ -1,102 +1,772 @@
 [
-{"title": "Centres of Vocational Excellence", "closing_date": "11/06/2025", "closing_time": "17:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/centres-of-vocational-excellence-0"},
-{"title": "Erasmus Charter for Higher Education", "closing_date": "22/04/2027", "closing_time": "17:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-charter-for-higher-education-1"},
-{"title": "Erasmus+ Virtual Exchanges in Western Balkans", "closing_date": "29/04/2025", "closing_time": "17:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-virtual-exchanges-in-western-balkans"},
-{"title": "Erasmus+ Virtual Exchanges in Sub-Saharan Africa", "closing_date": "29/04/2025", "closing_time": "17:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-virtual-exchanges-in-sub-saharan-africa"},
-{"title": "Erasmus+ Virtual Exchanges in Neighbourhood East", "closing_date": "29/04/2025", "closing_time": "17:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-virtual-exchanges-in-neighbourhood-east"},
-{"title": "Erasmus+ Virtual Exchanges in South Mediterranean Countries", "closing_date": "29/04/2025", "closing_time": "17:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-virtual-exchanges-in-south-mediterranean-countries"},
-{"title": "Erasmus+ Teacher Academies", "closing_date": "26/03/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-teacher-academies-0"},
-{"title": "Alliances for Education and Enterprises", "closing_date": "06/03/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/alliances-for-education-and-enterprises-2"},
-{"title": "Alliances for Sectoral Cooperation on Skills (implementing the ‘Blueprint')", "closing_date": "06/03/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/alliances-for-sectoral-cooperation-on-skills-implementing-the-blueprint-2"},
-{"title": "Capacity Building in the field of Youth in South Mediterranean Countries", "closing_date": "06/03/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-youth-in-south-mediterranean-countries"},
-{"title": "Capacity Building in the field of Youth in Western Balkans", "closing_date": "06/03/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-youth-in-western-balkans"},
-{"title": "Capacity Building in the field of Youth in Sub-Saharan Africa", "closing_date": "06/03/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-youth-in-sub-saharan-africa"},
-{"title": "Capacity Building in the field of Youth in Neighborhood East", "closing_date": "06/03/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-youth-in-neighborhood-east"},
-{"title": "European Youth Together 2025", "closing_date": "06/03/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/european-youth-together-2025"},
-{"title": "Cooperation Partnerships in the field of Youth", "closing_date": "05/03/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/cooperation-partnerships-in-the-field-of-youth"},
-{"title": "Partnerships for Cooperation - Cooperation Partnerships in the field of education and training submitted by European NGOs", "closing_date": "05/03/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/partnerships-for-cooperation-cooperation-partnerships-in-the-field-of-education-and-training-submitted-by-european-ngos-0"},
-{"title": "Cooperation Partnerships", "closing_date": "05/03/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/cooperation-partnerships-2"},
-{"title": "Not-for-profit European sport events", "closing_date": "05/03/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/not-for-profit-european-sport-events-2"},
-{"title": "Capacity Building in the Field of Sport", "closing_date": "05/03/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-sport-1"},
-{"title": "Small-scale Partnerships", "closing_date": "05/03/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/small-scale-partnerships-1"},
-{"title": "Capacity building in VET in Western Balkans", "closing_date": "27/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-vet-in-western-balkans"},
-{"title": "Capacity building in VET in South Mediterranean Countries", "closing_date": "27/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-vet-in-south-mediterranean-countries"},
-{"title": "Capacity building in VET in Caribbean", "closing_date": "27/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-vet-in-caribbean"},
-{"title": "Capacity building in VET in Neighbourhood East", "closing_date": "27/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-vet-in-neighbourhood-east"},
-{"title": "Capacity building in VET in Latin America", "closing_date": "27/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-vet-in-latin-america"},
-{"title": "Capacity building in VET in Sub-Saharan Africa", "closing_date": "27/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-vet-in-sub-saharan-africa"},
-{"title": "Erasmus Mundus Joint Masters", "closing_date": "13/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-mundus-joint-masters-2"},
-{"title": "Erasmus Mundus Design Measures", "closing_date": "13/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-mundus-design-measures-2"},
-{"title": "Jean Monnet Actions in the field of Higher Education: Centers of Excellence", "closing_date": "12/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-centers-of-excellence"},
-{"title": "Jean Monnet Actions for other fields of Education and Training: Teacher Training", "closing_date": "12/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-for-other-fields-of-education-and-training-teacher-training-1"},
-{"title": "Jean Monnet Network on internal policy: EU enlargement as a catalyst for progress", "closing_date": "12/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-network-on-internal-policy-eu-enlargement-as-a-catalyst-for-progress"},
-{"title": "Jean Monnet Network on external policy: EU-NORTH-AMERICA", "closing_date": "12/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-network-on-external-policy-eu-north-america"},
-{"title": "Jean Monnet Actions in the field of Higher Education: Modules", "closing_date": "12/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-modules-1"},
-{"title": "Jean Monnet Actions in the field of Higher Education: Chairs", "closing_date": "12/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-chairs-0"},
-{"title": "Jean Monnet Networks in other fields of education and training", "closing_date": "12/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-networks-in-other-fields-of-education-and-training-2"},
-{"title": "Jean Monnet Actions for other fields of Education and Training: Learning EU", "closing_date": "12/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-for-other-fields-of-education-and-training-learning-eu"},
-{"title": "Capacity building in the field of higher education Strand 3", "closing_date": "06/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-3-1"},
-{"title": "Capacity building in the field of higher education Strand 2", "closing_date": "06/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-2-1"},
-{"title": "Capacity building in the field of higher education Strand 1", "closing_date": "06/02/2025", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-1-1"},
-{"title": "Erasmus+ Teacher Academies", "closing_date": "06/06/2024", "closing_time": "17:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-teacher-academies"},
-{"title": "Policy Experimentation - Micro-credentials", "closing_date": "04/06/2024", "closing_time": "17:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/policy-experimentation-micro-credentials"},
-{"title": "Policy Experimentation - School Education", "closing_date": "04/06/2024", "closing_time": "17:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/policy-experimentation-school-education"},
-{"title": "Policy Experimentation - Digital Education", "closing_date": "04/06/2024", "closing_time": "17:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/policy-experimentation-digital-education"},
-{"title": "Policy Experimentation - Vocational Education and Training", "closing_date": "04/06/2024", "closing_time": "17:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/policy-experimentation-vocational-education-and-training"},
-{"title": "Policy Experimentation - Adult Education", "closing_date": "04/06/2024", "closing_time": "17:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/policy-experimentation-adult-education"},
-{"title": "Policy Experimentation - Higher Education", "closing_date": "04/06/2024", "closing_time": "17:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/policy-experimentation-higher-education"},
-{"title": "Centres of Vocational Excellence", "closing_date": "07/05/2024", "closing_time": "17:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/centres-of-vocational-excellence"},
-{"title": "Virtual exchanges in higher education and youth", "closing_date": "25/04/2024", "closing_time": "17:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/virtual-exchanges-in-higher-education-and-youth"},
-{"title": "Alliances for Sectoral Cooperation on Skills (implementing the ‘Blueprint')", "closing_date": "07/03/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/alliances-for-sectoral-cooperation-on-skills-implementing-the-blueprint-1"},
-{"title": "Alliances for Education and Enterprises", "closing_date": "07/03/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/alliances-for-education-and-enterprises-1"},
-{"title": "European Youth Together", "closing_date": "07/03/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/european-youth-together-1"},
-{"title": "Capacity Building in the field of Youth", "closing_date": "06/03/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-youth-1"},
-{"title": "Capacity building in the field of sport", "closing_date": "05/03/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-sport-0"},
-{"title": "Partnerships for Cooperation - Cooperation Partnerships in the field of Youth submitted by European NGOs", "closing_date": "05/03/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/partnerships-for-cooperation-cooperation-partnerships-in-the-field-of-youth-submitted-by-european-ngos"},
-{"title": "Not-for-profit European sport events", "closing_date": "05/03/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/not-for-profit-european-sport-events-1"},
-{"title": "Partnerships for Cooperation - Cooperation Partnerships in the field of Education and Training submitted by European NGOs", "closing_date": "05/03/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/partnerships-for-cooperation-cooperation-partnerships-in-the-field-of-education-and-training-submitted-by-european-ngos"},
-{"title": "Small-scale Partnerships", "closing_date": "05/03/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/small-scale-partnerships-0"},
-{"title": "Cooperation partnerships", "closing_date": "05/03/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/cooperation-partnerships-1"},
-{"title": "Capacity building in the field of Vocational education and training (VET)", "closing_date": "29/02/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-vocational-education-and-training-vet-1"},
-{"title": "Erasmus Mundus Design Measures", "closing_date": "15/02/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-mundus-design-measures-1"},
-{"title": "Erasmus Mundus Joint Masters", "closing_date": "15/02/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-mundus-joint-masters-1"},
-{"title": "Capacity Building in the field of higher education Strand 3", "closing_date": "08/02/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-3-0"},
-{"title": "Capacity Building in the field of higher education Strand 2", "closing_date": "08/02/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-2-0"},
-{"title": "European Universities - Community of practice", "closing_date": "06/02/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/european-universities-community-of-practice"},
-{"title": "European Universities - Development of deep institutional transnational cooperation", "closing_date": "06/02/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/european-universities-development-of-deep-institutional-transnational-cooperation"},
-{"title": "Jean Monnet Networks in other fields of education and training", "closing_date": "01/02/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-networks-in-other-fields-of-education-and-training-1"},
-{"title": "Jean Monnet Actions in the field of Higher Education: Chairs", "closing_date": "01/02/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-chairs"},
-{"title": "Jean Monnet actions for other fields of education and training – Teacher training", "closing_date": "01/02/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-for-other-fields-of-education-and-training-teacher-training-0"},
-{"title": "Jean Monnet Actions in the field of Higher Education: Centres of Excellence", "closing_date": "01/02/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-centres-of-excellence-0"},
-{"title": "Jean Monnet Actions in the field of Higher Education: Modules", "closing_date": "01/02/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-modules-0"},
-{"title": "Jean Monnet Network on external policy: EU-Africa", "closing_date": "01/02/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-network-on-external-policy-eu-africa"},
-{"title": "Jean Monnet Network on internal policy: An Economy that works for people", "closing_date": "01/02/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-network-on-internal-policy-an-economy-that-works-for-people"},
-{"title": "Jean Monnet Network on external policy: EU- Latin America", "closing_date": "01/02/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-network-on-external-policy-eu-latin-america"},
-{"title": "Jean Monnet Actions in other fields of Education and Training: Learning EU Initiatives", "closing_date": "01/02/2024", "closing_time": "17:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-other-fields-of-education-and-training-learning-eu-initiatives-0"},
-{"title": "Partnership for Excellence - Centres of Vocational Excellence", "closing_date": "08/06/2023", "closing_time": "2:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/partnership-for-excellence-centres-of-vocational-excellence-0"},
-{"title": "Open call for tenders to carry out studies in education, training, youth, sport, culture, research and innovation", "closing_date": "05/06/2023", "closing_time": "2:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/open-call-for-tenders-to-carry-out-studies-in-education-training-youth-sport-culture-research-and-innovation"},
-{"title": "Alliances for Sectoral Cooperation on Skills (implementing the ‘Blueprint')", "closing_date": "03/05/2023", "closing_time": "17:00 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/alliances-for-sectoral-cooperation-on-skills-implementing-the-blueprint-0"},
-{"title": "Alliances for Education and Enterprises", "closing_date": "03/05/2023", "closing_time": "11:58 CEST", "link": "https://erasmus-plus.ec.europa.eu/calls/alliances-for-education-and-enterprises-0"},
-{"title": "Small-scale partnerships", "closing_date": "23/03/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/small-scale-partnerships"},
-{"title": "Large scale not-for-profit European sport event", "closing_date": "22/03/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/large-scale-not-for-profit-european-sport-event"},
-{"title": "Cooperation partnerships", "closing_date": "22/03/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/cooperation-partnerships-0"},
-{"title": "Not-for-profit European sport events", "closing_date": "22/03/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/not-for-profit-european-sport-events-0"},
-{"title": "Partnerships for Cooperation in the fields of education and training - European NGOs", "closing_date": "22/03/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/partnerships-for-cooperation-in-the-fields-of-education-and-training-european-ngos"},
-{"title": "Partnerships for Cooperation in the field of youth - European NGOs", "closing_date": "22/03/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/partnerships-for-cooperation-in-the-field-of-youth-european-ngos"},
-{"title": "Partnerships for Innovation - Forward-Looking Projects - Adult learning", "closing_date": "15/03/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/partnerships-for-innovation-forward-looking-projects-adult-learning"},
-{"title": "Partnerships for Innovation - Forward-Looking Projects - Vocational Education and Training (VET)", "closing_date": "15/03/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/partnerships-for-innovation-forward-looking-projects-vocational-education-and-training-vet"},
-{"title": "Partnerships for Innovation - Forward-Looking Projects - Digital education (cross-sectoral)", "closing_date": "15/03/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/partnerships-for-innovation-forward-looking-projects-digital-education-cross-sectoral"},
-{"title": "European Youth Together", "closing_date": "09/03/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/european-youth-together-0"},
-{"title": "Capacity Building in the field of Youth", "closing_date": "08/03/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-youth-0"},
-{"title": "Capacity building in the field of Vocational education and training (VET)", "closing_date": "28/02/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-vocational-education-and-training-vet-0"},
-{"title": "Capacity building in the field of higher education Strand 2", "closing_date": "16/02/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-2"},
-{"title": "Capacity building in the field of higher education Strand 1", "closing_date": "16/02/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-1"},
-{"title": "Erasmus Mundus Design Measures", "closing_date": "16/02/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-mundus-design-measures-0"},
-{"title": "Capacity building in the field of higher education Strand 3", "closing_date": "16/02/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-3"},
-{"title": "Erasmus Mundus Joint Masters", "closing_date": "16/02/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-mundus-joint-masters-0"},
-{"title": "Jean Monnet Actions in the field of Higher Education: Centres of Excellence", "closing_date": "14/02/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-centres-of-excellence"},
-{"title": "Jean Monnet Actions in the field of Higher Education: Chair", "closing_date": "14/02/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-chair"},
-{"title": "Jean Monnet Actions in the field of Higher Education: Modules", "closing_date": "14/02/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-modules"},
-{"title": "Jean Monnet actions for other fields of education and training – Teacher training", "closing_date": "14/02/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-for-other-fields-of-education-and-training-teacher-training"},
-{"title": "Jean Monnet Actions in other fields of Education and Training: Learning EU Initiatives", "closing_date": "14/02/2023", "closing_time": "1:00 CET", "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-other-fields-of-education-and-training-learning-eu-initiatives"}
+{
+    "title": "Large scale not-for-profit European sport event",
+    "closing_date": "22/01/2026",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/large-scale-not-for-profit-european-sport-event-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Erasmus Mundus Design Measures",
+    "closing_date": "12/02/2026",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-mundus-design-measures-3",
+    "country": "União Europeia"
+},
+{
+    "title": "European Universities 2026",
+    "closing_date": "04/03/2026",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/european-universities-2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Erasmus Charter for Higher Education",
+    "closing_date": "24/03/2026",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-charter-for-higher-education-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Centres of Vocational Excellence",
+    "closing_date": "11/06/2025",
+    "closing_time": "17:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/centres-of-vocational-excellence-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Erasmus+ Virtual Exchanges in Western Balkans",
+    "closing_date": "29/04/2025",
+    "closing_time": "17:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-virtual-exchanges-in-western-balkans",
+    "country": "União Europeia"
+},
+{
+    "title": "Erasmus+ Virtual Exchanges in Sub-Saharan Africa",
+    "closing_date": "29/04/2025",
+    "closing_time": "17:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-virtual-exchanges-in-sub-saharan-africa",
+    "country": "União Europeia"
+},
+{
+    "title": "Erasmus+ Virtual Exchanges in Neighbourhood East",
+    "closing_date": "29/04/2025",
+    "closing_time": "17:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-virtual-exchanges-in-neighbourhood-east",
+    "country": "União Europeia"
+},
+{
+    "title": "Erasmus+ Virtual Exchanges in South Mediterranean Countries",
+    "closing_date": "29/04/2025",
+    "closing_time": "17:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-virtual-exchanges-in-south-mediterranean-countries",
+    "country": "União Europeia"
+},
+{
+    "title": "Erasmus+ Teacher Academies",
+    "closing_date": "26/03/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-teacher-academies-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Alliances for Education and Enterprises",
+    "closing_date": "06/03/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/alliances-for-education-and-enterprises-2",
+    "country": "União Europeia"
+},
+{
+    "title": "Alliances for Sectoral Cooperation on Skills (implementing the ‘Blueprint')",
+    "closing_date": "06/03/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/alliances-for-sectoral-cooperation-on-skills-implementing-the-blueprint-2",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity Building in the field of Youth in South Mediterranean Countries",
+    "closing_date": "06/03/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-youth-in-south-mediterranean-countries",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity Building in the field of Youth in Western Balkans",
+    "closing_date": "06/03/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-youth-in-western-balkans",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity Building in the field of Youth in Sub-Saharan Africa",
+    "closing_date": "06/03/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-youth-in-sub-saharan-africa",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity Building in the field of Youth in Neighborhood East",
+    "closing_date": "06/03/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-youth-in-neighborhood-east",
+    "country": "União Europeia"
+},
+{
+    "title": "European Youth Together 2025",
+    "closing_date": "06/03/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/european-youth-together-2025",
+    "country": "União Europeia"
+},
+{
+    "title": "Cooperation Partnerships in the field of Youth",
+    "closing_date": "05/03/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/cooperation-partnerships-in-the-field-of-youth",
+    "country": "União Europeia"
+},
+{
+    "title": "Partnerships for Cooperation - Cooperation Partnerships in the field of education and training submitted by European NGOs",
+    "closing_date": "05/03/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/partnerships-for-cooperation-cooperation-partnerships-in-the-field-of-education-and-training-submitted-by-european-ngos-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Cooperation Partnerships",
+    "closing_date": "05/03/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/cooperation-partnerships-2",
+    "country": "União Europeia"
+},
+{
+    "title": "Not-for-profit European sport events",
+    "closing_date": "05/03/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/not-for-profit-european-sport-events-2",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity Building in the Field of Sport",
+    "closing_date": "05/03/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-sport-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Small-scale Partnerships",
+    "closing_date": "05/03/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/small-scale-partnerships-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity building in VET in Western Balkans",
+    "closing_date": "27/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-vet-in-western-balkans",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity building in VET in South Mediterranean Countries",
+    "closing_date": "27/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-vet-in-south-mediterranean-countries",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity building in VET in Caribbean",
+    "closing_date": "27/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-vet-in-caribbean",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity building in VET in Neighbourhood East",
+    "closing_date": "27/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-vet-in-neighbourhood-east",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity building in VET in Latin America",
+    "closing_date": "27/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-vet-in-latin-america",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity building in VET in Sub-Saharan Africa",
+    "closing_date": "27/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-vet-in-sub-saharan-africa",
+    "country": "União Europeia"
+},
+{
+    "title": "Erasmus Mundus Joint Masters",
+    "closing_date": "13/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-mundus-joint-masters-2",
+    "country": "União Europeia"
+},
+{
+    "title": "Erasmus Mundus Design Measures",
+    "closing_date": "13/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-mundus-design-measures-2",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Actions in the field of Higher Education: Centers of Excellence",
+    "closing_date": "12/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-centers-of-excellence",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Actions for other fields of Education and Training: Teacher Training",
+    "closing_date": "12/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-for-other-fields-of-education-and-training-teacher-training-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Network on internal policy: EU enlargement as a catalyst for progress",
+    "closing_date": "12/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-network-on-internal-policy-eu-enlargement-as-a-catalyst-for-progress",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Network on external policy: EU-NORTH-AMERICA",
+    "closing_date": "12/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-network-on-external-policy-eu-north-america",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Actions in the field of Higher Education: Modules",
+    "closing_date": "12/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-modules-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Actions in the field of Higher Education: Chairs",
+    "closing_date": "12/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-chairs-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Networks in other fields of education and training",
+    "closing_date": "12/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-networks-in-other-fields-of-education-and-training-2",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Actions for other fields of Education and Training: Learning EU",
+    "closing_date": "12/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-for-other-fields-of-education-and-training-learning-eu",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity building in the field of higher education Strand 3",
+    "closing_date": "06/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-3-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity building in the field of higher education Strand 2",
+    "closing_date": "06/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-2-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity building in the field of higher education Strand 1",
+    "closing_date": "06/02/2025",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-1-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Erasmus+ Teacher Academies",
+    "closing_date": "06/06/2024",
+    "closing_time": "17:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-teacher-academies",
+    "country": "União Europeia"
+},
+{
+    "title": "Policy Experimentation - Micro-credentials",
+    "closing_date": "04/06/2024",
+    "closing_time": "17:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/policy-experimentation-micro-credentials",
+    "country": "União Europeia"
+},
+{
+    "title": "Policy Experimentation - School Education",
+    "closing_date": "04/06/2024",
+    "closing_time": "17:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/policy-experimentation-school-education",
+    "country": "União Europeia"
+},
+{
+    "title": "Policy Experimentation - Digital Education",
+    "closing_date": "04/06/2024",
+    "closing_time": "17:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/policy-experimentation-digital-education",
+    "country": "União Europeia"
+},
+{
+    "title": "Policy Experimentation - Vocational Education and Training",
+    "closing_date": "04/06/2024",
+    "closing_time": "17:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/policy-experimentation-vocational-education-and-training",
+    "country": "União Europeia"
+},
+{
+    "title": "Policy Experimentation - Adult Education",
+    "closing_date": "04/06/2024",
+    "closing_time": "17:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/policy-experimentation-adult-education",
+    "country": "União Europeia"
+},
+{
+    "title": "Policy Experimentation - Higher Education",
+    "closing_date": "04/06/2024",
+    "closing_time": "17:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/policy-experimentation-higher-education",
+    "country": "União Europeia"
+},
+{
+    "title": "Centres of Vocational Excellence",
+    "closing_date": "07/05/2024",
+    "closing_time": "17:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/centres-of-vocational-excellence",
+    "country": "União Europeia"
+},
+{
+    "title": "Virtual exchanges in higher education and youth",
+    "closing_date": "25/04/2024",
+    "closing_time": "17:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/virtual-exchanges-in-higher-education-and-youth",
+    "country": "União Europeia"
+},
+{
+    "title": "Alliances for Sectoral Cooperation on Skills (implementing the ‘Blueprint')",
+    "closing_date": "07/03/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/alliances-for-sectoral-cooperation-on-skills-implementing-the-blueprint-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Alliances for Education and Enterprises",
+    "closing_date": "07/03/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/alliances-for-education-and-enterprises-1",
+    "country": "União Europeia"
+},
+{
+    "title": "European Youth Together",
+    "closing_date": "07/03/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/european-youth-together-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity Building in the field of Youth",
+    "closing_date": "06/03/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-youth-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity building in the field of sport",
+    "closing_date": "05/03/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-sport-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Partnerships for Cooperation - Cooperation Partnerships in the field of Youth submitted by European NGOs",
+    "closing_date": "05/03/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/partnerships-for-cooperation-cooperation-partnerships-in-the-field-of-youth-submitted-by-european-ngos",
+    "country": "União Europeia"
+},
+{
+    "title": "Not-for-profit European sport events",
+    "closing_date": "05/03/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/not-for-profit-european-sport-events-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Partnerships for Cooperation - Cooperation Partnerships in the field of Education and Training submitted by European NGOs",
+    "closing_date": "05/03/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/partnerships-for-cooperation-cooperation-partnerships-in-the-field-of-education-and-training-submitted-by-european-ngos",
+    "country": "União Europeia"
+},
+{
+    "title": "Small-scale Partnerships",
+    "closing_date": "05/03/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/small-scale-partnerships-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Cooperation partnerships",
+    "closing_date": "05/03/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/cooperation-partnerships-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity building in the field of Vocational education and training (VET)",
+    "closing_date": "29/02/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-vocational-education-and-training-vet-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Erasmus Mundus Design Measures",
+    "closing_date": "15/02/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-mundus-design-measures-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Erasmus Mundus Joint Masters",
+    "closing_date": "15/02/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-mundus-joint-masters-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity Building in the field of higher education Strand 3",
+    "closing_date": "08/02/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-3-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity Building in the field of higher education Strand 2",
+    "closing_date": "08/02/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-2-0",
+    "country": "União Europeia"
+},
+{
+    "title": "European Universities - Community of practice",
+    "closing_date": "06/02/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/european-universities-community-of-practice",
+    "country": "União Europeia"
+},
+{
+    "title": "European Universities - Development of deep institutional transnational cooperation",
+    "closing_date": "06/02/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/european-universities-development-of-deep-institutional-transnational-cooperation",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Networks in other fields of education and training",
+    "closing_date": "01/02/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-networks-in-other-fields-of-education-and-training-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Actions in the field of Higher Education: Chairs",
+    "closing_date": "01/02/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-chairs",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet actions for other fields of education and training – Teacher training",
+    "closing_date": "01/02/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-for-other-fields-of-education-and-training-teacher-training-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Actions in the field of Higher Education: Centres of Excellence",
+    "closing_date": "01/02/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-centres-of-excellence-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Actions in the field of Higher Education: Modules",
+    "closing_date": "01/02/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-modules-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Network on external policy: EU-Africa",
+    "closing_date": "01/02/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-network-on-external-policy-eu-africa",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Network on internal policy: An Economy that works for people",
+    "closing_date": "01/02/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-network-on-internal-policy-an-economy-that-works-for-people",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Network on external policy: EU- Latin America",
+    "closing_date": "01/02/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-network-on-external-policy-eu-latin-america",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Actions in other fields of Education and Training: Learning EU Initiatives",
+    "closing_date": "01/02/2024",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-other-fields-of-education-and-training-learning-eu-initiatives-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Partnership for Excellence - Centres of Vocational Excellence",
+    "closing_date": "08/06/2023",
+    "closing_time": "2:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/partnership-for-excellence-centres-of-vocational-excellence-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Open call for tenders to carry out studies in education, training, youth, sport, culture, research and innovation",
+    "closing_date": "05/06/2023",
+    "closing_time": "2:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/open-call-for-tenders-to-carry-out-studies-in-education-training-youth-sport-culture-research-and-innovation",
+    "country": "União Europeia"
+},
+{
+    "title": "Alliances for Sectoral Cooperation on Skills (implementing the ‘Blueprint')",
+    "closing_date": "03/05/2023",
+    "closing_time": "17:00 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/alliances-for-sectoral-cooperation-on-skills-implementing-the-blueprint-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Alliances for Education and Enterprises",
+    "closing_date": "03/05/2023",
+    "closing_time": "11:58 CEST",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/alliances-for-education-and-enterprises-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Small-scale partnerships",
+    "closing_date": "23/03/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/small-scale-partnerships",
+    "country": "União Europeia"
+},
+{
+    "title": "Large scale not-for-profit European sport event",
+    "closing_date": "22/03/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/large-scale-not-for-profit-european-sport-event",
+    "country": "União Europeia"
+},
+{
+    "title": "Cooperation partnerships",
+    "closing_date": "22/03/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/cooperation-partnerships-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Not-for-profit European sport events",
+    "closing_date": "22/03/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/not-for-profit-european-sport-events-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Partnerships for Cooperation in the fields of education and training - European NGOs",
+    "closing_date": "22/03/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/partnerships-for-cooperation-in-the-fields-of-education-and-training-european-ngos",
+    "country": "União Europeia"
+},
+{
+    "title": "Partnerships for Cooperation in the field of youth - European NGOs",
+    "closing_date": "22/03/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/partnerships-for-cooperation-in-the-field-of-youth-european-ngos",
+    "country": "União Europeia"
+},
+{
+    "title": "Partnerships for Innovation - Forward-Looking Projects - Adult learning",
+    "closing_date": "15/03/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/partnerships-for-innovation-forward-looking-projects-adult-learning",
+    "country": "União Europeia"
+},
+{
+    "title": "Partnerships for Innovation - Forward-Looking Projects - Vocational Education and Training (VET)",
+    "closing_date": "15/03/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/partnerships-for-innovation-forward-looking-projects-vocational-education-and-training-vet",
+    "country": "União Europeia"
+},
+{
+    "title": "Partnerships for Innovation - Forward-Looking Projects - Digital education (cross-sectoral)",
+    "closing_date": "15/03/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/partnerships-for-innovation-forward-looking-projects-digital-education-cross-sectoral",
+    "country": "União Europeia"
+},
+{
+    "title": "European Youth Together",
+    "closing_date": "09/03/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/european-youth-together-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity Building in the field of Youth",
+    "closing_date": "08/03/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-youth-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity building in the field of Vocational education and training (VET)",
+    "closing_date": "28/02/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-vocational-education-and-training-vet-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity building in the field of higher education Strand 2",
+    "closing_date": "16/02/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-2",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity building in the field of higher education Strand 1",
+    "closing_date": "16/02/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-1",
+    "country": "União Europeia"
+},
+{
+    "title": "Erasmus Mundus Design Measures",
+    "closing_date": "16/02/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-mundus-design-measures-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity building in the field of higher education Strand 3",
+    "closing_date": "16/02/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-3",
+    "country": "União Europeia"
+},
+{
+    "title": "Erasmus Mundus Joint Masters",
+    "closing_date": "16/02/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/erasmus-mundus-joint-masters-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Actions in the field of Higher Education: Centres of Excellence",
+    "closing_date": "14/02/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-centres-of-excellence",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Actions in the field of Higher Education: Chair",
+    "closing_date": "14/02/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-chair",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Actions in the field of Higher Education: Modules",
+    "closing_date": "14/02/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-the-field-of-higher-education-modules",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet actions for other fields of education and training – Teacher training",
+    "closing_date": "14/02/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-for-other-fields-of-education-and-training-teacher-training",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Actions in other fields of Education and Training: Learning EU Initiatives",
+    "closing_date": "14/02/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-actions-in-other-fields-of-education-and-training-learning-eu-initiatives",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Policy Debate: Foreign policy issues: EU-AFRICA",
+    "closing_date": "14/02/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-policy-debate-foreign-policy-issues-eu-africa",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Networks in other fields of Education and Training",
+    "closing_date": "14/02/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-networks-in-other-fields-of-education-and-training-0",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Policy Debate: Foreign policy issues: Values and Democracy",
+    "closing_date": "14/02/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-policy-debate-foreign-policy-issues-values-and-democracy",
+    "country": "União Europeia"
+},
+{
+    "title": "Jean Monnet Policy Debate: Internal EU issues: Digital Transformation in Europe",
+    "closing_date": "14/02/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/jean-monnet-policy-debate-internal-eu-issues-digital-transformation-in-europe",
+    "country": "União Europeia"
+},
+{
+    "title": "Capacity building in the field of higher education Strand 1",
+    "closing_date": "08/02/2023",
+    "closing_time": "17:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/capacity-building-in-the-field-of-higher-education-strand-1-0",
+    "country": "União Europeia"
+},
+{
+    "title": "European Universities - Development of new deep institutional transnational cooperation (Topic 2)",
+    "closing_date": "31/01/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/european-universities-development-of-new-deep-institutional-transnational-cooperation-topic-2-0",
+    "country": "União Europeia"
+},
+{
+    "title": "European Universities - Intensification of prior deep institutional transnational cooperation (Topic 1)",
+    "closing_date": "31/01/2023",
+    "closing_time": "1:00 CET",
+    "link": "https://erasmus-plus.ec.europa.eu/calls/european-universities-intensification-of-prior-deep-institutional-transnational-cooperation-topic-1-0",
+    "country": "União Europeia"
+}
 ]
