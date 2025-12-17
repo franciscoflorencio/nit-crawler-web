@@ -4,7 +4,8 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+# Use legacy peer deps to accommodate React 19 with react-simple-maps peer range (<=18)
+RUN npm install --legacy-peer-deps
 
 COPY . .
 

@@ -5,6 +5,7 @@ import { Select, Pagination, Input, DatePicker } from "antd";
 import OpportunityCard from "../../components/OpportunityCard/";
 import { motion } from "framer-motion";
 import { ControlsRow, FilterGroup, FilterControl, Label } from "./style";
+import CountryMap from "../../components/CountryMap";
 const AnySelect: any = Select;
 const AnyInput: any = Input;
 const { RangePicker } = DatePicker;
@@ -16,6 +17,7 @@ const Opportunities = () => {
   const [uniqueValues, setUniqueValues] = useState<Record<string, string[]>>({});
   const [searchInput, setSearchInput] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
+  const [countryCounts, setCountryCounts] = useState<Record<string, number>>({});
   const [pagination, setPagination] = useState({
     count: 0,
     next: null,
@@ -77,6 +79,20 @@ const Opportunities = () => {
           throw new Error("Resposta inválida da API");
         }
         setOpportunities(response.data.results);
+
+        // Contagem de países para o mapa
+        const counts = (response.data.results as any[]).reduce(
+          (acc: Record<string, number>, curr: any) => {
+            const country = curr?.country;
+            if (country) {
+              acc[country] = (acc[country] || 0) + 1;
+            }
+            return acc;
+          },
+          {},
+        );
+        setCountryCounts(counts);
+
         setPagination({
           count: response.data.count || 0,
           next: response.data.next || null,
@@ -251,54 +267,67 @@ const Opportunities = () => {
         />
       </ControlsRow>
 
-      {isLoading && <motion.p>Carregando...</motion.p>}
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 380px", gap: "1rem", alignItems: "flex-start" }}>
+        <div>
+          {isLoading && <motion.p>Carregando...</motion.p>}
 
-      {opportunities.length > 0 ? (
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: {
-              opacity: 1,
-              y: 0,
-              transition: { staggerChildren: 0.1 },
-            },
-          }}
-        >
-          {opportunities.map((opportunity: any) => (
+          {opportunities.length > 0 ? (
             <motion.div
-              key={opportunity.id}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3 }}
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { staggerChildren: 0.1 },
+                },
+              }}
             >
-              <OpportunityCard opportunity={opportunity} />
+              {opportunities.map((opportunity: any) => (
+                <motion.div
+                  key={opportunity.id}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <OpportunityCard opportunity={opportunity} />
+                </motion.div>
+              ))}
             </motion.div>
-          ))}
-        </motion.div>
-      ) : (
-        !isLoading && <motion.p>Sem oportunidades disponíveis.</motion.p>
-      )}
+          ) : (
+            !isLoading && <motion.p>Sem oportunidades disponíveis.</motion.p>
+          )}
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        style={{
-          marginTop: "1rem",
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <Pagination
-          current={currentPage}
-          pageSize={PAGE_SIZE}
-          total={pagination.count}
-          onChange={handlePageChange}
-          showSizeChanger={false}
-        />
-      </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            style={{
+              marginTop: "1rem",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <Pagination
+              current={currentPage}
+              pageSize={PAGE_SIZE}
+              total={pagination.count}
+              onChange={handlePageChange}
+              showSizeChanger={false}
+            />
+          </motion.div>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          style={{ position: "sticky", top: "1rem" }}
+        >
+          <CountryMap countryCounts={countryCounts} />
+        </motion.div>
+      </div>
     </motion.div>
   );
 };
