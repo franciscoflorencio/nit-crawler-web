@@ -1,12 +1,14 @@
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api";
-import { Select, Pagination, Input } from "antd";
+import { Select, Pagination, Input, DatePicker } from "antd";
 import OpportunityCard from "../../components/OpportunityCard/";
 import { motion } from "framer-motion";
 import { ControlsRow, FilterGroup, FilterControl, Label } from "./style";
 const AnySelect: any = Select;
 const AnyInput: any = Input;
+const { RangePicker } = DatePicker;
+import dayjs from "dayjs";
 
 const Opportunities = () => {
   const [opportunities, setOpportunities] = useState([]);
@@ -26,24 +28,26 @@ const Opportunities = () => {
   useEffect(() => {
     const fetchFilterData = async () => {
       try {
-  const response = await axios.get(`${BASE_URL}/filterable-fields/`);
+        const response = await axios.get(`${BASE_URL}/filterable-fields/`);
         const filterData = response.data;
 
-        // Remove duplicates from each filter field
         const deduplicatedData = Object.keys(filterData).reduce((acc, key) => {
-          acc[key] = Array.from(new Set(filterData[key].filter(Boolean))); // Also removes empty values
+          acc[key] = Array.from(new Set(filterData[key].filter(Boolean)));
           return acc;
         }, {} as Record<string, string[]>);
 
-        setUniqueValues(deduplicatedData);
+        const allowedFields = ["source", "country", "closing_date"];
+        const filteredData = allowedFields.reduce((acc, key) => {
+          acc[key] = deduplicatedData[key] || [];
+          return acc;
+        }, {} as Record<string, string[]>);
 
-        const initialFilters = Object.keys(deduplicatedData).reduce(
-          (acc, key) => {
-            acc[key] = "";
-            return acc;
-          },
-          {} as Record<string, string>,
-        );
+        setUniqueValues(filteredData);
+
+        const initialFilters = allowedFields.reduce((acc, key) => {
+          acc[key] = "";
+          return acc;
+        }, {} as Record<string, string>);
         setFilters(initialFilters);
       } catch (error) {
         console.error("Erro ao buscar dados de filtro:", error);
@@ -67,7 +71,7 @@ const Opportunities = () => {
             params.append(key, value);
           }
         });
-  const url = `${BASE_URL}/opportunities/?${params.toString()}`;
+        const url = `${BASE_URL}/opportunities/?${params.toString()}`;
         const response = await axios.get(url);
         if (!response.data || !Array.isArray(response.data.results)) {
           throw new Error("Resposta inválida da API");
@@ -109,17 +113,70 @@ const Opportunities = () => {
   };
 
   const translateFieldName = (field: string) => {
-    const lowerField = field.toLowerCase();
+    const lower = field.toLowerCase();
+    if (lower.includes("source")) return "Origem";
+    if (lower.includes("country")) return "País";
+    if (lower.includes("closing_date")) return "Data de Fechamento";
+    return field.replace(/_/g, " ").replace(/(?:^|\s)\S/g, (c) => c.toUpperCase());
+  };
 
-    if (lowerField.includes('source')) return "Origem";
-    if (lowerField.includes('status')) return "Status da Oportunidade";
-    if (lowerField.includes('funding')) return "Tipo de Financiamento";
-    if (lowerField.includes('institu')) return "Instituição";
-    if (lowerField.includes('city')) return "Cidade";
-
-    return field
-      .replace(/_/g, " ")
-      .replace(/(?:^|\s)\S/g, (char) => char.toUpperCase());
+  // Returns a flag emoji (or empty string) for common country names.
+  const countryFlag = (name: string) => {
+    const n = name.trim().toLowerCase();
+    const map: Record<string, string> = {
+      brasil: "🇧🇷",
+      "brazil": "🇧🇷",
+      "reino unido": "🇬🇧",
+      "united kingdom": "🇬🇧",
+      "uk": "🇬🇧",
+      "estados unidos": "🇺🇸",
+      "united states": "🇺🇸",
+      "usa": "🇺🇸",
+      frança: "🇫🇷",
+      france: "🇫🇷",
+      alemanha: "🇩🇪",
+      germany: "🇩🇪",
+      espanha: "🇪🇸",
+      spain: "🇪🇸",
+      itália: "🇮🇹",
+      italy: "🇮🇹",
+      portugal: "🇵🇹",
+      canadá: "🇨🇦",
+      canada: "🇨🇦",
+      austrália: "🇦🇺",
+      australia: "🇦🇺",
+      japão: "🇯🇵",
+      japan: "🇯🇵",
+      china: "🇨🇳",
+      índia: "🇮🇳",
+      india: "🇮🇳",
+      méxico: "🇲🇽",
+      mexico: "🇲🇽",
+      argentina: "🇦🇷",
+      chile: "🇨🇱",
+      suíça: "🇨🇭",
+      switzerland: "🇨🇭",
+      suécia: "🇸🇪",
+      sweden: "🇸🇪",
+      noruega: "🇳🇴",
+      norway: "🇳🇴",
+      finlândia: "🇫🇮",
+      finland: "🇫🇮",
+      dinamarca: "🇩🇰",
+      denmark: "🇩🇰",
+      irlanda: "🇮🇪",
+      ireland: "🇮🇪",
+      bélgica: "🇧🇪",
+      belgium: "🇧🇪",
+      holanda: "🇳🇱",
+      "países baixos": "🇳🇱",
+      netherlands: "🇳🇱",
+      áustria: "🇦🇹",
+      austria: "🇦🇹",
+      polônia: "🇵🇱",
+      poland: "🇵🇱",
+    };
+    return map[n] || "";
   };
 
   const PAGE_SIZE = 10;
@@ -146,21 +203,42 @@ const Opportunities = () => {
               <Label htmlFor={`${field}-filter`}>
                 {translateFieldName(field)}:
               </Label>
-              <AnySelect
-                value={filters[field]}
-                onChange={(value: string) => handleFilterChange(field, value)}
-                style={{ width: "200px" }}
-                placeholder={`Selecione ${translateFieldName(field)}`}
-                allowClear
-                showSearch
-                options={[
-                  { label: "Todos", value: "" },
-                  ...(uniqueValues[field] || []).map((v) => ({ label: v, value: v })),
-                ]}
-                filterOption={(input: string, option?: { label: string; value: string }) =>
-                  (option?.label as string)?.toLowerCase().includes(input.toLowerCase())
-                }
-              />
+              {field === "closing_date" ? (
+                <DatePicker
+                  id={`${field}-filter`}
+                  allowClear
+                  format="DD/MM/YYYY"
+                  value={filters[field] ? dayjs(filters[field], "DD/MM/YYYY") : null}
+                  onChange={(value) => {
+                    const formatted = value ? value.format("DD/MM/YYYY") : "";
+                    handleFilterChange(field, formatted);
+                  }}
+                  style={{ width: "200px" }}
+                  placeholder="Selecione a data"
+                />
+              ) : (
+                <AnySelect
+                  value={filters[field]}
+                  onChange={(value: string) => handleFilterChange(field, value)}
+                  style={{ width: "200px" }}
+                  placeholder={`Selecione ${translateFieldName(field)}`}
+                  allowClear
+                  showSearch
+                  options={[
+                    { label: "Todos", value: "" },
+                    ...(uniqueValues[field] || []).map((v) => ({
+                      label:
+                        field === "country"
+                          ? `${countryFlag(v)} ${v}`.trim()
+                          : v,
+                      value: v,
+                    })),
+                  ]}
+                  filterOption={(input: string, option?: { label: string; value: string }) =>
+                    (option?.label as string)?.toLowerCase().includes(input.toLowerCase())
+                  }
+                />
+              )}
             </FilterControl>
           ))}
         </FilterGroup>

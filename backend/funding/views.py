@@ -11,10 +11,8 @@ class FilterableFieldsView(APIView):
     def get(self, request, *args, **kwargs):
         filterable_field_names = [
             "source",
-            "opportunity_status",
-            "funding_type",
-            "institution",
-            "city",
+            "country",
+            "closing_date",
         ]
 
         filter_data = {}

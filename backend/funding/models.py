@@ -22,6 +22,7 @@ class FundingOpportunity(models.Model):
     observation = models.TextField(null=True, blank=True)
     institution = models.CharField(max_length=500, null=True, blank=True)
     city = models.CharField(max_length=100, null=True, blank=True)
+    country = models.CharField(max_length=100, null=True, blank=True)
     date = models.TextField(null=True, blank=True)
 
     source = models.CharField(max_length=100, null=True, blank=True)
