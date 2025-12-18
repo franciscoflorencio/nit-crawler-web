@@ -9,8 +9,11 @@ type CountryMapProps = {
 
 const nameMap: Record<string, string> = {
   "reino unido": "united kingdom",
+  "uk": "united kingdom",
   "estados unidos": "united states of america",
   usa: "united states of america",
+  "united states": "united states of america",
+  "eua": "united states of america",
   "coreia do sul": "south korea",
   "coreia do norte": "north korea",
   "emirados árabes unidos": "united arab emirates",
@@ -23,6 +26,11 @@ const nameMap: Record<string, string> = {
   "nova zelândia": "new zealand",
   "países baixos": "netherlands",
   holanda: "netherlands",
+  frança: "france",
+  franca: "france",
+  "frça": "france",
+  fr: "france",
+  mundo: "world",
 };
 
 const normalize = (name: string) => name.trim().toLowerCase();
@@ -37,23 +45,33 @@ export default function CountryMap({ countryCounts }: CountryMapProps) {
 
   const hasData = Object.keys(normalizedCounts).length > 0;
 
+  const resolveGeoName = (geo: any) => {
+    const raw =
+      geo.properties?.name ||
+      geo.properties?.NAME ||
+      geo.properties?.admin ||
+      geo.properties?.ADMIN ||
+      "";
+    return normalize(raw);
+  };
+
   return (
     <div style={{ display: "grid", gap: "0.5rem" }}>
       <div
         style={{
-          width: 360,
-          height: 230,
+          width: "min(520px, 100%)",
+          height: "min(340px, 60vw)",
           background: "#f7f9f8",
           borderRadius: 12,
           border: "1px solid #e2e8e5",
           overflow: "hidden",
         }}
       >
-        <ComposableMap projectionConfig={{ scale: 110 }} style={{ width: "100%", height: "100%" }}>
+        <ComposableMap projectionConfig={{ scale: 150 }} style={{ width: "100%", height: "100%" }}>
           <Geographies geography={TOPO_JSON_URL}>
             {({ geographies }) =>
               geographies.map((geo) => {
-                const geoName = normalize(geo.properties.name);
+                const geoName = resolveGeoName(geo);
                 const count = normalizedCounts[geoName] || 0;
                 const isHighlighted = count > 0;
                 return (
@@ -78,8 +96,8 @@ export default function CountryMap({ countryCounts }: CountryMapProps) {
 
       <div
         style={{
-          minWidth: 240,
-          maxWidth: 360,
+          minWidth: 260,
+          maxWidth: "min(520px, 100%)",
           background: "#f7f9f8",
           border: "1px solid #e2e8e5",
           borderRadius: 12,

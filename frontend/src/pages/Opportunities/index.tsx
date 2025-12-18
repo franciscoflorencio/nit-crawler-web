@@ -62,9 +62,7 @@ const Opportunities = () => {
     const fetchOpportunities = async () => {
       setIsLoading(true);
       try {
-        const params = new URLSearchParams({
-          page: String(currentPage),
-        });
+        const params = new URLSearchParams({ page: String(currentPage) });
         if (searchQuery) {
           params.append("search", searchQuery);
         }
@@ -73,30 +71,29 @@ const Opportunities = () => {
             params.append(key, value);
           }
         });
-        const url = `${BASE_URL}/opportunities/?${params.toString()}`;
-        const response = await axios.get(url);
-        if (!response.data || !Array.isArray(response.data.results)) {
+
+        const countParams = new URLSearchParams(params);
+        countParams.delete("page");
+
+        const opportunitiesUrl = `${BASE_URL}/opportunities/?${params.toString()}`;
+        const countryCountUrl = `${BASE_URL}/opportunities/country-counts/?${countParams.toString()}`;
+
+        const [opportunitiesResponse, countryCountResponse] = await Promise.all([
+          axios.get(opportunitiesUrl),
+          axios.get(countryCountUrl),
+        ]);
+
+        if (!opportunitiesResponse.data || !Array.isArray(opportunitiesResponse.data.results)) {
           throw new Error("Resposta inválida da API");
         }
-        setOpportunities(response.data.results);
 
-        // Contagem de países para o mapa
-        const counts = (response.data.results as any[]).reduce(
-          (acc: Record<string, number>, curr: any) => {
-            const country = curr?.country;
-            if (country) {
-              acc[country] = (acc[country] || 0) + 1;
-            }
-            return acc;
-          },
-          {},
-        );
-        setCountryCounts(counts);
+        setOpportunities(opportunitiesResponse.data.results);
+        setCountryCounts(countryCountResponse.data || {});
 
         setPagination({
-          count: response.data.count || 0,
-          next: response.data.next || null,
-          previous: response.data.previous || null,
+          count: opportunitiesResponse.data.count || 0,
+          next: opportunitiesResponse.data.next || null,
+          previous: opportunitiesResponse.data.previous || null,
         });
       } catch (error) {
         console.error("Erro ao buscar oportunidades:", error);
