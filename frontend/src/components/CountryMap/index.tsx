@@ -5,6 +5,8 @@ const TOPO_JSON_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m
 
 type CountryMapProps = {
   countryCounts: Record<string, number>;
+  onCountryClick: (country: string) => void;
+  selectedCountry: string;
 };
 
 const nameMap: Record<string, string> = {
@@ -13,13 +15,11 @@ const nameMap: Record<string, string> = {
   "uk": "united kingdom",
   "estados unidos": "united states of america",
   "usa": "united states of america",
-  "united states": "united states of america",
   "eua": "united states of america",
   "coreia do sul": "south korea",
   "coreia do norte": "north korea",
   "emirados árabes unidos": "united arab emirates",
   rússia: "russian federation",
-  russia: "russian federation",
   irã: "iran, islamic rep.",
   "república tcheca": "czech republic",
   turquia: "turkey",
@@ -28,48 +28,32 @@ const nameMap: Record<string, string> = {
   "países baixos": "netherlands",
   holanda: "netherlands",
   frança: "france",
-  franca: "france",
-  "frça": "france",
-  fr: "france",
   mundo: "world",
   "união europeia": "european union",
-  "uniao europeia": "european union",
 
   // Added
   brasil: "brazil",
   alemanha: "germany",
   espanha: "spain",
   itália: "italy",
-  italia: "italy",
   portugal: "portugal",
   canadá: "canada",
-  canada: "canada",
   austrália: "australia",
-  australia: "australia",
   japão: "japan",
-  japao: "japan",
   china: "china",
   índia: "india",
-  india: "india",
   méxico: "mexico",
-  mexico: "mexico",
   argentina: "argentina",
   chile: "chile",
   suíça: "switzerland",
-  suica: "switzerland",
   suécia: "sweden",
-  suecia: "sweden",
   noruega: "norway",
   finlândia: "finland",
-  finlandia: "finland",
   dinamarca: "denmark",
   irlanda: "ireland",
   bélgica: "belgium",
-  belgica: "belgium",
   áustria: "austria",
-  austria: "austria",
   polônia: "poland",
-  polonia: "poland",
 };
 
 const euCountries = new Set([
@@ -103,22 +87,22 @@ const euCountries = new Set([
 ]);
 
 const countryColors: Record<string, string> = {
-  brazil: "#27ab83",
-  "united kingdom": "#e53e3e",
-  france: "#0a66c2",
-  germany: "#ffc107",
+  brazil: "#50C878", // Emerald
+  "united kingdom": "#E57373", // Soft Red
+  france: "#4A90E2", // Refined Blue
+  germany: "#FFB300", // Golden Yellow
 };
 
 const countryHoverColors: Record<string, string> = {
-  brazil: "#1f8a69",
-  "united kingdom": "#c53030",
-  france: "#084f99",
-  germany: "#d9a300",
+  brazil: "#3E9E63",
+  "united kingdom": "#D35F5F",
+  france: "#357ABD",
+  germany: "#E6A100",
 };
 
 const normalize = (name: string) => name.trim().toLowerCase();
 
-export default function CountryMap({ countryCounts }: CountryMapProps) {
+export default function CountryMap({ countryCounts, onCountryClick, selectedCountry }: CountryMapProps) {
   const normalizedCounts: Record<string, number> = {};
   Object.entries(countryCounts).forEach(([country, count]) => {
     const norm = normalize(country);
@@ -150,12 +134,22 @@ export default function CountryMap({ countryCounts }: CountryMapProps) {
     return normalize(raw);
   };
 
-  const EU_COLOR = "#a78bfa"; // Light Purple
-  const HIGHLIGHT_COLOR = "#0a66c2"; // Blue
-  const EU_HOVER_COLOR = "#8b5cf6";
-  const HIGHLIGHT_HOVER_COLOR = "#084f99";
-  const DEFAULT_COLOR = "#e5e7eb";
-  const DEFAULT_HOVER_COLOR = "#d6d9de";
+  const invertedNameMap = Object.entries(nameMap).reduce((acc, [key, value]) => {
+    if (!acc[value]) {
+      acc[value] = key;
+    }
+    return acc;
+  }, {} as Record<string, string>);
+
+  // Elegant Palette
+  const EU_COLOR = "#9B8AFB"; // Muted Lavender
+  const HIGHLIGHT_COLOR = "#4A90E2"; // Refined Blue
+  const EU_HOVER_COLOR = "#7C6EF9";
+  const HIGHLIGHT_HOVER_COLOR = "#357ABD";
+  const DEFAULT_COLOR = "#F0F0F0"; // Warmer, lighter gray
+  const DEFAULT_HOVER_COLOR = "#E0E0E0";
+  const SELECTED_COLOR = "#FFD700"; // Gold
+  const SELECTED_HOVER_COLOR = "#E6C300";
 
   return (
     <div style={{ display: "grid", gap: "0.5rem" }}>
@@ -176,13 +170,23 @@ export default function CountryMap({ countryCounts }: CountryMapProps) {
                 const geoName = resolveGeoName(geo);
                 const countrySpecificCount = normalizedCounts[geoName] || 0;
                 const isEuCountry = euCountries.has(geoName);
+
+                const isSelected =
+                  normalize(selectedCountry) === geoName ||
+                  (isEuCountry &&
+                    !countrySpecificCount &&
+                    normalize(selectedCountry) === "european union");
+
                 const specialColor = countryColors[geoName];
                 const specialHoverColor = countryHoverColors[geoName];
 
                 let fill = DEFAULT_COLOR;
                 let hoverFill = DEFAULT_HOVER_COLOR;
 
-                if (countrySpecificCount > 0) {
+                if (isSelected) {
+                  fill = SELECTED_COLOR;
+                  hoverFill = SELECTED_HOVER_COLOR;
+                } else if (countrySpecificCount > 0) {
                   if (specialColor) {
                     fill = specialColor;
                     hoverFill = specialHoverColor || specialColor;
@@ -203,9 +207,23 @@ export default function CountryMap({ countryCounts }: CountryMapProps) {
                     stroke="#ffffff"
                     strokeWidth={0.3}
                     style={{
-                      default: { outline: "none" },
+                      default: { outline: "none", cursor: "pointer" },
                       hover: { outline: "none", fill: hoverFill },
                       pressed: { outline: "none" },
+                    }}
+                    onClick={() => {
+                      const hasIndividualOpportunities = countrySpecificCount > 0;
+                      if (isEuCountry && !hasIndividualOpportunities) {
+                        const newSelectedCountry =
+                          normalize(selectedCountry) === "european union" ? "" : "união europeia";
+                        onCountryClick(newSelectedCountry);
+                        return;
+                      }
+
+                      const normalizedGeoName = normalize(geo.properties.name);
+                      const preferredName = invertedNameMap[normalizedGeoName] || normalizedGeoName;
+                      const newSelectedCountry = isSelected ? "" : preferredName;
+                      onCountryClick(newSelectedCountry);
                     }}
                   />
                 );

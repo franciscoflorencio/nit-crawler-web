@@ -1,9 +1,11 @@
 import React from "react";
 import {
-  OpportunityItem,
-  OpportunityTitle,
-  Field,
-  LearnMoreLink,
+  CardContainer,
+  CardTitle,
+  CardDescription,
+  DetailsGrid,
+  Detail,
+  LearnMoreButton,
 } from "./style";
 
 interface OpportunityCardProps {
@@ -36,98 +38,83 @@ const OpportunityCard: React.FC<OpportunityCardProps> = ({ opportunity }) => {
     value !== null && value !== undefined && value !== "";
 
   return (
-    <OpportunityItem>
-      {/* Title */}
-      <OpportunityTitle>{opportunity.title}</OpportunityTitle>
+    <CardContainer>
+      <CardTitle href={opportunity.link} target="_blank" rel="noopener noreferrer">
+        {opportunity.title}
+      </CardTitle>
 
-      {/* Render only the fields that have values */}
-      {hasValue(opportunity.source) && (
-        <Field>
-          <span>Source:</span> {opportunity.source}
-        </Field>
-      )}
       {hasValue(opportunity.description) && (
-        <Field>
-          <span>Description:</span> {opportunity.description}
-        </Field>
-      )}
-      {hasValue(opportunity.opening_date) && (
-        <Field>
-          <span>Opening Date:</span> {opportunity.opening_date}
-        </Field>
-      )}
-      {hasValue(opportunity.closing_date) && (
-        <Field>
-          <span>Closing Date:</span> {opportunity.closing_date}
-        </Field>
-      )}
-      {hasValue(opportunity.closing_time) && (
-        <Field>
-          <span>Closing Time:</span> {opportunity.closing_time}
-        </Field>
-      )}
-      {hasValue(opportunity.opportunity_status) && (
-        <Field>
-          <span>Status:</span> {opportunity.opportunity_status}
-        </Field>
-      )}
-      {hasValue(opportunity.funders) && (
-        <Field>
-          <span>Funders:</span> {opportunity.funders}
-        </Field>
-      )}
-      {hasValue(opportunity.funding_type) && (
-        <Field>
-          <span>Funding Type:</span> {opportunity.funding_type}
-        </Field>
-      )}
-      {hasValue(opportunity.total_fund) && (
-        <Field>
-          <span>Total Fund:</span> ${opportunity.total_fund}
-        </Field>
-      )}
-      {hasValue(opportunity.award_range) && (
-        <Field>
-          <span>Award Range:</span> {opportunity.award_range}
-        </Field>
-      )}
-      {hasValue(opportunity.publication_date) && (
-        <Field>
-          <span>Publication Date:</span> {opportunity.publication_date}
-        </Field>
-      )}
-      {hasValue(opportunity.observation) && (
-        <Field>
-          <span>Observation:</span> {opportunity.observation}
-        </Field>
-      )}
-      {hasValue(opportunity.institution) && (
-        <Field>
-          <span>Institution:</span> {opportunity.institution}
-        </Field>
-      )}
-      {hasValue(opportunity.city) && (
-        <Field>
-          <span>City:</span> {opportunity.city}
-        </Field>
-      )}
-      {hasValue(opportunity.date) && (
-        <Field>
-          <span>Date:</span> {opportunity.date}
-        </Field>
+        <CardDescription>{opportunity.description}</CardDescription>
       )}
 
-      {/* Learn More Link */}
+      <DetailsGrid>
+        {hasValue(opportunity.source) && (
+          <Detail>
+            <span>Source:</span> {opportunity.source}
+          </Detail>
+        )}
+        {hasValue(opportunity.funding_type) && (
+          <Detail>
+            <span>Funding Type:</span> {opportunity.funding_type}
+          </Detail>
+        )}
+        {hasValue(opportunity.opening_date) && (
+          <Detail>
+            <span>Opening Date:</span> {opportunity.opening_date}
+          </Detail>
+        )}
+        {hasValue(opportunity.closing_date) && (
+          <Detail>
+            <span>Closing Date:</span> {opportunity.closing_date}
+          </Detail>
+        )}
+        {hasValue(opportunity.publication_date) && (
+          <Detail>
+            <span>Published On:</span> {opportunity.publication_date}
+          </Detail>
+        )}
+        {hasValue(opportunity.funders) && (
+          <Detail>
+            <span>Funders:</span> {opportunity.funders}
+          </Detail>
+        )}
+        {hasValue(opportunity.total_fund) && (
+          <Detail>
+            <span>Total Fund:</span> ${opportunity.total_fund.toLocaleString()}
+          </Detail>
+        )}
+        {hasValue(opportunity.award_range) && (
+          <Detail>
+            <span>Award Range:</span> {opportunity.award_range}
+          </Detail>
+        )}
+        {hasValue(opportunity.opportunity_status) && (
+          <Detail>
+            <span>Status:</span> {opportunity.opportunity_status}
+          </Detail>
+        )}
+        {hasValue(opportunity.institution) && (
+          <Detail>
+            <span>Institution:</span> {opportunity.institution}
+          </Detail>
+        )}
+        {hasValue(opportunity.city) && (
+          <Detail>
+            <span>City:</span> {opportunity.city}
+          </Detail>
+        )}
+      </DetailsGrid>
+
       {hasValue(opportunity.link) && (
-        <LearnMoreLink
+        <LearnMoreButton
           href={opportunity.link}
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn More
-        </LearnMoreLink>
+        </LearnMoreButton>
       )}
-    </OpportunityItem>
+    </CardContainer>
   );
 };
 

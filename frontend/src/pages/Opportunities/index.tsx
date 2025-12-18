@@ -68,7 +68,11 @@ const Opportunities = () => {
         }
         Object.entries(filters).forEach(([key, value]) => {
           if (value) {
-            params.append(key, value);
+            if (key === "closing_date") {
+              params.append("closing_date__lte", value);
+            } else {
+              params.append(key, value);
+            }
           }
         });
 
@@ -129,7 +133,7 @@ const Opportunities = () => {
     const lower = field.toLowerCase();
     if (lower.includes("source")) return "Origem";
     if (lower.includes("country")) return "País";
-    if (lower.includes("closing_date")) return "Data de Fechamento";
+    if (lower.includes("closing_date")) return "Data Limite";
     return field.replace(/_/g, " ").replace(/(?:^|\s)\S/g, (c) => c.toUpperCase());
   };
 
@@ -255,13 +259,13 @@ const Opportunities = () => {
             </FilterControl>
           ))}
         </FilterGroup>
-        <AnyInput
-          placeholder="Pesquisar em todos os campos"
-          value={searchInput}
-          onChange={handleSearchChange}
-          style={{ minWidth: 250, flexShrink: 0 }}
-          allowClear
-        />
+          <AnyInput
+            placeholder="Pesquisar em todos os campos"
+            value={searchInput}
+            onChange={handleSearchChange}
+            style={{ width: "648px" }}
+            allowClear
+          />
       </ControlsRow>
 
       <div style={{ display: "grid", gridTemplateColumns: "1fr 380px", gap: "1rem", alignItems: "flex-start" }}>
@@ -322,7 +326,11 @@ const Opportunities = () => {
           transition={{ duration: 0.4 }}
           style={{ position: "sticky", top: "1rem" }}
         >
-          <CountryMap countryCounts={countryCounts} />
+          <CountryMap
+            countryCounts={countryCounts}
+            onCountryClick={(countryName) => handleFilterChange("country", countryName)}
+            selectedCountry={filters.country || ""}
+          />
         </motion.div>
       </div>
     </motion.div>

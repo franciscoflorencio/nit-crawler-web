@@ -5,6 +5,7 @@ from django.db.models import Count
 from .models import FundingOpportunity
 from .serializers import FundingOpportunitySerializer
 from .pagination import LargeResultsSetPagination
+from datetime import datetime
 from rest_framework.response import Response
 
 
@@ -17,8 +18,10 @@ def _filter_queryset(request):
         search_fields = [
             f.name
             for f in FundingOpportunity._meta.get_fields()
-            if hasattr(f, "get_internal_type")
-            and f.get_internal_type() in ["CharField", "TextField", "URLField"]
+            if (
+                hasattr(f, "get_internal_type")
+                and f.get_internal_type() in ["CharField", "TextField", "URLField"]
+            )
         ]
 
         q_object = Q()
@@ -28,10 +31,18 @@ def _filter_queryset(request):
 
     model_fields = [f.name for f in FundingOpportunity._meta.get_fields()]
     for field in model_fields:
+        if field == "closing_date":
+            continue
         value = params.get(field, None)
         if value:
             queryset = queryset.filter(**{f"{field}__iexact": value})
-
+    closing_date_lte = params.get("closing_date__lte", None)
+    if closing_date_lte:
+        try:
+            date_obj = datetime.strptime(closing_date_lte, "%d/%m/%Y").date()
+            queryset = queryset.filter(closing_date__lte=date_obj)
+        except (ValueError, TypeError):
+            pass
     return queryset
 
 
