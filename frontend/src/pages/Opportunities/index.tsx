@@ -206,7 +206,7 @@ const Opportunities = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        Bolsas de Oportunidade
+        Bolsas
       </motion.h1>
 
       <ControlsRow>

@@ -8,10 +8,11 @@ type CountryMapProps = {
 };
 
 const nameMap: Record<string, string> = {
+  // Existing
   "reino unido": "united kingdom",
   "uk": "united kingdom",
   "estados unidos": "united states of america",
-  usa: "united states of america",
+  "usa": "united states of america",
   "united states": "united states of america",
   "eua": "united states of america",
   "coreia do sul": "south korea",
@@ -31,6 +32,88 @@ const nameMap: Record<string, string> = {
   "frça": "france",
   fr: "france",
   mundo: "world",
+  "união europeia": "european union",
+  "uniao europeia": "european union",
+
+  // Added
+  brasil: "brazil",
+  alemanha: "germany",
+  espanha: "spain",
+  itália: "italy",
+  italia: "italy",
+  portugal: "portugal",
+  canadá: "canada",
+  canada: "canada",
+  austrália: "australia",
+  australia: "australia",
+  japão: "japan",
+  japao: "japan",
+  china: "china",
+  índia: "india",
+  india: "india",
+  méxico: "mexico",
+  mexico: "mexico",
+  argentina: "argentina",
+  chile: "chile",
+  suíça: "switzerland",
+  suica: "switzerland",
+  suécia: "sweden",
+  suecia: "sweden",
+  noruega: "norway",
+  finlândia: "finland",
+  finlandia: "finland",
+  dinamarca: "denmark",
+  irlanda: "ireland",
+  bélgica: "belgium",
+  belgica: "belgium",
+  áustria: "austria",
+  austria: "austria",
+  polônia: "poland",
+  polonia: "poland",
+};
+
+const euCountries = new Set([
+  "austria",
+  "belgium",
+  "bulgaria",
+  "croatia",
+  "cyprus",
+  "czech republic",
+  "denmark",
+  "estonia",
+  "finland",
+  "france",
+  "germany",
+  "greece",
+  "hungary",
+  "ireland",
+  "italy",
+  "latvia",
+  "lithuania",
+  "luxembourg",
+  "malta",
+  "netherlands",
+  "poland",
+  "portugal",
+  "romania",
+  "slovakia",
+  "slovenia",
+  "spain",
+  "sweden",
+]);
+
+const countryColors: Record<string, string> = {
+  brazil: "#27ab83",
+  "united kingdom": "#e53e3e",
+  france: "#0a66c2",
+  germany: "#ffc107",
+};
+
+const countryHoverColors: Record<string, string> = {
+  brazil: "#1f8a69",
+  "united kingdom": "#c53030",
+  france: "#084f99",
+  germany: "#d9a300",
 };
 
 const normalize = (name: string) => name.trim().toLowerCase();
@@ -43,7 +126,19 @@ export default function CountryMap({ countryCounts }: CountryMapProps) {
     normalizedCounts[mapped] = (normalizedCounts[mapped] || 0) + count;
   });
 
-  const hasData = Object.keys(normalizedCounts).length > 0;
+  const euOpportunityCount = normalizedCounts["european union"] || 0;
+  const hasEuOpportunity = euOpportunityCount > 0;
+  if (normalizedCounts["european union"]) {
+    delete normalizedCounts["european union"];
+  }
+
+  const listItems = Object.entries(normalizedCounts);
+  if (hasEuOpportunity) {
+    listItems.push(["european union", euOpportunityCount]);
+  }
+  listItems.sort((a, b) => b[1] - a[1]);
+
+  const hasData = listItems.length > 0;
 
   const resolveGeoName = (geo: any) => {
     const raw =
@@ -54,6 +149,13 @@ export default function CountryMap({ countryCounts }: CountryMapProps) {
       "";
     return normalize(raw);
   };
+
+  const EU_COLOR = "#a78bfa"; // Light Purple
+  const HIGHLIGHT_COLOR = "#0a66c2"; // Blue
+  const EU_HOVER_COLOR = "#8b5cf6";
+  const HIGHLIGHT_HOVER_COLOR = "#084f99";
+  const DEFAULT_COLOR = "#e5e7eb";
+  const DEFAULT_HOVER_COLOR = "#d6d9de";
 
   return (
     <div style={{ display: "grid", gap: "0.5rem" }}>
@@ -67,23 +169,42 @@ export default function CountryMap({ countryCounts }: CountryMapProps) {
           overflow: "hidden",
         }}
       >
-        <ComposableMap projectionConfig={{ scale: 150 }} style={{ width: "100%", height: "100%" }}>
+        <ComposableMap projectionConfig={{ center: [-20, 10], scale: 320 }} style={{ width: "100%", height: "100%" }}>
           <Geographies geography={TOPO_JSON_URL}>
             {({ geographies }) =>
               geographies.map((geo) => {
                 const geoName = resolveGeoName(geo);
-                const count = normalizedCounts[geoName] || 0;
-                const isHighlighted = count > 0;
+                const countrySpecificCount = normalizedCounts[geoName] || 0;
+                const isEuCountry = euCountries.has(geoName);
+                const specialColor = countryColors[geoName];
+                const specialHoverColor = countryHoverColors[geoName];
+
+                let fill = DEFAULT_COLOR;
+                let hoverFill = DEFAULT_HOVER_COLOR;
+
+                if (countrySpecificCount > 0) {
+                  if (specialColor) {
+                    fill = specialColor;
+                    hoverFill = specialHoverColor || specialColor;
+                  } else {
+                    fill = HIGHLIGHT_COLOR;
+                    hoverFill = HIGHLIGHT_HOVER_COLOR;
+                  }
+                } else if (isEuCountry && hasEuOpportunity) {
+                  fill = EU_COLOR;
+                  hoverFill = EU_HOVER_COLOR;
+                }
+
                 return (
                   <Geography
                     key={geo.rsmKey}
                     geography={geo}
-                    fill={isHighlighted ? "#0a66c2" : "#e5e7eb"}
+                    fill={fill}
                     stroke="#ffffff"
                     strokeWidth={0.3}
                     style={{
                       default: { outline: "none" },
-                      hover: { outline: "none", fill: isHighlighted ? "#084f99" : "#d6d9de" },
+                      hover: { outline: "none", fill: hoverFill },
                       pressed: { outline: "none" },
                     }}
                   />
@@ -107,17 +228,36 @@ export default function CountryMap({ countryCounts }: CountryMapProps) {
         <h4 style={{ margin: "0 0 0.5rem 0", color: "#014f38" }}>Países com bolsas</h4>
         {hasData ? (
           <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: "0.35rem" }}>
-            {Object.entries(normalizedCounts)
-              .sort((a, b) => b[1] - a[1])
-              .map(([name, count]) => (
+            {listItems.map(([name, count]) => {
+              const specialColor = countryColors[name];
+              let color = HIGHLIGHT_COLOR;
+              if (name === "european union") {
+                color = EU_COLOR;
+              } else if (specialColor) {
+                color = specialColor;
+              }
+
+              return (
                 <li
                   key={name}
                   style={{ display: "flex", justifyContent: "space-between", fontSize: "0.95rem", color: "#2f2f2f" }}
                 >
-                  <span>{name.charAt(0).toUpperCase() + name.slice(1)}</span>
-                  <span style={{ color: "#0a66c2", fontWeight: 700 }}>{count}</span>
+                  <span>
+                    {name === "european union"
+                      ? "União Europeia"
+                      : name.charAt(0).toUpperCase() + name.slice(1)}
+                  </span>
+                  <span
+                    style={{
+                      color: color,
+                      fontWeight: 700,
+                    }}
+                  >
+                    {count}
+                  </span>
                 </li>
-              ))}
+              );
+            })}
           </ul>
         ) : (
           <p style={{ margin: 0, color: "#555" }}>Nenhum país disponível para os resultados atuais.</p>
