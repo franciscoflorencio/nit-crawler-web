@@ -57,6 +57,7 @@ class Command(BaseCommand):
                     observation=item.get('observation'),
                     institution=item.get('institution'),
                     city=item.get('city'),
+                    country=item.get('country'),
                     date=item.get('date'),
                     source=source,  # Dynamically set the source here
                 )

@@ -1,21 +1,17 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-
-// Cores oficiais
-export const PRIMARY_COLOR = "#f7981a"; // Laranja
-export const SECONDARY_COLOR = "#02714f"; // Verde
+import { Link, NavLink as RouterNavLink } from "react-router-dom";
 
 export const NavContainer = styled.nav`
   display: flex;
   align-items: center;
-  right: 0;
-  background-color: ${SECONDARY_COLOR}; /* Navbar background color */
-
-  justify-content: space-between; /* Garante que o logo e os links fiquem alinhados */
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  justify-content: space-between;
+  background-color: var(--card-background);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 4rem;
+  height: 4.5rem;
   position: sticky;
-  z-index: 1000; /* Garante que a navbar esteja sempre acima do conteúdo */
-  height: 4rem;
+  top: 0;
+  z-index: 1000;
 `;
 
 export const Logo = styled.img`
@@ -27,20 +23,11 @@ export const Logo = styled.img`
 export const NavLinks = styled.div`
   display: flex;
   align-items: center;
-  gap: 2rem; /* Espaçamento entre os links */
-  font-size: 1.25rem;
+  gap: 2.5rem; /* Increased spacing */
+  font-size: 1rem;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 1rem;
-    position: absolute;
-    top: 100%; /* Posiciona abaixo da navbar */
-    right: 0;
-    background-color: ${SECONDARY_COLOR}; /* Same as navbar background */
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 1rem;
-    border-radius: 4px;
+    display: none; // Simple hiding on mobile for now, can be replaced with a hamburger menu later
   }
 `;
 
@@ -48,29 +35,26 @@ export const ImageLink = styled(Link)`
   text-decoration: none;
 `;
 
-// Individual Link
-export const NavLink = styled(Link)`
+export const NavLink = styled(RouterNavLink)`
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
 
   &:hover {
-    color: ${PRIMARY_COLOR}; /* Change hover to orange */
+    color: var(--primary-green);
   }
 
-  &:last-child {
-    margin-right: 0; /* Remove margin from the last link */
+  &.active {
+    color: var(--primary-green);
+    font-weight: 700;
   }
 `;
 
 export const Dropdown = styled.div`
   position: relative;
   cursor: pointer;
-
-  &:hover {
-    cursor: pointer;
-  }
 `;
 
 export const DropdownContent = styled.div`
@@ -79,30 +63,23 @@ export const DropdownContent = styled.div`
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: ${SECONDARY_COLOR}; /* Same as navbar background */
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
+  background-color: var(--card-background);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
   padding: 0.5rem 0;
   z-index: 1000;
+  min-width: 160px;
 
   a {
     text-decoration: none;
-    color: #fff; /* Default text color for dropdown links */
-    padding: 0.5rem 1rem;
+    color: var(--text-color);
+    padding: 0.75rem 1.5rem;
     font-size: 1rem;
-    transition:
-      background-color 0.3s ease,
-      color 0.3s ease;
+    transition: background-color 0.2s ease;
 
     &:hover {
-      background-color: ${PRIMARY_COLOR}; /* Orange background on hover */
-      color: #fff; /* White text on hover */
+      background-color: #f0f0f0;
     }
-  }
-
-  p {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    color: #fff; /* Default text color for empty dropdown message */
   }
 `;

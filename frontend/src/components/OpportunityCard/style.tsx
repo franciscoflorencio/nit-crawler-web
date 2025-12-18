@@ -1,100 +1,76 @@
 import styled from "styled-components";
 
-export const Field = styled.p`
-  font-size: 1rem;
-  color: #666;
-  margin: 0.5rem 0;
+export const CardContainer = styled.div`
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
 
-  span {
-    font-weight: bold;
-    color: #333;
+  &:hover {
+    border-color: #cce2db;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
   }
 `;
 
-export const Select = styled.select`
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-`;
-
-export const FilterContainer = styled.div`
+export const CardTitle = styled.a`
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary-green);
   margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-`;
-
-export const Label = styled.label`
-  margin-right: 0.5rem;
-  font-weight: bold;
-  color: #333;
-`;
-
-export const OpportunitiesContainer = styled.div`
-  padding: 2rem;
-`;
-
-export const Title = styled.h1`
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #333;
-`;
-
-export const OpportunityList = styled.ul`
-  list-style: none;
-  padding: 0;
-`;
-
-export const OpportunityItem = styled.li`
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #f9f9f9;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-`;
-
-export const OpportunityTitle = styled.h2`
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #007bff;
-`;
-
-export const OpportunityDescription = styled.p`
-  font-size: 1rem;
-  color: #666;
-`;
-
-export const LearnMoreLink = styled.a`
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #007bff;
   text-decoration: none;
 
   &:hover {
+    color: var(--primary-green-darker);
     text-decoration: underline;
   }
 `;
 
-export const PaginationContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 0.5rem;
+export const CardDescription = styled.p`
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
 `;
 
-export const PageButton = styled.button`
-  padding: 0.5rem 1rem;
-  background-color: ${(props) => (props.disabled ? "#ccc" : "#007bff")};
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
+export const DetailsGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.75rem 1.5rem;
+  margin-bottom: 1.5rem;
+`;
 
-  &:hover {
-    background-color: ${(props) => (props.disabled ? "#ccc" : "#0056b3")};
+export const Detail = styled.p`
+  font-size: 0.95rem;
+  color: var(--text-color);
+  margin: 0;
+  line-height: 1.5;
+
+  span {
+    font-weight: 600;
+    color: #6c757d;
+    margin-right: 0.5rem;
   }
 `;
+
+export const LearnMoreButton = styled.a`
+  display: inline-block;
+  background-color: var(--primary-green);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--primary-green-darker);
+    color: white;
+    text-decoration: none;
+  }
+`;
+
