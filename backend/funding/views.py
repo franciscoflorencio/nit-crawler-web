@@ -5,13 +5,16 @@ from django.db.models import Count
 from .models import FundingOpportunity
 from .serializers import FundingOpportunitySerializer
 from .pagination import LargeResultsSetPagination
-from datetime import datetime
+from datetime import datetime, date
 from rest_framework.response import Response
 
 
 def _filter_queryset(request):
     queryset = FundingOpportunity.objects.all().order_by("-id")
     params = request.query_params
+
+    # Always exclude expired opportunities (closing_date after today)
+    queryset = queryset.filter(closing_date__gt=date.today())
 
     search_query = params.get("search", None)
     if search_query:
@@ -36,11 +39,11 @@ def _filter_queryset(request):
         value = params.get(field, None)
         if value:
             queryset = queryset.filter(**{f"{field}__iexact": value})
-    closing_date_lte = params.get("closing_date__lte", None)
-    if closing_date_lte:
+    closing_date_gte = params.get("closing_date__gte", None)
+    if closing_date_gte:
         try:
-            date_obj = datetime.strptime(closing_date_lte, "%d/%m/%Y").date()
-            queryset = queryset.filter(closing_date__lte=date_obj)
+            date_obj = datetime.strptime(closing_date_gte, "%d/%m/%Y").date()
+            queryset = queryset.filter(closing_date__gte=date_obj)
         except (ValueError, TypeError):
             pass
     return queryset

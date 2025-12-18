@@ -69,7 +69,7 @@ const Opportunities = () => {
         Object.entries(filters).forEach(([key, value]) => {
           if (value) {
             if (key === "closing_date") {
-              params.append("closing_date__lte", value);
+              params.append("closing_date__gte", value);
             } else {
               params.append(key, value);
             }
@@ -192,6 +192,11 @@ const Opportunities = () => {
       austria: "🇦🇹",
       polônia: "🇵🇱",
       poland: "🇵🇱",
+      "união europeia": "🇪🇺",
+      "european union": "🇪🇺",
+      "eu": "🇪🇺",
+      mundo: "🌐",
+      world: "🌐",
     };
     return map[n] || "";
   };
