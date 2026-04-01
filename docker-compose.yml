@@ -40,8 +40,12 @@ services:
     build: ./frontend
     environment:
       VITE_API_BASE_URL: "http://localhost:8000/api"
+      CHOCKIDAR_USEPOLLING: "true"
     ports:
       - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
     depends_on:
       - backend
 

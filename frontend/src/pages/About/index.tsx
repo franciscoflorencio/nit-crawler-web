@@ -53,6 +53,7 @@ const AboutUs: React.FC = () => {
                     href={r.linkedin}
                     target="_blank"
                     rel="noreferrer"
+                    style={{ background: "#131592" }}
                   >
                     <span>LinkedIn</span>
                   </LinkButton>
@@ -62,9 +63,19 @@ const AboutUs: React.FC = () => {
                     href={r.lattes}
                     target="_blank"
                     rel="noreferrer"
-                    style={{ background: "#0b8457" }}
+                    style={{ background: "#ca680d" }}
                   >
                     <span>Lattes</span>
+                  </LinkButton>
+                )}
+                {r.orcid && (
+                  <LinkButton
+                    href={r.orcid}
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ background: "#0b8457" }}
+                  >
+                    <span>Orcid</span>
                   </LinkButton>
                 )}
               </LinkRow>
