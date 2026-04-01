@@ -1,24 +1,66 @@
 import henriquePhoto from "../assets/perfil_photos/henrique_perfil.gif";
 import jorgePhoto from "../assets/perfil_photos/perfil_jorge.gif";
+import defaultPhoto from "../assets/perfil_photos/defaultPhoto.gif";
+import denizePhoto from "../assets/perfil_photos/denizePhoto.gif";
+import edsonPhoto from "../assets/perfil_photos/edsonPhoto.png";
+import carlaPhoto from "../assets/perfil_photos/carlaPhoto.gif";
+import renataPhoto from "../assets/perfil_photos/renataPhoto.jpeg";
 
 export const researchers = [
   {
-    name: "Henrique Koch Chaves",
-    role: "Pesquisador",
-    linkedin:
-      "https://www.linkedin.com/in/henrique-koch-chaves-83277a26/?originalSubdomain=br",
-    lattes:
-      "https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4233829U3&tokenCaptchar=0cAFcWeA4JcD0xfUi9tqsXzVt429SwbbSTQTMBMqfvisGDnHVD_Wl8HrX0QaTGszz6_KbCMWfaKHUgQ7j9yYur8leJXlHdjvv1mkdgKPM0Y3o5EYQ7h41gm1Ws82_qtxlKLO9J6ITXI749zxd6TS7e0yHPQxCJv59YM7DSm1fluXzcD8wosKIWU-g2YqfBFSHNgOPodMhmTLkTspfawP-xEpPifvSrS0S_IuMw4f_5WqAq7KzAV0NXPKAB5GJhFTe1zD1CxVForPlokGfdPqwwY1wge9_IF-eY4pisHokEnJVnu-qw-czb6jfSS-kBeMwEVRAJA_wICDmqgUouxOoyHcXFU-KWr_EEZZjRfaI_PCAr67hiLfegPa7xgtgeKzJGg5HmD4R3zJmiIF881WOcV2S03-mtS490DH7-aUHA1YRVzctrOG73IZrkpZh3jk8UzXvrV_RPiN7InOCWeWmoD1ohw95BPQSEEjh1oZjc_ERmOmynlSHAKvgdK9EYqjH2dNAnZiqeflmcbjsJd_Am5WwghZbjqO_oYcQPHfdNd_P0ugiqM7i7xk9DqeZKNfD08QBbhf3n-r8oEGXXi5Qo-qwHCm24V7CTpYyU2LeSlY5QP4AREDMih7KsTp7ZeuivL7jZuxYh7QGUcGRO3ofl-nlYvSBIhHOHHhS8LR0KJOjVMjizvAqwUhx1Cj8KMAUWqnF2CtdFBeCwUitEAgTOnCth9xdJFsYj1nScG1V3PBDL8zIojp6tVvsGf5r8i0m85xeRpmgl0G18Gw5ilcKZKQvwYosMYtgJvnq_biYgoW3qUfa-xYxLFws",
-    avatar: henriquePhoto,
-    bio:
-      "Atualmente trabalho como Analista de PD, onde realizo pesquisas na área de Gestão e Inovação Científica, Tecnológica e Mercadológica no Núcleo de Inovação Tecnológica (NIT) do Instituto de Tecnologia em Fármacos de Farmanguinhos/FIOCRUZ. A ênfase das pesquisas permeiam a identificação, extração e análise da informação essencial dentro do 'Big data' em Saúde no que tange a Gestão e Inovação Tecnológica. As investigações são realizadas através da elaboração de cenários prospectivos e tecnológicos com ferramentas da ciência da informação, inteligência Competitiva e Gestão do Conhecimento para Saúde Global. Inclui-se neste contexto a análise do Big Data em saúde, estratégia negócios, área farmacêutica, Tendências Tecnológicas, Mercadológica, Patentes e Análises Bibliométricas. Realizei o meu pós-doutorado na Fiocruz, atuando na área de Inovação Científica, Tecnológica e Mercadológica de oncológicos para terapia e diagnóstico. No nomento estou fazendo o Mestrado Profissional em Avaliação em Tecnologias em Saúde (ATS) no Instituto Nacional de Cardiologia (INC). Possuo mestrado e doutorado em Química Analítica e Inorgânica pela Universidade de São Paulo (USP), tendo experiência nos seguintes temas: 1) compostos organometálicos, complexos de rutênio para catálise homogênea, polímeros, metátese de olefinas; 2) complexo de rênio e tecnécio para aplicações farmacológicas e medicinais, incluindo aplicações como agentes antitumorais. Graduado em Química pela Universidade Estadual de Santa Cruz (UESC).",
-  },
-  {
     name: "Jorge Lima de Magalhães",
     role: "Pesquisador",
+    linkedin: "https://www.linkedin.com/in/jorgelimamagalhaes/",
     lattes: "http://lattes.cnpq.br/9829199474735249",
+    orcid: "https://orcid.org/0000-0003-2219-5446",
     avatar: jorgePhoto,
-    bio:
-      "Possui pós-doutorado pela Aix Marseille Université, France (Laboratoire IRSIC EA4262 - Institut de Recherche en Sciences de l'Information et de la Communication) em Inteligência Competitiva para saúde pública (2013). É detentor dos títulos de Doutor em Ciências pelo Programa de Pós-graduação em Tecnologia de Processos Químicos e Bioquímicos da EQ/UFRJ - área de concentração Gestão e Inovação Tecnológica (2010) e Mestre em Ciências pelo mesmo programa (2007). Tem especialização em Administração e Gerência Empresarial pelas Faculdades Simonsen (1998) e é Químico Industrial com Licenciatura Plena pela Faculdade de Filosofia Ciências e Letras Souza Marques (1996). Possui mais de 22 anos de vivência em Gestão estratégica nas Operações Industriais farmacêuticas. Dedica-se nos últimos 22 anos à P,DI na área da Saúde Pública na FIOCRUZ onde possui 5 livros publicados, 38 capítulos de livros e diversos artigos em revistas indexadas e revisadas por pares. Atua em Gestão e Inovação Tecnológica no Núcleo de Inovação Tecnológica (NIT-FAR) do Instituto de Tecnologia em Fármacos de Farmanguinhos/FIOCRUZ. Em grupos de Pesquisas do CNPq, é líder do grupo Gestão do Conhecimento e Prospecção em Saúde da FIOCRUZ, participa do Sistema de Informação sobre Indústria Química - SIQUIM da UFRJ e do grupo Prospecção Tecnológica em Propriedade Intelectual do INPI. É pesquisador convidado do Global Health and Tropical Medicine (GHMT) do Instituto de Higiene e Medicina Tropical (IHMT) da Universidade NOVA de Lisboa. A ênfase de suas pesquisas permeiam a identificação, extração e análise da informação essencial no universo do 'Big data' em Saúde no que tange a Gestão e Inovação Tecnológica. Os temas cobertos são inerentes a Saúde Global, nos quais envolvem o setor farmacêutico, química fina e a saúde pública. As investigações são realizadas através da elaboração de cenários prospectivos e tecnológicos com ferramentas da ciência da informação, a inteligência Competitiva e Gestão do Conhecimento para Saúde Global e 'One Health'. Inclui-se neste contexto a análise do Big Data em saúde, estratégia de negócios na área farmacêutica, Saúde Digital, Tendências Tecnológicas, Mercadológicas, Patentes e Translação do Conhecimento.",
+    bio:"Possui pós-doutorado pela Aix Marseille Université, France (Laboratoire IRSIC EA4262 - Institut de Recherche en Sciences de l'Information et de la Communication) em Inteligência Competitiva para saúde pública (2013). É detentor dos títulos de Doutor em Ciências pelo Programa de Pós-graduação em Tecnologia de Processos Químicos e Bioquímicos da EQ/UFRJ - área de concentração Gestão e Inovação Tecnológica (2010) e Mestre em Ciências pelo mesmo programa (2007). Tem especialização em Administração e Gerência Empresarial pelas Faculdades Simonsen (1998) e é Químico Industrial com Licenciatura Plena pela Faculdade de Filosofia Ciências e Letras Souza Marques (1996).",
+  },
+  {
+    name: "Carla Cristina de Freitas da Silveira",
+    role: "Coordenadora",
+    lattes: "http://lattes.cnpq.br/0896415734552449",
+    orcid: "https://orcid.org/0000-0001-7376-7948",
+    avatar: carlaPhoto,
+    bio: "Doutora em Saúde Coletiva - Instituto de Medicina Social (IMS) da Universidade do Estado do Rio de Janeiro - UERJ (2016). Pós-graduada em Gestão de Organizações de Ciência e Tecnologia em Saúde - Escola Nacional de Saúde Pública (ENSP) da Fiocruz (2014). Pós-graduada em Direito Civil e Processo Civil - Universidade Gama Filho (2010). Bacharel em Direito - Universidade Estácio de Sá (2008). Mestre em Ciência - Química Orgânica - Universidade Federal do Rio de Janeiro - UFRJ (1998). Bacharel em Química com Atribuições Tecnológicas (1992) e Licenciada em Química (1991) - Faculdade de Humanidades Pedro II."
+  },
+  {
+    name: "Renata Oliveira Fagundes",
+    role: "Pesquisador",
+    linkedin: "https://www.linkedin.com/in/renata-fagundes-a630a817b/",
+    lattes: "http://lattes.cnpq.br/4854637109722444",
+    orcid: "https://orcid.org/0000-0002-1665-5867",
+    avatar: renataPhoto,
+    bio: "Doutora em Gestão, Pesquisa e Desenvolvimento na Indústria Farmacêutica pela Fiocruz (FARMANGUINHOS), com mestrado na mesma área e especialização em Engenharia de Produção (Qualidade e Produtividade) pela UFRJ."
+  },
+  {
+    name: "Henrique Koch Chaves",
+    role: "Pesquisador",
+    linkedin: "https://www.linkedin.com/in/henrique-koch-chaves-83277a26/",
+    lattes: "http://lattes.cnpq.br/2605608269201041",
+    orcid: "https://orcid.org/0000-0003-3035-6799",
+    avatar: henriquePhoto,
+    bio: "Doutor em Química Analítica e Inorgânica pelo Instituto de Química de São Carlos da USP, com mestrado em Química Analítica pela USP e graduação em Química (Licenciatura) pela UESC. Realizou pós-doutorado na Fiocruz e atualmente cursa mestrado profissional em Avaliação de Tecnologias em Saúde no Instituto Nacional de Cardiologia, com foco em economia da saúde e radiofármacos..",
+  },
+  {
+    name: "Edson Ferreira da Silva",
+    role: "Pesquisador",
+    lattes: "http://lattes.cnpq.br/1471443262299422",
+    avatar: edsonPhoto,
+    bio: "Químico Industrial formado pela Faculdade Reunidas Professor Nuno Lisbôa. Obteve o título de Mestre em Química Orgânica (com ênfase em Química Medicinal) pelo Instituto de Química (IQ) da UFRJ. Obteve também o título de Doutor em Química Orgânica (com ênfase em Síntese de Fase Estacionária Quiral para Cromatografia Gasosa) pelo Instituto de Química (IQ) da UFRJ."
+  },
+  {
+    name: "Denize Gomes Maranhão",
+    role: "Analista",
+    lattes: "http://lattes.cnpq.br/1795725319151820",
+    avatar: denizePhoto,
+    bio: "Possui graduação em Arquivologia pela Universidade Federal do Estado do Rio de Janeiro (UNIRIO), graduação em Farmácia pelo Centro Universitário Augusto Motta (UNISUAM) e Bacharelado em Psicologia pelo Centro Universitário Celso Lisboa."
+  },
+  {
+    name: "Carlos Eduardo Collazo Pontes",
+    role: "Analista",
+    lattes: "http://lattes.cnpq.br/0359870978393939",
+    avatar: defaultPhoto,
+    bio: "Possui graduação em Farmácia pela Universidade Federal do Rio de Janeiro (2004), especialização em Saúde Pública pelo Centro Universitário Celso Lisboa (2008), mestrado em Gestão, Pesquisa e Desenvolvimento na Indústria Farmacêutica pela Fundação Oswaldo Cruz (2016) e MBA em Gestão Estratégica de Inovação Tecnológica (2015)."
   },
 ];

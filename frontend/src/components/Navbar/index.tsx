@@ -9,9 +9,7 @@ const Navbar = () => {
         <Logo src={Nit} alt="Logo" />
       </ImageLink>
       <NavLinks style={{ marginRight: "4rem" }}>
-        <NavLink to="/articles">Artigos</NavLink>
         <NavLink to="/opportunities">Bolsas</NavLink>
-        <NavLink to="/crawlai">Crawl AI</NavLink>
         <NavLink to="/about">Sobre nós</NavLink>
         <NavLink to="/contact">Contato</NavLink>
       </NavLinks>
