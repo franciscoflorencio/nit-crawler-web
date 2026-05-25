@@ -13,8 +13,7 @@ def _filter_queryset(request):
     queryset = FundingOpportunity.objects.all().order_by("-id")
     params = request.query_params
 
-    # Always exclude expired opportunities (closing_date after today)
-    queryset = queryset.filter(closing_date__gt=date.today())
+    # No automatic exclusion of expired opportunities
 
     search_query = params.get("search", None)
     if search_query:
