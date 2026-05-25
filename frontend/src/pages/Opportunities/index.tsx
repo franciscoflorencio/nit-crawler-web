@@ -1,6 +1,5 @@
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
-const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api";
 import { Select, Pagination, DatePicker } from "antd";
 import OpportunityCard from "../../components/OpportunityCard/";
 import { motion } from "framer-motion";
@@ -26,12 +25,19 @@ import {
   SidebarColumn,
   SidebarCard,
   SidebarTitle,
+  FlagSection,
+  FlagGrid,
+  FlagButton,
+  FlagEmoji,
+  FlagName,
   LoadingState,
   EmptyState,
 } from "./style";
 import CountryMap from "../../components/CountryMap";
 const AnySelect: any = Select;
 import dayjs from "dayjs";
+
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api";
 
 const Opportunities = () => {
   const [opportunities, setOpportunities] = useState([]);
@@ -40,6 +46,7 @@ const Opportunities = () => {
   const [searchInput, setSearchInput] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [countryCounts, setCountryCounts] = useState<Record<string, number>>({});
+  const [selectedCountries, setSelectedCountries] = useState<string[]>([]);
   const [pagination, setPagination] = useState({
     count: 0,
     next: null,
@@ -130,6 +137,14 @@ const Opportunities = () => {
     fetchOpportunities();
   }, [currentPage, filters, searchQuery]);
 
+  useEffect(() => {
+    if (filters.country) {
+      setSelectedCountries(filters.country.split(",").map((item) => item.trim()).filter(Boolean));
+    } else if (selectedCountries.length) {
+      setSelectedCountries([]);
+    }
+  }, [filters.country]);
+
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setSearchInput(value);
@@ -145,6 +160,21 @@ const Opportunities = () => {
   const handleFilterChange = (field: string, value: string) => {
     setFilters((prev) => ({ ...prev, [field]: value || "" }));
     setCurrentPage(1);
+  };
+
+  const setCountryFilter = (countries: string[]) => {
+    const deduped = Array.from(new Set(countries.filter(Boolean)));
+    setSelectedCountries(deduped);
+    handleFilterChange("country", deduped.join(","));
+  };
+
+  const toggleCountrySelection = (country: string) => {
+    const normalized = country.trim();
+    setCountryFilter(
+      selectedCountries.includes(normalized)
+        ? selectedCountries.filter((item) => item !== normalized)
+        : [...selectedCountries, normalized]
+    );
   };
 
   const handlePageChange = (page: number) => {
@@ -217,10 +247,18 @@ const Opportunities = () => {
       "união europeia": "🇪🇺",
       "european union": "🇪🇺",
       "eu": "🇪🇺",
-      mundo: "🌐",
-      world: "🌐",
+      mundo: "🌍",
+      world: "🌍",
     };
     return map[n] || "";
+  };
+
+  const countryOptions = () => {
+    const list = (uniqueValues.country || []).slice();
+    if (!list.find((item) => item.toLowerCase() === "união europeia")) {
+      list.push("União Europeia");
+    }
+    return list.sort((a, b) => a.localeCompare(b));
   };
 
   const PAGE_SIZE = 10;
@@ -269,7 +307,11 @@ const Opportunities = () => {
                   ) : (
                     <AnySelect
                       value={filters[field]}
-                      onChange={(value: string) => handleFilterChange(field, value)}
+                      onChange={(value: string) =>
+                        field === "country"
+                          ? setCountryFilter(value ? [value] : [])
+                          : handleFilterChange(field, value)
+                      }
                       placeholder={`Selecione ${translateFieldName(field)}`}
                       allowClear
                       showSearch
@@ -358,10 +400,31 @@ const Opportunities = () => {
             >
               <SidebarCard>
                 <SidebarTitle>Distribuicao por pais</SidebarTitle>
+                <FlagSection>
+                  <Label>Selecione paises</Label>
+                  <FlagGrid>
+                    {countryOptions().map((country) => {
+                      const isSelected = selectedCountries.includes(country);
+                      return (
+                        <FlagButton
+                          key={country}
+                          type="button"
+                          $selected={isSelected}
+                          onClick={() => toggleCountrySelection(country)}
+                        >
+                          <FlagEmoji>{countryFlag(country) || "🏳️"}</FlagEmoji>
+                          <FlagName>{country}</FlagName>
+                        </FlagButton>
+                      );
+                    })}
+                  </FlagGrid>
+                </FlagSection>
                 <CountryMap
                   countryCounts={countryCounts}
-                  onCountryClick={(countryName) => handleFilterChange("country", countryName)}
-                  selectedCountry={filters.country || ""}
+                  onCountryClick={(countryName) =>
+                    countryName ? toggleCountrySelection(countryName) : setCountryFilter([])
+                  }
+                  selectedCountry={selectedCountries[0] || ""}
                 />
               </SidebarCard>
             </motion.div>

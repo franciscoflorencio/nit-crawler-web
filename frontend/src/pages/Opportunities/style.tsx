@@ -163,6 +163,48 @@ export const SidebarTitle = styled.h3`
   font-size: 1.1rem;
 `;
 
+export const FlagSection = styled.div`
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+  display: grid;
+  gap: 0.75rem;
+`;
+
+export const FlagGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 0.6rem;
+`;
+
+export const FlagButton = styled.button<{ $selected?: boolean }>`
+  border: 1px solid ${({ $selected }) => ($selected ? "#0c7a61" : "#dde5ee")};
+  background: ${({ $selected }) => ($selected ? "#e6f5f1" : "#ffffff")};
+  color: #2f3b4a;
+  border-radius: 12px;
+  padding: 0.45rem 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    border-color: #b7c6d7;
+    background: #f6f9fc;
+    transform: translateY(-1px);
+  }
+`;
+
+export const FlagEmoji = styled.span`
+  font-size: 1rem;
+`;
+
+export const FlagName = styled.span`
+  line-height: 1.2;
+`;
+
 export const LoadingState = styled(motion.p)`
   background: #f7f9fc;
   border: 1px dashed #d6dee8;
