@@ -1,14 +1,22 @@
 import json
+
 from django.core.management.base import BaseCommand
 from funding.models import FundingOpportunity
-import os
+
 
 class Command(BaseCommand):
-    help='Import Scrapy JSON data into the database'
+    help = 'Import Scrapy JSON data into the database'
 
     def add_arguments(self, parser):
-        parser.add_argument('file_path', type=str, help='Path to the JSON file')
-        parser.add_argument('--source', type=str, required=True, help='Source of the data (e.g., CNPq, EAC, FAPERJ)')
+        parser.add_argument(
+            'file_path', type=str, help='Path to the JSON file'
+        )
+        parser.add_argument(
+            '--source',
+            type=str,
+            required=True,
+            help='Source of the data (e.g., CNPq, EAC, FAPERJ)'
+        )
 
     def clean_decimal(self, value):
         """
@@ -26,19 +34,21 @@ class Command(BaseCommand):
             return float(cleaned_value)
         except ValueError:
             # Log a warning if the value cannot be converted
-            self.stderr.write(self.style.WARNING(f'Invalid total_fund value: {value}'))
+            msg = f'Invalid total_fund value: {value}'
+            self.stderr.write(self.style.WARNING(msg))
             return None
 
     def handle(self, *args, **kwargs):
         file_path = kwargs['file_path']
-        source = kwargs['source']  # Get the source from the command-line argument
+        # Get the source from the command-line argument
+        source = kwargs['source']
         try:
             with open(file_path, 'r') as file:
                 data = json.load(file)
 
             for item in data:
                 if 'total_fund' in item:
-                   item['total_fund'] = self.clean_decimal(item['total_fund'])
+                    item['total_fund'] = self.clean_decimal(item['total_fund'])
 
                 FundingOpportunity.objects.create(
                     title=item.get('title'),

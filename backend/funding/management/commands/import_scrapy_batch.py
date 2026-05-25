@@ -14,13 +14,19 @@ class Command(BaseCommand):
             "--path",
             type=str,
             default="/data/scrapy_output",
-            help="Folder that contains JSON files (default: /data/scrapy_output)",
+            help=(
+                "Folder that contains JSON files "
+                "(default: /data/scrapy_output)"
+            ),
         )
         parser.add_argument(
             "--source",
             type=str,
             default=None,
-            help="Optional fixed source for all files (default: filename-based).",
+            help=(
+                "Optional fixed source for all files "
+                "(default: filename-based)."
+            ),
         )
 
     def clean_decimal(self, value):
@@ -32,7 +38,8 @@ class Command(BaseCommand):
             ).replace(",", ".")
             return Decimal(cleaned_value)
         except (InvalidOperation, ValueError):
-            self.stderr.write(self.style.WARNING(f"Invalid total_fund value: {value}"))
+            msg = f"Invalid total_fund value: {value}"
+            self.stderr.write(self.style.WARNING(msg))
             return None
 
     def handle(self, *args, **kwargs):
@@ -40,7 +47,8 @@ class Command(BaseCommand):
         fixed_source = kwargs["source"]
 
         if not os.path.isdir(folder_path):
-            self.stderr.write(self.style.ERROR(f"Folder not found: {folder_path}"))
+            msg = f"Folder not found: {folder_path}"
+            self.stderr.write(self.style.ERROR(msg))
             return
 
         files = [f for f in os.listdir(folder_path) if f.endswith(".json")]
@@ -67,7 +75,8 @@ class Command(BaseCommand):
             if not isinstance(data, list):
                 self.stderr.write(
                     self.style.WARNING(
-                        f"Skipping {filename}: JSON file does not contain a list."
+                        f"Skipping {filename}: JSON file does not "
+                        "contain a list."
                     )
                 )
                 continue
@@ -77,7 +86,8 @@ class Command(BaseCommand):
                 if not link:
                     self.stderr.write(
                         self.style.WARNING(
-                            f"Skipping item without link in {filename}: {item.get('title', 'No Title')}"
+                            f"Skipping item without link in {filename}: "
+                            f"{item.get('title', 'No Title')}"
                         )
                     )
                     continue
@@ -103,18 +113,22 @@ class Command(BaseCommand):
                     "source": source_name,
                 }
 
-                existing = FundingOpportunity.objects.filter(link=link).order_by("id")
-                if existing.exists():
-                    opportunity = existing.first()
+                existing = FundingOpportunity.objects.filter(
+                    link=link
+                ).order_by("id")
+
+                opportunity = existing.first()
+                if opportunity:
                     for field, value in defaults.items():
                         setattr(opportunity, field, value)
                     opportunity.save()
 
-                    duplicates = existing.exclude(id=opportunity.id)
+                    duplicates = existing.exclude(pk=opportunity.pk)
                     if duplicates.exists():
                         self.stderr.write(
                             self.style.WARNING(
-                                f"Duplicate link found in DB for {link}. Removing {duplicates.count()} duplicates."
+                                f"Duplicate link found in DB for {link}. "
+                                f"Removing {duplicates.count()} duplicates."
                             )
                         )
                         duplicates.delete()
@@ -133,6 +147,7 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Import finished. Created: {created_count}, Updated: {updated_count}"
+                f"Import finished. Created: {created_count}, "
+                f"Updated: {updated_count}"
             )
         )
