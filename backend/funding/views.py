@@ -13,8 +13,7 @@ def _filter_queryset(request):
     queryset = FundingOpportunity.objects.all().order_by("-id")
     params = request.query_params
 
-    # Always exclude expired opportunities (closing_date after today)
-    queryset = queryset.filter(closing_date__gt=date.today())
+    # No automatic exclusion of expired opportunities
 
     search_query = params.get("search", None)
     if search_query:
@@ -38,7 +37,14 @@ def _filter_queryset(request):
             continue
         value = params.get(field, None)
         if value:
-            queryset = queryset.filter(**{f"{field}__iexact": value})
+            if field == "country":
+                country_values = [v.strip() for v in value.split(",") if v.strip()]
+                if len(country_values) > 1:
+                    queryset = queryset.filter(country__in=country_values)
+                else:
+                    queryset = queryset.filter(country__iexact=value)
+            else:
+                queryset = queryset.filter(**{f"{field}__iexact": value})
     closing_date_gte = params.get("closing_date__gte", None)
     if closing_date_gte:
         try:

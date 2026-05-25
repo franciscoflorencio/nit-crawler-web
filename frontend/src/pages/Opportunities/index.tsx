@@ -1,15 +1,43 @@
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
-const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api";
-import { Select, Pagination, Input, DatePicker } from "antd";
+import { Select, Pagination, DatePicker } from "antd";
 import OpportunityCard from "../../components/OpportunityCard/";
 import { motion } from "framer-motion";
-import { ControlsRow, FilterGroup, FilterControl, Label } from "./style";
+import {
+  Page,
+  PageContent,
+  Hero,
+  HeroTitle,
+  HeroSubtitle,
+  ControlsPanel,
+  ControlsRow,
+  FilterGroup,
+  FilterControl,
+  Label,
+  SearchRow,
+  SearchInput,
+  ResultsGrid,
+  ResultsColumn,
+  ResultsHeader,
+  ResultsTitle,
+  ResultsCount,
+  PaginationRow,
+  SidebarColumn,
+  SidebarCard,
+  SidebarTitle,
+  FlagSection,
+  FlagGrid,
+  FlagButton,
+  FlagEmoji,
+  FlagName,
+  LoadingState,
+  EmptyState,
+} from "./style";
 import CountryMap from "../../components/CountryMap";
 const AnySelect: any = Select;
-const AnyInput: any = Input;
-const { RangePicker } = DatePicker;
 import dayjs from "dayjs";
+
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api";
 
 const Opportunities = () => {
   const [opportunities, setOpportunities] = useState([]);
@@ -18,6 +46,7 @@ const Opportunities = () => {
   const [searchInput, setSearchInput] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [countryCounts, setCountryCounts] = useState<Record<string, number>>({});
+  const [selectedCountries, setSelectedCountries] = useState<string[]>([]);
   const [pagination, setPagination] = useState({
     count: 0,
     next: null,
@@ -108,6 +137,14 @@ const Opportunities = () => {
     fetchOpportunities();
   }, [currentPage, filters, searchQuery]);
 
+  useEffect(() => {
+    if (filters.country) {
+      setSelectedCountries(filters.country.split(",").map((item) => item.trim()).filter(Boolean));
+    } else if (selectedCountries.length) {
+      setSelectedCountries([]);
+    }
+  }, [filters.country]);
+
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setSearchInput(value);
@@ -123,6 +160,21 @@ const Opportunities = () => {
   const handleFilterChange = (field: string, value: string) => {
     setFilters((prev) => ({ ...prev, [field]: value || "" }));
     setCurrentPage(1);
+  };
+
+  const setCountryFilter = (countries: string[]) => {
+    const deduped = Array.from(new Set(countries.filter(Boolean)));
+    setSelectedCountries(deduped);
+    handleFilterChange("country", deduped.join(","));
+  };
+
+  const toggleCountrySelection = (country: string) => {
+    const normalized = country.trim();
+    setCountryFilter(
+      selectedCountries.includes(normalized)
+        ? selectedCountries.filter((item) => item !== normalized)
+        : [...selectedCountries, normalized]
+    );
   };
 
   const handlePageChange = (page: number) => {
@@ -195,150 +247,191 @@ const Opportunities = () => {
       "união europeia": "🇪🇺",
       "european union": "🇪🇺",
       "eu": "🇪🇺",
-      mundo: "🌐",
-      world: "🌐",
+      mundo: "🌍",
+      world: "🌍",
     };
     return map[n] || "";
+  };
+
+  const countryOptions = () => {
+    const list = (uniqueValues.country || []).slice();
+    if (!list.find((item) => item.toLowerCase() === "união europeia")) {
+      list.push("União Europeia");
+    }
+    return list.sort((a, b) => a.localeCompare(b));
   };
 
   const PAGE_SIZE = 10;
 
   return (
-    <motion.div
+    <Page
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      style={{ padding: "2rem" }}
     >
-      <motion.h1
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        Bolsas
-      </motion.h1>
-
-      <ControlsRow>
-        <FilterGroup>
-          {Object.keys(uniqueValues).map((field) => (
-            <FilterControl key={field}>
-              <Label htmlFor={`${field}-filter`}>
-                {translateFieldName(field)}:
-              </Label>
-              {field === "closing_date" ? (
-                <DatePicker
-                  id={`${field}-filter`}
-                  allowClear
-                  format="DD/MM/YYYY"
-                  value={filters[field] ? dayjs(filters[field], "DD/MM/YYYY") : null}
-                  onChange={(value) => {
-                    const formatted = value ? value.format("DD/MM/YYYY") : "";
-                    handleFilterChange(field, formatted);
-                  }}
-                  style={{ width: "200px" }}
-                  placeholder="Selecione a data"
-                />
-              ) : (
-                <AnySelect
-                  value={filters[field]}
-                  onChange={(value: string) => handleFilterChange(field, value)}
-                  style={{ width: "200px" }}
-                  placeholder={`Selecione ${translateFieldName(field)}`}
-                  allowClear
-                  showSearch
-                  options={[
-                    { label: "Todos", value: "" },
-                    ...(uniqueValues[field] || []).map((v) => ({
-                      label:
-                        field === "country"
-                          ? `${countryFlag(v)} ${v}`.trim()
-                          : v,
-                      value: v,
-                    })),
-                  ]}
-                  filterOption={(input: string, option?: { label: string; value: string }) =>
-                    (option?.label as string)?.toLowerCase().includes(input.toLowerCase())
-                  }
-                />
-              )}
-            </FilterControl>
-          ))}
-        </FilterGroup>
-          <AnyInput
-            placeholder="Pesquisar em todos os campos"
-            value={searchInput}
-            onChange={handleSearchChange}
-            style={{ width: "648px" }}
-            allowClear
-          />
-      </ControlsRow>
-
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 380px", gap: "1rem", alignItems: "flex-start" }}>
-        <div>
-          {isLoading && <motion.p>Carregando...</motion.p>}
-
-          {opportunities.length > 0 ? (
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={{
-                hidden: { opacity: 0, y: 50 },
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                  transition: { staggerChildren: 0.1 },
-                },
-              }}
-            >
-              {opportunities.map((opportunity: any) => (
-                <motion.div
-                  key={opportunity.id}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <OpportunityCard opportunity={opportunity} />
-                </motion.div>
-              ))}
-            </motion.div>
-          ) : (
-            !isLoading && <motion.p>Sem oportunidades disponíveis.</motion.p>
-          )}
-
+      <PageContent>
+        <Hero>
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            style={{
-              marginTop: "1rem",
-              display: "flex",
-              justifyContent: "center",
-            }}
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.4 }}
           >
-            <Pagination
-              current={currentPage}
-              pageSize={PAGE_SIZE}
-              total={pagination.count}
-              onChange={handlePageChange}
-              showSizeChanger={false}
-            />
+            <HeroTitle>Bolsas e oportunidades</HeroTitle>
+            <HeroSubtitle>
+              Encontre editais e oportunidades internacionais com filtros inteligentes e uma
+              visao clara por pais.
+            </HeroSubtitle>
           </motion.div>
-        </div>
+        </Hero>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          style={{ position: "sticky", top: "1rem" }}
-        >
-          <CountryMap
-            countryCounts={countryCounts}
-            onCountryClick={(countryName) => handleFilterChange("country", countryName)}
-            selectedCountry={filters.country || ""}
-          />
-        </motion.div>
-      </div>
-    </motion.div>
+        <ControlsPanel>
+          <ControlsRow>
+            <FilterGroup>
+              {Object.keys(uniqueValues).map((field) => (
+                <FilterControl key={field}>
+                  <Label htmlFor={`${field}-filter`}>
+                    {translateFieldName(field)}
+                  </Label>
+                  {field === "closing_date" ? (
+                    <DatePicker
+                      id={`${field}-filter`}
+                      allowClear
+                      format="DD/MM/YYYY"
+                      value={filters[field] ? dayjs(filters[field], "DD/MM/YYYY") : null}
+                      onChange={(value) => {
+                        const formatted = value ? value.format("DD/MM/YYYY") : "";
+                        handleFilterChange(field, formatted);
+                      }}
+                      placeholder="Selecione a data"
+                    />
+                  ) : (
+                    <AnySelect
+                      value={filters[field]}
+                      onChange={(value: string) =>
+                        field === "country"
+                          ? setCountryFilter(value ? [value] : [])
+                          : handleFilterChange(field, value)
+                      }
+                      placeholder={`Selecione ${translateFieldName(field)}`}
+                      allowClear
+                      showSearch
+                      options={[
+                        { label: "Todos", value: "" },
+                        ...(uniqueValues[field] || []).map((v) => ({
+                          label:
+                            field === "country"
+                              ? `${countryFlag(v)} ${v}`.trim()
+                              : v,
+                          value: v,
+                        })),
+                      ]}
+                      filterOption={(input: string, option?: { label: string; value: string }) =>
+                        (option?.label as string)?.toLowerCase().includes(input.toLowerCase())
+                      }
+                    />
+                  )}
+                </FilterControl>
+              ))}
+            </FilterGroup>
+          </ControlsRow>
+          <SearchRow>
+            <SearchInput
+              placeholder="Pesquisar em todos os campos"
+              value={searchInput}
+              onChange={handleSearchChange}
+              allowClear
+            />
+          </SearchRow>
+        </ControlsPanel>
+
+        <ResultsGrid>
+          <ResultsColumn>
+            <ResultsHeader>
+              <ResultsTitle>Resultados</ResultsTitle>
+              <ResultsCount>{pagination.count} oportunidades</ResultsCount>
+            </ResultsHeader>
+
+            {isLoading && <LoadingState>Carregando oportunidades...</LoadingState>}
+
+            {opportunities.length > 0 ? (
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  hidden: { opacity: 0, y: 50 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { staggerChildren: 0.08 },
+                  },
+                }}
+              >
+                {opportunities.map((opportunity: any) => (
+                  <motion.div
+                    key={opportunity.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.25 }}
+                  >
+                    <OpportunityCard opportunity={opportunity} />
+                  </motion.div>
+                ))}
+              </motion.div>
+            ) : (
+              !isLoading && <EmptyState>Sem oportunidades disponiveis.</EmptyState>
+            )}
+
+            <PaginationRow>
+              <Pagination
+                current={currentPage}
+                pageSize={PAGE_SIZE}
+                total={pagination.count}
+                onChange={handlePageChange}
+                showSizeChanger={false}
+              />
+            </PaginationRow>
+          </ResultsColumn>
+
+          <SidebarColumn>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+            >
+              <SidebarCard>
+                <SidebarTitle>Distribuicao por pais</SidebarTitle>
+                <FlagSection>
+                  <Label>Selecione paises</Label>
+                  <FlagGrid>
+                    {countryOptions().map((country) => {
+                      const isSelected = selectedCountries.includes(country);
+                      return (
+                        <FlagButton
+                          key={country}
+                          type="button"
+                          $selected={isSelected}
+                          onClick={() => toggleCountrySelection(country)}
+                        >
+                          <FlagEmoji>{countryFlag(country) || "🏳️"}</FlagEmoji>
+                          <FlagName>{country}</FlagName>
+                        </FlagButton>
+                      );
+                    })}
+                  </FlagGrid>
+                </FlagSection>
+                <CountryMap
+                  countryCounts={countryCounts}
+                  onCountryClick={(countryName) =>
+                    countryName ? toggleCountrySelection(countryName) : setCountryFilter([])
+                  }
+                  selectedCountry={selectedCountries[0] || ""}
+                />
+              </SidebarCard>
+            </motion.div>
+          </SidebarColumn>
+        </ResultsGrid>
+      </PageContent>
+    </Page>
   );
 };
 

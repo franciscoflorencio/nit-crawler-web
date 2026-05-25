@@ -1,130 +1,666 @@
 [
 {
-    "title": "Gerda Henkel Fellowship for the History of Knowledge and the History of Science (2 Post-Doctoral Fellowship, 1 Fellowship for Doctoral Students in Halle, 3 months)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/gerda-henkel-fellowship-history-knowledge-and-history-science-2-post-doctoral-0",
-    "description": "Gerda Henkel Fellowship for the History of Knowledge and the History of ScienceAnnouncement: 2 Fellowships for Postdoctoral Researchers and 1 Fellowship for Doctoral StudentsSupported by the Gerda Henkel Foundation, the IZEA established a new fellowship programme on the history of knowledge and the...",
-    "opening_date": "24/11/2025",
-    "closing_date": "15/01/2026",
+    "title": "PhD Project: Sustainable Smart Energy Solutions for Maritime Ports (STREAM Project)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-project-sustainable-smart-energy-solutions-maritime-ports-stream-project",
+    "description": "OutlineIreland’s maritime sector faces significant decarbonisation challenges due to forthcoming EU regulations requiring major ports to provide on‑shore power supply (OPS) to vessels by 2030. The STREAM project addresses these challenges by developing off‑grid, renewable‑powered energy and charging...",
+    "opening_date": "21/05/2026",
+    "closing_date": "15/06/2026",
     "country": "União Europeia"
 },
 {
-    "title": "Postdoctoral Research Assignment “Advanced physicochemical and electrochemical characterization of modified Ni-based electro-catalysts/electrodes for Solid Oxide Cells under steam electrolysis conditions (SOECs)”",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/postdoctoral-research-assignment-advanced-physicochemical-and-electrochemical",
-    "description": "The Institute of Chemical Engineering Sciences, Foundation for Research and Technology - Hellas, (FORTH/ICE- HT) is seeking applicants for one postdoctoral research assignment in the context of the research project “Novel SOE architectures for hydrogen production (NOAH2)” - Grant Agreement number...",
-    "opening_date": "21/11/2025",
+    "title": "PhD Project: Gestural Entrainment: The Social Impact of Temporal and Magnitude Alignment in HRI",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-project-gestural-entrainment-social-impact-temporal-and-magnitude-alignment-hri",
+    "description": "OutlineRecent adaptive frameworks emphasize the need for \"consistency\" across verbal and non-verbal modalities. However, the specific alignment of gesture magnitude and frequency (mimicry) between a robot and a human remains under-explored in its effect on long-term rapport. In light of this, the...",
+    "opening_date": "21/05/2026",
+    "closing_date": "20/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "PhD Project: Generative AI for Pasture Management in Grass-Based Dairy Farming",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-project-generative-ai-pasture-management-grass-based-dairy-farming",
+    "description": "OutlineProject DescriptionThis PhD project offers an innovative opportunity to investigate how generative artificial intelligence (Gen AI) can support pasture management in grass based dairy farming. The research focuses on producing pasture information that is technically sound and useful in...",
+    "opening_date": "21/05/2026",
+    "closing_date": "02/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "ATRAE Programme-Call 2026",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/atrae-programme-call-2026",
+    "description": "AimTo attract internationally recognised research talent to the Spanish R&D systemTo facilitate the incorporation of established researchers of outstanding international prestige into Spanish institutionsTo strengthen Spain’s scientific excellence, promote knowledge circulation, and support the...",
+    "opening_date": "20/05/2026",
+    "closing_date": "04/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "SenSQAI: a persuasive digital service for participatory monitoring of multi-pollutant factors.",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/sensqai-persuasive-digital-service-participatory-monitoring-multi-pollutant-factors",
+    "description": "OutlineThe democratisation of digital culture and services is reinforcing participatory monitoring and citizen control (citizen sensing, CS) in the public sphere (Shin et al., 2024). In this process, citizens are increasingly involved in data collection and production, deploying sensors (Kamel...",
+    "opening_date": "20/05/2026",
+    "closing_date": "29/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "FIAS 2027/2028 Call for applications",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/fias-2027/2028-call-applications",
+    "description": "The French Institutes for Advanced Study Fellowship Programme offers 10-month fellowships at the seven Institutes of Aix Marseille, Cergy, Loire Valley (Orléans-Tours), Lyon, Montpellier, Nantes and Paris. It welcomes applications from high-level international scholars and scientists to develop...",
+    "opening_date": "19/05/2026",
+    "closing_date": "25/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "OPUS 31",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/opus-31",
+    "description": "The National Science Centre has launched the OPUS 31 call for research projects addressed to researchers at any stage of their research career. Under OPUS 31, funding may be requested for research projects carried out:in collaboration with partners from foreign research institutions;without foreign...",
+    "opening_date": "19/05/2026",
+    "closing_date": "16/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "PRELUDIUM 25",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/preludium-25",
+    "description": "The National Science Centre has launched the PRELUDIUM 25 call for research projects addressed to researchers who are not PhD holders. Under the PRELUDIUM call for proposals, a research team must not include more than three researchers, including the principal investigator and mentor.Basic research...",
+    "opening_date": "19/05/2026",
+    "closing_date": "16/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "MINIATURA 10",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/miniatura-10",
+    "description": "MINIATURA 10 call for single research activities carried out in one of the following forms: preliminary/pilot studies, library and archive searches, fellowships, research visits and/ or consultations. The main objective of the call is to finance research activities for the purposes of future...",
+    "opening_date": "19/05/2026",
+    "closing_date": "31/07/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Research Assignment “Chemical analysis of primary particle and gas emissions”",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/research-assignment-chemical-analysis-primary-particle-and-gas-emissions",
+    "description": "The Institute of Chemical Engineering Sciences, Foundation for Research and Technology - Hellas, (FORTH/ICE-HT) is seeking applicants for research work in the context of the research project “Safe and sustainable LOW-Carbon fuels for heavy-duty, aviation, and maritime sectors (LowC) GA- 101192913 —...",
+    "opening_date": "18/05/2026",
+    "closing_date": "28/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Research Assignment “Characterization of emissions of low-carbon fuels”",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/research-assignment-characterization-emissions-low-carbon-fuels",
+    "description": "The Institute of Chemical Engineering Sciences, Foundation for Research and Technology - Hellas, (FORTH/ICE-HT) is seeking applicants for research work in the context of the research project “Safe and sustainable LOW-Carbon fuels for heavy-duty, aviation, and maritime sectors (LowC) GA- 101192913 —...",
+    "opening_date": "18/05/2026",
+    "closing_date": "28/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Postdoctoral Research Assignment “Assessment of air pollution and climate impacts of low-carbon fuel transition”",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/postdoctoral-research-assignment-assessment-air-pollution-and-climate-impacts-low",
+    "description": "The Institute of Chemical Engineering Sciences, Foundation for Research and Technology - Hellas, (FORTH/ICE-HT) is seeking applicants for one position of a postdoctoral research assignment in the context of the research project “Safe and sustainable LOW-Carbon fuels for heavy-duty, aviation, and...",
+    "opening_date": "18/05/2026",
+    "closing_date": "28/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Research Assignment “Emissions measurement and characterization”",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/research-assignment-emissions-measurement-and-characterization",
+    "description": "The Institute of Chemical Engineering Sciences, Foundation for Research and Technology - Hellas, (FORTH/ICE-HT) is seeking applicants for one research assignment in the context of the research project “Safe and sustainable LOW-Carbon fuels for heavy-duty, aviation, and maritime sectors (LowC) GA-...",
+    "opening_date": "18/05/2026",
+    "closing_date": "28/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "PhD Fellowship “Measurements of atmospheric organic particles”",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-fellowship-measurements-atmospheric-organic-particles-0",
+    "description": "The Institute of Chemical Engineering Sciences, Foundation for Research and Technology - Hellas, (FORTH/ICE-HT) is seeking applicants for one PhD candidate position in the context of the research project “Safe and sustainable LOW-Carbon fuels for heavy-duty, aviation, and maritime sectors (LowC) GA-...",
+    "opening_date": "18/05/2026",
+    "closing_date": "28/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "PhD Fellowship “Measurements of atmospheric organic pollutants”",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-fellowship-measurements-atmospheric-organic-pollutants-0",
+    "description": "The Institute of Chemical Engineering Sciences, Foundation for Research and Technology - Hellas, (FORTH/ICE-HT) is seeking applicants for one PhD candidate position in the context of the research project “Safe and sustainable LOW-Carbon fuels for heavy-duty, aviation, and maritime sectors (LowC) GA-...",
+    "opening_date": "18/05/2026",
+    "closing_date": "28/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Invitation for Expression of Interest: PhD Fellowship “Chemical characterization of primary particulate and gaseous emissions”",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/invitation-expression-interest-phd-fellowship-chemical-characterization-primary",
+    "description": "The Institute of Chemical Engineering Sciences, Foundation for Research and Technology - Hellas, (FORTH/ICE-HT) is seeking applicants for one PhD candidate position in the context of the research project “Safe and sustainable LOW-Carbon fuels for heavy-duty, aviation, and maritime sectors (LowC) GA-...",
+    "opening_date": "18/05/2026",
+    "closing_date": "28/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Postdoctoral Research Assignment “Optimization of plasma processes for water disinfection”",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/postdoctoral-research-assignment-optimization-plasma-processes-water-disinfection",
+    "description": "The Institute of Chemical Engineering Sciences, Foundation for Research and Technology – Hellas (FORTH/ICE-HT) is seeking applicants for one postdoctoral research assignment in the context of the research project «Comprehensive and sustainable solution to minimize food loss and waste and promoting...",
+    "opening_date": "18/05/2026",
+    "closing_date": "28/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Maynooth University Department of Geography Doctoral Scholarship",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/maynooth-university-department-geography-doctoral-scholarship",
+    "description": "Maynooth UniversityICARUS (Irish Climate Research and Analysis Units) Department of GeographyDoctoral Scholarship Details of the Scholarship Award The Department of Geography and Irish Climate Research and Analysis at Maynooth University is pleased to announce that a PhD Scholarship will be...",
+    "opening_date": "15/05/2026",
+    "closing_date": "14/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Maynooth University Doctoral Scholarships  Faculty of Science & Engineering (Electronic Engineering)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/maynooth-university-doctoral-scholarships-faculty-science-engineering-electronic",
+    "description": "Maynooth UniversityFaculty of Science and Engineering Doctoral Scholarship – Electronic Engineering Details of the Scholarship Award The Faculty of Science and Engineering at Maynooth University is pleased to announce that a Maynooth University Doctoral Scholarship will be available in the...",
+    "opening_date": "15/05/2026",
+    "closing_date": "01/07/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Maynooth University School of Law and Criminology Doctoral Scholarship",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/maynooth-university-school-law-and-criminology-doctoral-scholarship",
+    "description": "Maynooth University School of Law and Criminology Doctoral Scholarship Details of the Scholarship Award The School of Law and Criminology (‘the School’) at Maynooth University is pleased to announce that one PhD Scholarship (a School of Law and Criminology Doctoral Scholarship) will be available for...",
+    "opening_date": "15/05/2026",
+    "closing_date": "09/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "The Rhodes Scholarships for Saudi Arabia (UK)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/rhodes-scholarships-saudi-arabia-uk",
+    "description": "OutlineThe Rhodes Scholarship is a fully funded, full-time, postgraduate award that enables talented young people from around the world to study at the University of Oxford in the United Kingdom. The Rhodes Scholarships for Saudi Arabia offer two scholarships each year, in partnership with Muhammad...",
+    "opening_date": "14/05/2026",
+    "closing_date": "23/09/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Heinrich Böll Student Scholarships (all disciplines | Germany)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/heinrich-boll-student-scholarships-all-disciplines-germany",
+    "description": "OutlineThe Heinrich Böll Student Scholarships by the Heinrich Böll Stiftung (The Green Political Foundation) support graduate students of all subjects in Germany. Applications close every year on March 1 and September 1. What is fundedThe funding is up to 992 EUR/month for the regular duration of...",
+    "opening_date": "14/05/2026",
+    "closing_date": "01/09/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Short-term Research Stays (humanities, social sciences | Sweden)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/short-term-research-stays-humanities-social-sciences-sweden",
+    "description": "OutlineThe Short-term Research Stays from the Swedish Collegium for Advanced Study (SCAS) is a residential fellowship program (on-site in Uppsala, Sweden) for scholars from all countries in the humanities and social sciences. The Collegium also invites small groups of two to five scholars for short...",
+    "opening_date": "14/05/2026",
+    "closing_date": "26/02/2027",
+    "country": "União Europeia"
+},
+{
+    "title": "The Rhodes Scholarships for Southern Africa (UK)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/rhodes-scholarships-southern-africa-uk",
+    "description": "OutlineThe Rhodes Scholarship is a fully funded, full-time, postgraduate award that enables talented young people from around the world to study at the University of Oxford in the United Kingdom. The Rhodes Scholarships for Southern Africa offer four scholarships each yearApplications close on...",
+    "opening_date": "14/05/2026",
+    "closing_date": "03/08/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "7/2026/BII/ BIOMATH",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/7/2026/bii/biomath",
+    "description": "Reference: Public notice 7/2026/BII/ BIOMATH NOTICE FOR THE AWARD OF GRANTS IN THE SCOPE OF R&D PROJECTS AND INSTITUTIONS A tender is hereby opened for the award of 1 (one) Starting Research Grant (SRG) in the scope of the thematic line BioMath of the Center for Research and Development in...",
+    "opening_date": "14/05/2026",
+    "closing_date": "28/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "TALENTGAL MSCA COFUND Programme – Professional Development of Postdoctoral Researchers in Galicia",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/talentgal-msca-cofund-programme-professional-development-postdoctoral-researchers",
+    "description": "TALENTGAL is a five‑year MSCA COFUND postdoctoral programme funded by the European Commission under the Marie Skłodowska-Curie Actions (MSCA). It is promoted by the Xunta de Galicia for the research centres of the CIGUS Network (Network of Research Centres of the Galician University System) and...",
+    "opening_date": "13/05/2026",
+    "closing_date": "23/07/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Contrat doctoral. \"Le sens à même le corps. Enjeux sémiotiques et potentialités thérapeutiques des traitements psychédéliques\"",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/contrat-doctoral-le-sens-meme-le-corps-enjeux-semiotiques-et-potentialites",
+    "description": "OutlineLe projet doctoral « Psyché-Sémio – Le sens à même le corps : enjeux sémiotiques et potentialités thérapeutiques des traitements psychédéliques » vise à établir un dialogue interdisciplinaire entre la sémiotique et la psychiatrie autour des thérapies psychédéliques et, plus largement, des...",
+    "opening_date": "12/05/2026",
+    "closing_date": "05/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Maynooth University Doctoral Scholarships  Faculty of Science & Engineering (Sports Science and Nutrition)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/maynooth-university-doctoral-scholarships-faculty-science-engineering-sports-science",
+    "description": "The Department of Sport Science and Nutrition at Maynooth University is pleased to announce that a Maynooth University Doctoral Scholarship will be available for a suitably qualified and successful applicant intending to commence their PhD studies in September 2026. Project Title: Athlete...",
+    "opening_date": "07/05/2026",
+    "closing_date": "01/07/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Maynooth University Doctoral Scholarships  Faculty of Science & Engineering (Psychology)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/maynooth-university-doctoral-scholarships-faculty-science-engineering-psychology-1",
+    "description": "The Faculty of Science and Engineering at Maynooth University are pleased to announce that a Maynooth University Doctoral Scholarship in the department of Psychology will be available for a suitably qualified and successful applicant intending to commence their PhD studies in September/October 2026...",
+    "opening_date": "07/05/2026",
+    "closing_date": "01/07/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Maynooth University Doctoral Scholarships  Faculty of Science & Engineering (Psychology)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/maynooth-university-doctoral-scholarships-faculty-science-engineering-psychology-0",
+    "description": "The Faculty of Science and Engineering at Maynooth University are pleased to announce that a Maynooth University Doctoral Scholarship in the department of Psychology will be available for a suitably qualified and successful applicant intending to commence their PhD studies in September/October 2026...",
+    "opening_date": "07/05/2026",
+    "closing_date": "01/07/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Maynooth University Doctoral Scholarships  Faculty of Science & Engineering (Psychology )",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/maynooth-university-doctoral-scholarships-faculty-science-engineering-psychology",
+    "description": "The Faculty of Science and Engineering at Maynooth University are pleased to announce that a Maynooth University Doctoral Scholarship in the department of Psychology will be available for a suitably qualified and successful applicant intending to commence their PhD studies in September/October 2026...",
+    "opening_date": "07/05/2026",
+    "closing_date": "01/07/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Maynooth University Doctoral Scholarships  Faculty of Science & Engineering (Mathematics and Statistics))",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/maynooth-university-doctoral-scholarships-faculty-science-engineering-mathematics-0",
+    "description": "The Faculty of Science and Engineering at Maynooth University are pleased to announce that a Maynooth University Doctoral Scholarship in the Department of Mathematics and Statistics will be available for a suitably qualified and successful applicant intending to commence their PhD studies in October...",
+    "opening_date": "07/05/2026",
+    "closing_date": "12/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Maynooth University Doctoral Scholarships  Faculty of Science & Engineering (Mathematics and Statistics)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/maynooth-university-doctoral-scholarships-faculty-science-engineering-mathematics-and",
+    "description": "The Faculty of Science and Engineering at Maynooth University are pleased to announce that a Maynooth University Doctoral Scholarship in the Department of Mathematics and Statistics will be available for a suitably qualified and successful applicant intending to commence their PhD studies in October...",
+    "opening_date": "07/05/2026",
+    "closing_date": "12/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Maynooth University Doctoral Scholarships  Faculty of Science & Engineering (Computer Science)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/maynooth-university-doctoral-scholarships-faculty-science-engineering-computer-0",
+    "description": "The Faculty of Science and Engineering at Maynooth University are pleased to announce that a Maynooth University Doctoral Scholarship will be available in the department of Computer Science for a suitably qualified and successful applicant intending to commence their PhD studies in September/October...",
+    "opening_date": "07/05/2026",
+    "closing_date": "29/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Maynooth University Doctoral Scholarships  Faculty of Science & Engineering (Computer Science)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/maynooth-university-doctoral-scholarships-faculty-science-engineering-computer-science",
+    "description": "Details of the Scholarship Award The Faculty of Science and Engineering at Maynooth University are pleased to announce that a Maynooth University Doctoral Scholarship in the department of Computer Science will be available for a suitably qualified and successful applicant intending to commence their...",
+    "opening_date": "06/05/2026",
+    "closing_date": "01/07/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "The Rhodes Scholarships for Jamaica",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/rhodes-scholarships-jamaica",
+    "description": "OutlineThe Rhodes Scholarship is a fully funded, full-time, postgraduate award that enables talented young people from around the world to study at the University of Oxford in the United Kingdom. The Rhodes Scholarships for Jamaica offer one scholarship each year.Applications close on September 24...",
+    "opening_date": "06/05/2026",
+    "closing_date": "24/09/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Fraunhofer-Bessel Research Award (applied research | international researchers in Germany)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/fraunhofer-bessel-research-award-applied-research-international-researchers-germany",
+    "description": "OutlineThe Fraunhofer-Bessel Research Award from the Alexander von Humboldt Foundation supports internationally recognised researchers working in applied research for their research stay in Germany. Nominations may be submitted online at any time. The selection committee meets twice a year in March...",
+    "opening_date": "06/05/2026",
+    "closing_date": "06/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Alexander von Humboldt Professorship (academics moving to Germany | all disciplines)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/alexander-von-humboldt-professorship-academics-moving-germany-all-disciplines",
+    "description": "OutlineThe Alexander von Humboldt Professorship supports established investigators in all disciplines wishing to move to Germany. The award enables the recipient to conduct forward-thinking, long-term research at universities and research institutions in Germany and makes a sustainable contribution...",
+    "opening_date": "06/05/2026",
+    "closing_date": "15/09/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Programa Mobilidade AULP/ AULP Mobility Programme (all disciplines | Portuguese-speaking countries)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/programa-mobilidade-aulp/aulp-mobility-programme-all-disciplines-portuguese-speaking",
+    "description": "OutlineThe Programa Mobilidade AULP/ AULP Mobility Programme funded by the Associação das Universidades de Língua Portuguesa (AULP) is open to undergraduate and master's students enrolled in AULP member institutions. The programme promotes credit recognition, flexible study plans, and the...",
+    "opening_date": "06/05/2026",
+    "closing_date": "30/09/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Three PhD Research Positions in Chemical Physics",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/three-phd-research-positions-chemical-physics",
+    "description": "Start date: 1 October 2026 Duration: 48 months (state funding) We offer three positions for doctoral candidates, starting 1 October. Each PhD research position is funded for 48 months.The doctoral candidates will be supervised by Professor Darius Abramavičius (relaxation theory and computations)...",
+    "opening_date": "06/05/2026",
+    "closing_date": "25/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "PhD studentships on Multiomics Modelling for Specialised Healthcare research theme available in a multi-institutional, interdisciplinary national centre for  data science and AI funded by Research Ireland",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-studentships-multiomics-modelling-specialised-healthcare-research-theme-available",
+    "description": "Background:Applications are invited for a cohort of 2 PhD studentships in MTU as part of a multi-institutional interdisciplinary national centre for data science and AI funded by Research Ireland. These studentships are available through a cohort-based PhD training programme across a suite of...",
+    "opening_date": "30/04/2026",
+    "closing_date": "31/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "PhD studentships on Optimisation & Reasoning research theme available in a multi-institutional, interdisciplinary national centre for data science and AI funded by Research Ireland",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-studentships-optimisation-reasoning-research-theme-available-multi-institutional",
+    "description": "Background:Applications are invited for a cohort of 2 PhD studentships in MTU as part of a multi-institutional interdisciplinary national centre for data science and AI funded by Research Ireland. These studentships are available through a cohort-based PhD training programme across a suite of...",
+    "opening_date": "30/04/2026",
+    "closing_date": "31/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Anslagsutlysning | Call for applications (people and businesses | Nordics)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/anslagsutlysning-call-applications-people-and-businesses-nordics",
+    "description": "OutlineThe Letterstedtska Föreningen's call for applications supports the collaboration of academic researchers in various disciplines and activities that promote knowledge and exchange between people and businesses in the Nordic region. The grant may be used to:Organizing Nordic conferences or...",
+    "opening_date": "30/04/2026",
+    "closing_date": "15/09/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Laboratory for Political and Institutional Theory and the History of Ideas MSCA Postdoctoral Fellowships call (Greece)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/laboratory-political-and-institutional-theory-and-history-ideas-msca-postdoctoral",
+    "description": "OutlineThe MSCA Postdoctoral Fellowships call from the Laboratory for Political and Institutional Theory and the History of Ideas is a co-fund scheme between the Department of History and Philosophy of Science, of the National and Kapodistrian University of Athens and the European Union’s Marie...",
+    "opening_date": "30/04/2026",
+    "closing_date": "10/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Barbara Huber Scholarship 2027",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/barbara-huber-scholarship-2027-1",
+    "description": "The Max Planck Institute for the Study of Crime, Security and Law in Freiburg, Germany is proud to announce a new call for applications for the Barbara Huber Scholarship Program — a unique opportunity for outstanding researchers from around the world to advance science in the fields of criminology...",
+    "opening_date": "24/04/2026",
+    "closing_date": "31/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Barbara Huber Scholarship 2027",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/barbara-huber-scholarship-2027-0",
+    "description": "The Max Planck Institute for the Study of Crime, Security and Law in Freiburg, Germany is proud to announce a new call for applications for the Barbara Huber Scholarship Program — a unique opportunity for outstanding researchers from around the world to advance science in the fields of criminology...",
+    "opening_date": "24/04/2026",
+    "closing_date": "31/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Barbara Huber Scholarship 2027",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/barbara-huber-scholarship-2027",
+    "description": "The Max Planck Institute for the Study of Crime, Security and Law in Freiburg, Germany is proud to announce a new call for applications for the Barbara Huber Scholarship Program — a unique opportunity for outstanding researchers from around the world to advance science in the fields of criminology...",
+    "opening_date": "24/04/2026",
+    "closing_date": "31/05/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Doctoral Scholarship - Department of Sport Science and Nutrition Maynooth University",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/doctoral-scholarship-department-sport-science-and-nutrition-maynooth-university",
+    "description": "For full details of this scholarship please visit our website. The Department of Sport Science and Nutrition at Maynooth University is pleased to announce that a Maynooth University Doctoral Scholarship will be available for a suitably qualified and successful applicant intending to commence their...",
+    "opening_date": "23/04/2026",
+    "closing_date": "01/07/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "FRONTIERS Investigator Program 2026",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/frontiers-investigator-program-2026",
+    "description": "CALL FOR PROPOSALSFRONTIERS Investigator ProgramHungary – 2026 Groundbreaking discoveries and disruptive technologies have the power to shape the future of humankind. Such breakthroughs are most likely to emerge where creative minds converge with long-term funding security for high-risk endeavors...",
+    "opening_date": "20/04/2026",
+    "closing_date": "24/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Data Science Investigator – Emerging 2026 (Denmark)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/data-science-investigator-emerging-2026-denmark",
+    "description": "OutlineThe Data Science Investigator – Emerging 2026 from the Novo Nordisk Fonden supports outstanding early-career data scientists to establish their own research groups in Denmark. Research proposals should address:Development of new algorithms, methods and technologies within data science...",
+    "opening_date": "16/04/2026",
+    "closing_date": "15/07/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "IZEA fellowships \"Multiple Enlightenments: 18th century to today\", MLU Halle-Wittenberg (deadline 15.6.2026)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/izea-fellowships-multiple-enlightenments-18th-century-today-mlu-halle-wittenberg",
+    "description": "OutlineIZEA fellowships \"Multiple Enlightenments: 18th century to today\" at Martin-Luther-University Halle-Wittenberg, Interdisciplinary Center for European Enlightenment StudiesResearching the diversity, complexity and contradictory nature of the processes that have led to ever new contours and...",
+    "opening_date": "15/04/2026",
+    "closing_date": "15/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "LEO Foundation Visiting Researchers (dermatology | Denmark)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/leo-foundation-visiting-researchers-dermatology-denmark",
+    "description": "OutlineThe LEO Foundation Visiting Researchers research funding supports temporary embedment of skin researchers in a foreign research environment to foster genuine international collaborations and strengthen the exchange of knowledge, ideas, methodology, and technology between Danish and...",
+    "opening_date": "10/04/2026",
+    "closing_date": "04/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Grant for recruiting international visiting researchers to Sweden",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/grant-recruiting-international-visiting-researchers-sweden",
+    "description": "Outline + EligibilityThe Grant for recruiting international visiting researchers to Sweden from the Swedish Research Council supports Swedish higher education institutions (HEI) and research organizations to develop and strengthen a research field by recruiting an internationally prominent...",
+    "opening_date": "10/04/2026",
+    "closing_date": "10/11/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Grant for recruiting visiting researchers from Ukraine within the infection area (Sweden)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/grant-recruiting-visiting-researchers-ukraine-within-infection-area-sweden",
+    "description": "OutlineThe Grant for recruiting visiting researchers from Ukraine within the infection area from the Swedish Research Council (Vetenskapsrådet) supports higher education institutions and other research organisations in Sweden to develop and strengthen research within the infection area by recruiting...",
+    "opening_date": "10/04/2026",
+    "closing_date": "29/09/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Call 2 - For Physicists: UPSaclaySTAR-Phy",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/call-2-physicists-upsaclaystar-phy",
+    "description": "OverviewThe Graduate School of Physics of Paris-Saclay University is a major place for research in Physics in France, hosting more than 3000 scientific staff in 40 laboratories concentrating 15% of French research potential in the fields. It brings together all research in physics, as well as...",
+    "opening_date": "10/04/2026",
+    "closing_date": "15/07/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Maynooth University - Economics Scholarship",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/maynooth-university-economics-scholarship",
+    "description": "Maynooth University – Department of Economics ScholarshipThe Department of Economics is pleased to announce that a PhD Scholarship will be available for a suitably qualified and successful applicant intending to commence their PhD studies in September 2026. The partner organization is Teagasc, Rural...",
+    "opening_date": "09/04/2026",
+    "closing_date": "01/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "PhD Fellowship (European biomedicine)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-fellowship-european-biomedicine",
+    "description": "OutlineThe PhD Fellowship in biomedicine is funded by the Boehringer Ingelheim Fonds for junior researchers worldwide. There are three application closing dates per year: February 1, June 1, and October 1.What is fundedThe fellowship provides a country-dependent monthly stipend and a travel...",
+    "opening_date": "02/04/2026",
+    "closing_date": "01/10/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Sabbatsstipendier | Sabbatical Fellowships (all disciplines | Sweden)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/sabbatsstipendier-sabbatical-fellowships-all-disciplines-sweden",
+    "description": "OutlineThe Sabbatsstipendier funding from Wenner-Gren Stiftelserna supports Swedish professors' research visits abroad. Applications close annually on March 10 and October 1. The next applications open on August 1, 2026, and close on October 1, 2026.What is fundedVisit abroad.DurationThe award...",
+    "opening_date": "26/03/2026",
+    "closing_date": "01/10/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Gästföreläsaranslag | Guest Speaker Grants (Sweden | all disciplines)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/gastforelasaranslag-guest-speaker-grants-sweden-all-disciplines",
+    "description": "OutlineThe Guest Speaker Grants from Wenner-Gren Stiftelserna support Swedish researchers or institutions to invite foreign guest lecturers with doctorates. The inviting researcher or institution is eligible to apply.Applications can be made at any time during the year, but no later than 2 months...",
+    "opening_date": "26/03/2026",
+    "closing_date": "26/03/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Resestipendier | Travel Grants (all disciplines | Sweden)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/resestipendier-travel-grants-all-disciplines-sweden",
+    "description": "OutlineThe Travel Grants from Wenner-Gren Stiftelserna support early-career researchers in Sweden to attend international conferences abroad. Applications close annually on March 10 and October 1. The next applications open on August 1, 2026, and close on October 1, 2026.What is fundedTax-free...",
+    "opening_date": "26/03/2026",
+    "closing_date": "01/10/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Hannah Arendt Fellowships – Annual Theme 2027 “Humans and AI”",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/hannah-arendt-fellowships-annual-theme-2027-humans-and-ai",
+    "description": "The Hannah Arendt Fellowships offer outstanding international scholars the opportunity to pursue independent research for up to six months in Lower Saxony (Germany) during the summer semester 2027 (April–September). The programme is a funding initiative of zukunft.niedersachsen, a joint programme of...",
+    "opening_date": "18/03/2026",
+    "closing_date": "01/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Gästforskarstipendier | Visiting Researcher Fellowships (all disciplines | Sweden)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/gastforskarstipendier-visiting-researcher-fellowships-all-disciplines-sweden",
+    "description": "OutlineThe Gästforskarstipendier funding from Wenner-Gren Stiftelserna supports foreign senior researchers to work in Sweden.Applications close annually on March 10 and October 1. The next applications open on August 1, 2026, and close on October 1, 2026.What is fundedResearch funding.DurationThe...",
+    "opening_date": "18/03/2026",
+    "closing_date": "01/10/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Einstein Visiting Fellow (all disciplines | Berlin)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/einstein-visiting-fellow-all-disciplines-berlin",
+    "description": "OutlineThe Einstein Visiting Fellow program from the Einstein Foundation Berlin seeks to enhance the international profile of universities and research institutions in Berlin by involving leading scientists and scholars from abroad in long-term academic research collaborations. Einstein Visiting...",
+    "opening_date": "18/03/2026",
+    "closing_date": "16/11/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Einstein Postdoctoral Grant (all disciplines | Berlin)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/einstein-postdoctoral-grant-all-disciplines-berlin",
+    "description": "OutlineThe Einstein Postdoctoral Grant Programme from the Einstein Foundation Berlin enables eligible Berlin institutions to recruit and retain outstanding researchers to focus on their research projects. Applications can be submitted by Freie Universität Berlin, Humboldt-Universität zu Berlin...",
+    "opening_date": "18/03/2026",
+    "closing_date": "16/11/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Early Independence: NERC Independent Research Fellowship 2026 (environmental science | worldwide to UK)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/early-independence-nerc-independent-research-fellowship-2026-environmental-science",
+    "description": "OutlineThe Early Independence: NERC Independent Research Fellowship 2026 is offered by the Natural Environment Research Council (NERC). The fellowship supports early-career researchers to develop their careers through independent environmental research hosted at an eligible UK research organisation...",
+    "opening_date": "18/03/2026",
+    "closing_date": "16/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "PF2MT – Postdoctoral Fellowship Training Scheme for Incoming Postdocs to Malta",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/pf2mt-postdoctoral-fellowship-training-scheme-incoming-postdocs-malta-0",
+    "description": "Xjenza Malta is receiving proposals under the Postdoctoral Fellowship Training Scheme for Incoming Postdocs to Malta (PF2MT).PF2MT supports travel and accommodation expenses for Phd holders willing to submit a proposal with Maltese entity host for the MSCA Postdoctoral Fellowship call with deadline...",
+    "opening_date": "11/03/2026",
+    "closing_date": "02/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "UPSaclaySTAR-Phy",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/upsaclaystar-phy",
+    "description": "OverviewThe Graduate School of Physics of Paris-Saclay University is a major place for research in Physics in France, hosting more than 3000 scientific staff in 40 laboratories concentrating 15% of French research potential in the fields. It brings together all research in physics, as well as...",
+    "opening_date": "06/03/2026",
+    "closing_date": "15/07/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Postdoctoral Scholarship Program in Mathematics for researchers from outside Sweden",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/postdoctoral-scholarship-program-mathematics-researchers-outside-sweden",
+    "description": "OutlineThe Postdoctoral Scholarship Program in Mathematics for researchers from outside Sweden from the Knut and Alice Wallenberg Foundation together with the Royal Swedish Academy of Science supports senior researchers at Swedish Universities to apply for financing of a post-doc position to the...",
+    "opening_date": "26/02/2026",
+    "closing_date": "05/10/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "2026: Matematikprogrammet | 2026: Program for Mathematics - guest researchers (Sweden)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/2026-matematikprogrammet-2026-program-mathematics-guest-researchers-sweden",
+    "description": "OutlineThe 2026: Program for Mathematics from the Knut and Alice Wallenberg Foundation together with the Royal Swedish Academy of Science supports guest researchers in mathematics in Sweden. Applications open on September 1 and close on October 5, 2026.What is fundedThe remuneration to the guest...",
+    "opening_date": "26/02/2026",
+    "closing_date": "05/10/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Marc R. de Leval Fellowship (congenital heart surgery | Austria, Italy, Poland, UK)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/marc-r-de-leval-fellowship-congenital-heart-surgery-austria-italy-poland-uk",
+    "description": "OutlineThe Marc R. de Leval Fellowship, from the American Association for Thoracic Surgery (AATS), supports early-career cardiothoracic and thoracic surgeons in studying congenital heart surgery clinical techniques at a host institution. Host Surgeons and Institutions:Massimo Caputo, MD, Bristol...",
+    "opening_date": "20/02/2026",
+    "closing_date": "02/07/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "European Innovation Council Support Scheme",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/european-innovation-council-support-scheme-1",
+    "description": "Xjenza Malta is receiving proposals under the European Innovation Council Support Scheme. The aim of the scheme is to support applicants applying to Open and Challenges calls and who will apply for the cut-off dates as stated in the Horizon Europe EIC work programme: click to visit website.The...",
+    "opening_date": "16/02/2026",
+    "closing_date": "16/02/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Yurt Dışı Doktora Burs Programı | Overseas Graduate Scholarship Program (Only PhD) (science and technology | Türkiye)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/yurt-disi-doktora-burs-programi-overseas-graduate-scholarship-program-only-phd-science",
+    "description": "OutlineThe 2213-A Overseas Graduate Scholarship Program from TÜBİTAK supports individuals who would like to pursue their doctoral degrees abroad. Applicants must be Turkish citizens and must return to Turkey. Applications are open all year round.What is fundedThe fellowship provides up to 60,000 USD...",
+    "opening_date": "29/01/2026",
+    "closing_date": "29/01/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Fellowships for Visiting Scientists and Scientists on Sabbatical Leave (all disciplines | Türkiye)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/fellowships-visiting-scientists-and-scientists-sabbatical-leave-all-disciplines",
+    "description": "OutlineThe 2221 - Fellowships for Visiting Scientists and Scientists on Sabbatical Leave from TÜBİTAK supports leading Turkish scientists and other scientists working in universities or research institutions abroad to come to Türkiye. This program also supports visiting scientists to carry out all...",
+    "opening_date": "29/01/2026",
+    "closing_date": "29/01/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Minerva Short-Term Research Grant (all disciplines | Germany, Israel)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/minerva-short-term-research-grant-all-disciplines-germany-israel",
+    "description": "OutlineThe Minerva Short-Term Research Grant from the Minerva Stiftung supports young researchers from all subjects based in Germany and Israel with the opportunity to visit research partners and to establish contacts with scientists in the respective guest country.Applications close on May 2 and...",
+    "opening_date": "29/01/2026",
+    "closing_date": "29/01/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "4 Year Ph.D. Scholarship in Theoretical Physics",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/4-year-phd-scholarship-theoretical-physics",
+    "description": "Details of the Scholarship AwardThe Department of Physics at Maynooth University in Co. Kildare, Ireland is pleased to announce that a PhD Scholarship will be available for a suitably qualified and successful applicant intending to commence their PhD studies in September 2026. The student is...",
+    "opening_date": "28/01/2026",
+    "closing_date": "01/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "LEAP-SE Cofund Call 2026",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/leap-se-cofund-call-2026",
+    "description": "Outline:The National Science Centre (NCN), in cooperation with the LEAP-SE (Long-Term Joint EU-AU Research and Innovation Partnership on Sustainable Energy) Network, is launching the LEAP-SE Cofund Call 2026 for international research projects in the area of energy transition and renewable energy...",
+    "opening_date": "23/01/2026",
+    "closing_date": "01/07/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Christian Boulin Fellowships (molecular biology | Europe+)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/christian-boulin-fellowships-molecular-biology-europe",
+    "description": "OutlineThe Christian Boulin Fellowships from the European Molecular Biology Laboratory (EMBL) support young scientists visiting facilities at the EMBL sites, so they can learn and use the latest scientific techniques and advance their research projects. Applications can be submitted at any time and...",
+    "opening_date": "14/01/2026",
+    "closing_date": "14/01/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "HIPAS – Horizon Internationalisation Partnership Award Scheme",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/hipas-horizon-internationalisation-partnership-award-scheme",
+    "description": "Xjenza Malta is receiving proposals under the Horizon Internationalisation Partnership Award Scheme (HIPAS). The Scheme will support Maltese eligible entities intending to submit a Horizon Europe proposal (including Partnerships indicated in the Scheme Rules), as a Coordinator entity to engage a...",
+    "opening_date": "13/01/2026",
+    "closing_date": "13/01/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Grindley Grant (experimental psychology | UK)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/grindley-grant-experimental-psychology-uk",
+    "description": "OutlineThe Grindley Grant from the Experimental Psychological Society supports EPS members to attend conferences. Preference is given to attendance at meetings of the Experimental Psychology Society. Grants to attend non-EPS conferences are awarded only to those making a presentation and are...",
+    "opening_date": "08/01/2026",
+    "closing_date": "08/01/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Study Visit Grants (experimental psychology | UK-based researchers)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/study-visit-grants-experimental-psychology-uk-based-researchers",
+    "description": "OutlineThe Study Visit Grants from the Experimental Psychological Society support UK-based postgraduate and postdoctoral researchers in experimental psychology to undertake a study visit to another institution.The annual submission dates are 1st March, 1st June, 1st September and 1st December.What...",
+    "opening_date": "08/01/2026",
+    "closing_date": "08/01/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Study Visit Grants (experimental psychology | UK)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/study-visit-grants-experimental-psychology-uk-0",
+    "description": "OutlineThe Study Visit Grants from the Experimental Psychological Society support postgraduate and postdoctoral researchers in experimental psychology to undertake a study visit to an institution in the United Kingdom.The annual submission dates are 1st March, 1st June, 1st September and 1st...",
+    "opening_date": "08/01/2026",
+    "closing_date": "08/01/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Study Visit Grants (experimental psychology | UK)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/study-visit-grants-experimental-psychology-uk",
+    "description": "OutlineThe Study Visit Grants from the Experimental Psychological Society support postgraduate and postdoctoral researchers in experimental psychology to undertake a study visit to an institution in the United Kingdom.The annual submission dates are 1st March, 1st June, 1st September and 1st...",
+    "opening_date": "16/12/2025",
+    "closing_date": "16/12/2025",
+    "country": "União Europeia"
+},
+{
+    "title": "University of Galway 2026 Hardiman PhD Scholarships",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/university-galway-2026-hardiman-phd-scholarships",
+    "description": "The 2026 Hardiman PhD Scholarship applications at the University of Galway are now open.Our university champions the role of foundational, curiosity-driven research in expanding our understanding of the world and inspiring innovation. Our research community is engaged in global challenges, national...",
+    "opening_date": "01/12/2025",
     "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Postdoctoral Research Assignment “Laser-assisted materials synthesis for Li-ion anodes and electrochemical evaluation”",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/postdoctoral-research-assignment-laser-assisted-materials-synthesis-li-ion-anodes-and",
-    "description": "The Institute of Chemical Engineering Sciences, Foundation for Research and Technology - Hellas, (FORTH/ICE-HT) is seeking applicants for one postdoctoral research assignment in the context of the research project “Integrating novel materials with scalable processes for safer and recyclable Li-ion...",
-    "opening_date": "21/11/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "PhD Fellowship “Synthesis of semi-solid electrolytes and fabrication of flexible supercapacitors and batteries for wearable devices”",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-fellowship-synthesis-semi-solid-electrolytes-and-fabrication-flexible",
-    "description": "The Institute of Chemical Engineering Sciences, Foundation for Research and Technology - Hellas, (FORTH/ICE- HT) is seeking applicants for one PhD candidate position in the context of the research project «Innovative pilot lines for sustainable graphene-based flexible and structural energy...",
-    "opening_date": "21/11/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "PhD fellowship “Measurements of atmospheric organic pollutants”",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-fellowship-measurements-atmospheric-organic-pollutants",
-    "description": "The Institute of Chemical Engineering Sciences, Foundation for Research and Technology - Hellas, (FORTH/ICE-HT) is seeking applicants for one PhD candidate position in the context of the research project “Effects on Air quality of Semi-VOLatile Engine Emissions (EASVOLEE) GA- 101095457 — EASVOLEE —...",
-    "opening_date": "21/11/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "PhD fellowship “Measurements of atmospheric organic particles”",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-fellowship-measurements-atmospheric-organic-particles",
-    "description": "The Institute of Chemical Engineering Sciences, Foundation for Research and Technology - Hellas, (FORTH/ICE-HT) is seeking applicants for one PhD candidate position in the context of the research project “Effects on Air quality of Semi-VOLatile Engine Emissions (EASVOLEE) GA- 101095457 — EASVOLEE —...",
-    "opening_date": "21/11/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Postdoctoral Research Assignment “Simulation of aerosol fluid mechanics in novel atmospheric sampling systems”",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/postdoctoral-research-assignment-simulation-aerosol-fluid-mechanics-novel-0",
-    "description": "The Institute of Chemical Engineering Sciences, Foundation for Research and Technology - Hellas, (FORTH/ICE-HT) is seeking applicants for one postdoctoral research assignment in the context of the research project “Effects on Air quality of Semi-VOLatile Engine Emissions (EASVOLEE) GA- 101095457 —...",
-    "opening_date": "21/11/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Postdoctoral Research Assignment “Coordination of research activities involving campaigns, laboratory studies, and modeling”",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/postdoctoral-research-assignment-coordination-research-activities-involving-campaigns",
-    "description": "The Institute of Chemical Engineering Sciences, Foundation for Research and Technology - Hellas, (FORTH/ICE-HT) is seeking applicants for one postdoctoral research assignment in the context of the research project “Clouds and climate transitioning to post-fossil aerosol regime (CleanCloud) GA-...",
-    "opening_date": "21/11/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Ramon y Cajal programme Call",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/ramon-y-cajal-programme-call",
-    "description": "The Spanish Agency for Research (AEI) announces the opening of the Ramón y Cajal (RYC) 2025 call, under the State Plan for Research, Technological Development and Innovation 2024-2027. AimThe scheme aims to promote the recruitment of outstanding researchers (Spanish or international) into Spanish...",
-    "opening_date": "20/11/2025",
-    "closing_date": "11/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Promoties in de Geesteswetenschappen 2026 | PhDs in the Humanities 2026 (Aruba, Curaçao, Netherlands, St. Martin)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/promoties-de-geesteswetenschappen-2026-phds-humanities-2026-aruba-curacao-netherlands",
-    "description": "OutlineThe PhDs in the Humanities 2026 from the Nederlandse Organisatie voor Wetenschappelijk Onderzoek (NWO), the Dutch Research Council, support PhD students to carry out an independent PhD project. This is an annual grant. The next applications are due February 17, 2026.What is funded +...",
-    "opening_date": "19/11/2025",
-    "closing_date": "17/02/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "Call for proposals for German-Italian cooperation (humanities and social sciences)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/call-proposals-german-italian-cooperation-humanities-and-social-sciences",
-    "description": "OutlineThe Call for proposals for German-Italian cooperation is conceived and organised by Villa Vigoni in cooperation with the Deutsche Forschungsgemeinschaft (DFG). Applications close December 1, 2025.What is fundedThe programme supports academics from both countries with the opportunity to...",
-    "opening_date": "19/11/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Call for individual mobility 2025-2026 - Culture Moves Europe funding (Europe + associated countries)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/call-individual-mobility-2025-2026-culture-moves-europe-funding-europe-associated",
-    "description": "OutlineThe Call for individual mobility 2025-2026 - Culture Moves Europe funding is funded by Creative Europe and implemented by the Goethe-Institut. The call supports one artistic or cultural project to be carried out in another Creative Europe country, with the support of an international partner...",
-    "opening_date": "19/11/2025",
-    "closing_date": "30/04/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "Open call for TOP200 NAWA Programme (Poland)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/open-call-top200-nawa-programme-poland",
-    "description": "The Polish National Agency for Academic Exchange, in cooperation with the National Science Centre (NCN) and the National Centre for Research and Development (NCBR) encourages outstanding researchers to apply for this new opportunity.The TOP200 NAWA programme aims to attract to Poland outstanding...",
-    "opening_date": "19/11/2025",
-    "closing_date": "27/02/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "TRAD RESEARCH FELLOWSHIP",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/trad-research-fellowship",
-    "description": "[ENG]The CREC Chair announces the annual TRAD grant, dedicated to the research and digitization of Catalan graphic heritage. Scholarship amount (by means of invoice)20.000 €, VAT included Duration of the scholarship12 months Deadline for submission of applicationsDecember 14, 2025 Expected start...",
-    "opening_date": "18/11/2025",
-    "closing_date": "14/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "CfA Funding for Research Sabbaticals (Fellowships) and Working Groups",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/cfa-funding-research-sabbaticals-fellowships-and-working-groups-0",
-    "description": "The Center for Advanced Internet Studies (CAIS) funds innovative research on the societal impact of digital transformation. We support individual researchers (fellows) and collaborative projects (working groups). Fellowships: Time and Space for Focus and InspirationA fellowship at CAIS provides the...",
-    "opening_date": "13/11/2025",
-    "closing_date": "19/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "JSPS international fellowships for research in Japan (standard | social science, natural science, humanities | Sweden)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/jsps-international-fellowships-research-japan-standard-social-science-natural-science",
-    "description": "OutlineThe JSPS international fellowships for research in Japan (standard) from the Kungliga Vetenskapsakademien (KVA), The Royal Swedish Academy of Sciences in collaboration with the Japan Society for the Promotion of Science (JSPS), support Swedish postdoctoral researchers to conduct cooperative...",
-    "opening_date": "12/11/2025",
-    "closing_date": "06/01/2026",
     "country": "União Europeia"
 },
 {
@@ -136,339 +672,35 @@
     "country": "União Europeia"
 },
 {
-    "title": "DKFZ International PhD Program (cancer research | Germany)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/dkfz-international-phd-program-cancer-research-germany",
-    "description": "OutlineThe DKFZ International PhD Program is a fully funded, structured program providing its doctoral researchers (PhD students) with tailored mentoring and training in cancer research. The doctoral research projects are conducted at the German Cancer Research Center in Heidelberg or Dresden, or...",
-    "opening_date": "12/11/2025",
-    "closing_date": "15/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Early Career Rescue Fellowship Programme",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/early-career-rescue-fellowship-programme",
-    "description": "Call for Applications: Early Career Rescue Fellowship Academic freedom is under pressure today. This requires rescue havens of free research. The Freiburg Institute for Advanced Studies (FRIAS), the Tübingen College of Fellows (CoF), and the Zukunftskolleg Konstanz (ZuKo) invite early career...",
-    "opening_date": "12/11/2025",
-    "closing_date": "09/01/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "Graduate Membership & DAAD-GSSP Scholarships 2025",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/graduate-membership-daad-gssp-scholarships-2025",
-    "description": "The Heidelberg Graduate School for the Humanities and Social Sciences (HGGS) invites applications for Graduate Membership and two DAAD-GSSP Scholarships. We are looking for motivated doctoral candidates with an interest in interdisciplinary research. Heidelberg University provides through the HGGS...",
-    "opening_date": "12/11/2025",
-    "closing_date": "15/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "PhD position in tensor networks for quantum simulations of quantum many body systems",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-position-tensor-networks-quantum-simulations-quantum-many-body-systems",
-    "description": "Outline:We are looking for a highly motivated candidate for a fully-funded 4-year PhD position in tensor network simulations of strongly correlated quantum many body systems that parallel similar efforts with ultracold gases quantum simulators. The principal investigators are Prof Jacek Dziarmaga...",
-    "opening_date": "06/11/2025",
-    "closing_date": "30/04/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "MSCA Choose Europe for Science call (all disciplines | Europe and associated countries)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/msca-choose-europe-science-call-all-disciplines-europe-and-associated-countries",
-    "description": "OutlineThe Choose Europe for Science call (MSCA) – Marie Skłodowska-Curie Actions funding program of Horizon Europe provides funding to make European research careers more attractive by providing long-term employment, excellent working conditions, and stable career prospects.Applications close on...",
-    "opening_date": "05/11/2025",
-    "closing_date": "03/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "ATENEA MSCA postdoctoral fellowship programme (materials science and engineering | Spain)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/atenea-msca-postdoctoral-fellowship-programme-materials-science-and-engineering-spain",
-    "description": "OutlineThe ATENEA Postdoctoral Fellowship Programme is funded by IMDEA Materials Institute and co-funded by the Marie Skłodowska-Curie Actions (MSCA) under Horizon Europe. Applications close on December 15, 2025.What is funded The Program offers ten 30-month postdoctoral fellowships in the field of...",
-    "opening_date": "05/11/2025",
-    "closing_date": "15/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Discovery Research Future Leaders Fellowship (UK cardiovascular research)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/discovery-research-future-leaders-fellowship-uk-cardiovascular-research",
-    "description": "OutlineThe Discovery Research Future Leaders Fellowship from the British Heart Foundation provides long-term support to high-potential scientists as they transition to independence, leading their own research projects and teams. The programme is open to applicants with a background in cardiovascular...",
-    "opening_date": "05/11/2025",
-    "closing_date": "01/04/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "Discovery Research Early Career Fellowship (UK cardiovascular research)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/discovery-research-early-career-fellowship-uk-cardiovascular-research",
-    "description": "OutlineThe Discovery Research Early Career Fellowship from the British Heart Foundation supports exceptional early-career researchers working on a cardiovascular research project in the UK. This fellowship scheme is open to all non-clinician scientists working on a cardiovascular research project...",
-    "opening_date": "05/11/2025",
-    "closing_date": "01/04/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "UCD Iseult Honohan Doctoral Scholarship",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/ucd-iseult-honohan-doctoral-scholarship-1",
-    "description": "OutlineThe aim of the scholarship is to attract applicants of the highest academic calibre to pursue a PhD in the UCD School of Politics and International Relations, and to provide them with the training, experience and mentorship necessary to their professional development.We welcome applications...",
-    "opening_date": "03/11/2025",
-    "closing_date": "30/01/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "Seeking New Master/Ph.D. Students and Postdoctoral Researcher to join Research Group on Optics & Photonics @METU Ankara",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/seeking-new-master/phd-students-and-postdoctoral-researcher-join-research-group-optics",
-    "description": "Seeking New Master/Ph.D. Students and Postdoctoral Researcher to join Research Group on Optics & Photonics @METU AnkaraI am seeking to admit four (4) outstanding applicants to join my research group at the Department of Physics, Middle East Technical University (METU), Ankara, Turkey, as part of a...",
-    "opening_date": "30/10/2025",
-    "closing_date": "30/11/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "EIPOD-LinC Fellowship Programme (molecular biology | Europe+)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/eipod-linc-fellowship-programme-molecular-biology-europe",
-    "description": "OutlineThe EIPOD-LinC Fellowship Programme from the European Molecular Biology Laboratory (EMBL) supports promising researchers to work on interdisciplinary research on Molecules to Ecosystems. All projects require an EMBL Host and a partner. The EMBL Hosts participating in the 2025 call will be...",
-    "opening_date": "29/10/2025",
-    "closing_date": "02/02/2026",
-    "country": "União Europeia"
-},
-{
     "title": "Collaborative Research Grants (social psychology | Europe+)",
     "link": "https://euraxess.ec.europa.eu/jobs/funding/collaborative-research-grants-social-psychology-europe",
     "description": "OutlineThe Collaborative Research Grants from the European Association of Social Psychology (EASP) support researchers in developing new projects that will be pursued through collaboration with one or more researchers from different countries. In particular, collaborative research grants are...",
     "opening_date": "22/10/2025",
-    "closing_date": "15/03/2026",
+    "closing_date": "15/09/2026",
     "country": "União Europeia"
 },
 {
-    "title": "International Development Grant (behavioral science | worldwide)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/international-development-grant-behavioral-science-worldwide",
-    "description": "OutlineThe International Development Grant from the Society for the Advancement of Behavior Analysis (SABA) supports individuals and organizations for the development and/or dissemination of behavior analysis internationally. Applications close on January 14, 2026.What is funded The funding provides...",
-    "opening_date": "22/10/2025",
-    "closing_date": "14/01/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "NAWA Polish Returns programme",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/nawa-polish-returns-programme",
-    "description": "The Polish Returns Programme is addressed to Polish scientists working in any field of science around the world. The aim of the programme is for outstanding Polish scientists to return to Poland and take up employment at Polish universities, scientific institutes, or research institutes. The...",
-    "opening_date": "21/10/2025",
-    "closing_date": "15/01/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "Fully Funded PhD Opportunity in Computational Structural Biology and Protein Engineering",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/fully-funded-phd-opportunity-computational-structural-biology-and-protein-engineering",
-    "description": "Fully Funded PhD Opportunity in Computational Structural Biology and Protein EngineeringLocation: The University of Adelaide (Australia)Collaboration: Holocyte Pty Ltd & Neopuriph Pty LtdScholarship: Approx. AUD $36,500 per annum (indexed annually)Duration: 4-year PhD or 5.5-year integrated PhDStart...",
-    "opening_date": "20/10/2025",
-    "closing_date": "01/05/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "Open call for the position of post-doc in the HE - BioGeoSea project (24 months, Biogeochemical EOVs)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/open-call-position-post-doc-he-biogeosea-project-24-months-biogeochemical-eovs",
-    "description": "Outline2-year full-time scientist position to review marine biogeochemical observing requirements and use them to feed ocean metrics as part of EU BioGeoSea project at the Institute of Oceanology Polish Academy of SciencesThe Large-Scale Processes Team of the Department of Marine Chemistry &...",
-    "opening_date": "18/10/2025",
-    "closing_date": "28/11/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "IZEA fellowships ‘Multiple Enlightenments: 18th century to today’ at Martin-Luther-University Halle-Wittenberg",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/izea-fellowships-multiple-enlightenments-18th-century-today-martin-luther-university",
-    "description": "OutlineIZEA fellowships ‘Multiple Enlightenments: 18th century to today’ at Martin-Luther-University Halle-WittenbergResearching the diversity, complexity and contradictory nature of the processes that have led to ever new contours and interpretations of the concept of the Enlightenment in Europe...",
-    "opening_date": "17/10/2025",
-    "closing_date": "15/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "The École Nationale des Chartes Exchange Fellowship (humanities | USA, Canada to France)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/ecole-nationale-des-chartes-exchange-fellowship-humanities-usa-canada-france",
-    "description": "OutlineThe École Nationale des Chartes Exchange Fellowship from The Newberry Library supports a PhD candidate to spend a semester abroad at the École Nationale des Chartes in Paris and one affiliate of the École Nationale des Chartes to travel to Chicago to conduct research at the Newberry...",
-    "opening_date": "15/10/2025",
-    "closing_date": "08/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "The École Nationale des Chartes Exchange Fellowship (humanities | France to USA)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/ecole-nationale-des-chartes-exchange-fellowship-humanities-france-usa",
-    "description": "OutlineThe École Nationale des Chartes Exchange Fellowship from The Newberry Library supports researchers affiliated with the École Nationale des Chartes in Paris to travel to Chicago to conduct research at the Newberry. Applications close on December 8, 2025.What is fundedThe Newberry sponsors...",
-    "opening_date": "15/10/2025",
-    "closing_date": "08/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "CEIPEX - CEItec Postgradual EXperts",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/ceipex-ceitec-postgradual-experts",
-    "description": "OutlineThe concept of the CEITEC Postdoctoral EXperts (CEIPEX) programme is to provide an attractive environment for postdoctoral fellow mobility by focusing on a scientifically excellent and thematically compact academic research institution that has established a strong network of connections with...",
-    "opening_date": "13/10/2025",
-    "closing_date": "31/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Passive Flow Control for Turbulent Boundary Layer Drag Reduction",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/passive-flow-control-turbulent-boundary-layer-drag-reduction",
-    "description": "PhD scholarship in the field of fluid mechanics to investigate \"A Novel Passive Flow Control Method for Turbulent Boundary Layer Drag Reduction\" at the School of Mechanical and Mining Engineering at the University of Queensland:This project investigates a novel passive flow control strategy for...",
-    "opening_date": "10/10/2025",
-    "closing_date": "08/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "PhD opportunity [February 2026 start] on \"Anatomy localisation in X-ray fluoroscopy videos for mechanical thrombectomy\" in collaboration with Telos Health",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-opportunity-february-2026-start-anatomy-localisation-x-ray-fluoroscopy-videos",
-    "description": "Applications are invited for a fully funded 4 years PhD EPSRC CDT PSI studentship at King's College London (including tuition fees, annual stipend and consumables) starting in February 2026. Award detailsFocus: Anatomy localisation in X-ray fluoroscopy videos for mechanical thrombectomyFirst...",
-    "opening_date": "09/10/2025",
-    "closing_date": "30/11/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Stipendium från Hans Werthénfonden | Scholarship from the Hans Werthén Foundation (technology/science or economics/law | Sweden)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/stipendium-fran-hans-werthenfonden-scholarship-hans-werthen-foundation-technology",
-    "description": "OutlineThe scholarship from the Hans Werthén Foundation, from the Kungl. Ingenjörsvetenskapsakademien (IVA) supports Sweden-based young academics in scientific training abroad. Applications open on January 8, 2026, and close on March 8, 2026.What is fundedThe scholarships are in the fields of...",
-    "opening_date": "09/10/2025",
-    "closing_date": "08/03/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "AAG Research Grants (geography worldwide)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/aag-research-grants-geography-worldwide",
-    "description": "OutlineThe AAG Research Grants from the American Association of Geographers (AAG) support its members for research and fieldwork. Grants can be used only for direct expenses of research; salary and overhead costs are not allowed. Applications are due on December 31, 2025.What is fundedApplicants may...",
-    "opening_date": "09/10/2025",
-    "closing_date": "31/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Fulbright Hildeman Fellowship (Sweden to USA)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/fulbright-hildeman-fellowship-sweden-usa",
-    "description": "OutlineThe Fulbright Hildeman Fellowship from the Fulbright Sweden supports Swedish scholars to promote the study of Scandinavian language and area studies in the United States. Applications close on January 9, 2026.What is funded + DurationFor the 2026-27 academic year, North Park University in...",
-    "opening_date": "09/10/2025",
-    "closing_date": "09/01/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "PhD Scholarships (DAAD) at the Graduate School Practices of Literature, Münster (Deadline: 31 December 2025)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-scholarships-daad-graduate-school-practices-literature-munster-deadline-31",
-    "description": "Call for Applications: DAAD Scholarships for International PhD Students at the Graduate School Practices of Literature, University of Münster, GermanyStart date: October 1, 2026Deadline: December 31, 2025The Graduate School Practices of Literature (GSPoL) at the University of Münster invites...",
-    "opening_date": "08/10/2025",
-    "closing_date": "31/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "2232 - B International Fellowship for Early Stage Researchers",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/2232-b-international-fellowship-early-stage-researchers",
-    "description": "OutlineIn order to contribute to projects that will be executed in research fields that are of strategic importance for our country within the scope of the programme, it is aimed to promote young researchers under the age of 40 who have come to the fore with their high-level science and/or...",
-    "opening_date": "08/10/2025",
-    "closing_date": "30/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "2232 - A International Fellowship for Outstanding Researchers",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/2232-international-fellowship-outstanding-researchers",
-    "description": "OutlineIn order to contribute to projects that will be executed in research fields that are of strategic importance for our country within the scope of the programme, it is aimed to promote qualified researchers who have come to the fore with their high-level science and/or technology-oriented...",
-    "opening_date": "07/10/2025",
-    "closing_date": "30/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Max Planck School of Photonics (PhD | Germany)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/max-planck-school-photonics-phd-germany",
-    "description": "OutlineThe Max Planck School of Photonics - PhD program (Research Phase) is a joint Graduate program of German universities and research organizations. The Program is a 5-year Master's to PhD direct track program. The description here is for the PhD's part of the program.Applications close on...",
+    "title": "Max-Planck-Postdoc-Programm (natural sciences, life sciences, and humanities | Germany)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/max-planck-postdoc-programm-natural-sciences-life-sciences-and-humanities-germany",
+    "description": "OutlineThe Max Planck Postdoc Program from the Max-Planck-Gesellschaft provides talented early-career researchers with a range of attractive opportunities to advance their careers in science in natural sciences, life sciences, and humanities in Germany. Applications are accepted twice a year. The...",
     "opening_date": "25/09/2025",
-    "closing_date": "01/12/2025",
+    "closing_date": "13/10/2026",
     "country": "União Europeia"
 },
 {
-    "title": "Max Planck School of Photonics (Master's | Germany)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/max-planck-school-photonics-masters-germany",
-    "description": "OutlineThe Max Planck School of Photonics - Master's program (Study Phase) is a joint Graduate program of German universities and research organizations. The Program is a 5-year Master's to PhD direct track program. The description here is for the Master's part of the program. This joint Master of...",
-    "opening_date": "25/09/2025",
-    "closing_date": "01/12/2025",
+    "title": "2027 Research Training Fellowship (neuroscience | Europe)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/2027-research-training-fellowship-neuroscience-europe",
+    "description": "OutlineThe 2027 Research Training Fellowship from the European Academy of Neurology (EAN) supports training for European neurologists in any area of basic, clinical, or applied research in neuroscience. The research work must be carried out at a European academic neurological department outside the...",
+    "opening_date": "30/07/2025",
+    "closing_date": "31/08/2026",
     "country": "União Europeia"
 },
 {
-    "title": "Junior Scientist Conference Grants (genetics | UK)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/junior-scientist-conference-grants-genetics-uk",
-    "description": "OutlineThe Junior Scientist Conference Grants from The Genetics Society support the society's junior members to attend conferences. Non-UK-based members must attend meetings in the UK. UK-based members may attend conferences worldwide. Depending on the type of conference attended, up to 1000 GBP in...",
-    "opening_date": "17/09/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Junior Scientist Conference Grants (genetics | UK members)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/junior-scientist-conference-grants-genetics-uk-members",
-    "description": "OutlineThe Junior Scientist Conference Grants from The Genetics Society support the society's junior members to attend conferences. UK-based members may attend conferences worldwide. Non-UK-based members must attend meetings in the UK. Depending on the type of conference attended, up to 1000 GBP in...",
-    "opening_date": "17/09/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Max Planck School of Cognition (Master's and PhD | Germany)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/max-planck-school-cognition-masters-and-phd-germany",
-    "description": "OutlineThe Max Planck School of Cognition program supports doctoral students in a fully funded program in Germany. Applications are open to exceedingly bright students with strong academic experience in areas related to cognition, such as artificial intelligence, biology, (cognitive) neuroscience...",
-    "opening_date": "12/09/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "International Scholar Awards (childhood cancers | LMIC researcher training in HIC)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/international-scholar-awards-childhood-cancers-lmic-researcher-training-hic",
-    "description": "OutlineThe International Scholar Awards from the St. Baldrick’s Foundation supports researchers from low-and middle-income countries (as classified by the World Bank) to prepare them to fill specific stated needs in an area of childhood cancer research upon returning to their country of origin. The...",
-    "opening_date": "12/09/2025",
-    "closing_date": "08/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Osteology Research Scholarship (Austria, Germany, Switzerland, USA | oral tissue regeneration)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/osteology-research-scholarship-austria-germany-switzerland-usa-oral-tissue",
-    "description": "OutlineThe Osteology Research Scholarship from the Osteology Foundation supports young investigators to develop their careers in the field of oral tissue regeneration. The scholars should work on a research project teaming up with their mentors in one of the Osteology Research Scholarship Centres...",
-    "opening_date": "12/09/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Fulbright Schuman Program - Grants for Doctoral Research (EU citizens | USA | public policy)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/fulbright-schuman-program-grants-doctoral-research-eu-citizens-usa-public-policy",
-    "description": "OutlineThe Fulbright Schuman Program from the Fulbright Commission in Belgium supports EU citizens with scholarships for research in the United States with a focus on EU affairs/policy, or the US-EU transatlantic agenda. The Grants for Doctoral Research support PhD students who are EU citizens to...",
-    "opening_date": "03/09/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Fulbright Schuman Program – Grants for Post-Doctoral Research and Lecturing (EU citizens | USA | public policy)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/fulbright-schuman-program-grants-post-doctoral-research-and-lecturing-eu-citizens-usa",
-    "description": "OutlineThe Fulbright Schuman Program from the Fulbright Commission in Belgium supports EU citizens with scholarships for research in the United States with a focus on EU affairs/policy, or the US-EU transatlantic agenda. The Grants for Post-Doctoral Research and Lecturing support postdoctoral...",
-    "opening_date": "03/09/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Fulbright Schuman Program – Fulbright-NATO Security Studies Award (NATO citizens | USA)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/fulbright-schuman-program-fulbright-nato-security-studies-award-nato-citizens-usa",
-    "description": "OutlineThe Fulbright Schuman Program from the Fulbright Commission in Belgium supports EU citizens with scholarships for research in the United States with a focus on EU affairs/policy, or the US-EU transatlantic agenda. The Fulbright-NATO Security Studies Award supports post-doctoral researchers...",
-    "opening_date": "03/09/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "International Research Fellowships (clinical cancer research | Switzerland)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/international-research-fellowships-clinical-cancer-research-switzerland",
-    "description": "OutlineThe International Research Fellowships from Krebsforschung Schweiz support medical doctors in Switzerland to continue with their clinical research training at leading cancer research institutions abroad. Applications close twice per year, on January 31 and July 31. The next applications close...",
-    "opening_date": "27/08/2025",
-    "closing_date": "31/01/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "Summer Student Fellowships Program (Parkinson's disease | worldwide)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/summer-student-fellowships-program-parkinsons-disease-worldwide",
-    "description": "OutlineThe Parkinson's Foundation's Summer Student Fellowships Program supports advanced undergraduates and medical students in summer research projects on Parkinson's disease. The goal is to cultivate students' early interest in helping to solve, treat, and end Parkinson's and provide them with the...",
-    "opening_date": "27/08/2025",
-    "closing_date": "26/01/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "Max Planck School Matter to Life (Masters & PhD | Germany)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/max-planck-school-matter-life-masters-phd-germany",
-    "description": "OutlineThe Max Planck School Matter to Life is a joint Graduate program of German universities and research organizations. The Program addresses the questions “What is life?” and “Can life-like processes, functions and objects be quantitatively described, simulated, predicted and created in the...",
-    "opening_date": "27/08/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "CO-FUNDED Brain Circulation 3 (CoCirculation3)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/co-funded-brain-circulation-3-cocirculation3",
-    "description": "OutlineCoCirculation3 is a prestigious postdoctoral fellowship program co-funded by the European Commission under the Horizon Europe MSCA COFUND scheme and implemented by TÜBİTAK. With a total budget of €15 million—the highest level of funding awarded under the 2023 COFUND call—the program aims to...",
-    "opening_date": "14/08/2025",
-    "closing_date": "01/12/2025",
+    "title": "2027 Research Experience Fellowship (neuroscience | Europe)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/2027-research-experience-fellowship-neuroscience-europe",
+    "description": "OutlineThe Research Experience Fellowship from the European Academy of Neurology (EAN) supports experience for European neurologists in any area of basic, clinical or applied research in neuroscience. The research work must be carried out at a European academic neurological department outside the...",
+    "opening_date": "30/07/2025",
+    "closing_date": "31/08/2026",
     "country": "União Europeia"
 },
 {
@@ -480,35 +712,11 @@
     "country": "União Europeia"
 },
 {
-    "title": "University Summer Courses in Germany for Foreign Students and Graduates",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/university-summer-courses-germany-foreign-students-and-graduates",
-    "description": "OutlineThe University Summer Courses in Germany for Foreign Students and Graduates from the German Academic Exchange Service (DAAD) support undergraduate and master's students. It aims to help them improve their knowledge of the German language (general language) as well as German regional and...",
-    "opening_date": "25/06/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
     "title": "Subsidie voor internationale onderzoeksstage | Grant for international research internship (dementia research | Netherlands)",
     "link": "https://euraxess.ec.europa.eu/jobs/funding/subsidie-voor-internationale-onderzoeksstage-grant-international-research-internship",
     "description": "OutlineThe Grant for international research internship from Alzheimer Nederland supports early-career researchers in a dementia-related research internship abroad. Applications are accepted on a rolling basis.What is fundedThe grant is intended to cover at most travel and accommodation costs of an...",
     "opening_date": "25/06/2025",
     "closing_date": "25/06/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "SLS Travel Grant | SLS resebidrag (Sweden | Medicine)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/sls-travel-grant-sls-resebidrag-sweden-medicine",
-    "description": "OutlineThe SLS Travel Grant from Svenska Läkaresällskapet supports Sweden-based medical researchers' congress trip or research stay. The Swedish Society of Medicine's travel grant are open to medical doctors for active participation in an international scientific congress abroad or for a research...",
-    "opening_date": "20/06/2025",
-    "closing_date": "15/05/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "CAPES-Humboldt Research Fellowship",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/capes-humboldt-research-fellowship",
-    "description": "Outline:The CAPES-Humboldt Research Fellowship enables highly-qualified Brazilian researchers to conduct independent research at various stages of your career in Germany. Fellows collaborate with a host institution of their choice, fostering international scientific exchange and contributing to the...",
-    "opening_date": "16/06/2025",
-    "closing_date": "28/11/2025",
     "country": "União Europeia"
 },
 {
@@ -544,51 +752,35 @@
     "country": "União Europeia"
 },
 {
-    "title": "Two Postdoctoral Positions in Human Brain Glycomics Research",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/two-postdoctoral-positions-human-brain-glycomics-research",
-    "description": "The laboratory of Urte Neniskyte at the Vilnius University Life Sciences Center and European Molecular Biology Laboratory Partnership Institute (Vilnius, Lithuania) is seeking two talented postdoctoral researchers to join an ERC Consolidator Grant project studying the role of neuronal glycocalyx in...",
-    "opening_date": "16/06/2025",
-    "closing_date": "01/01/2026",
+    "title": "EFSD and Japan Diabetes Society (JDS) Reciprocal Travel Research Fellowship Programme",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/efsd-and-japan-diabetes-society-jds-reciprocal-travel-research-fellowship-programme",
+    "description": "OutlineThe EFSD and Japan Diabetes Society (JDS) Reciprocal Travel Research Fellowship Programme from the European Foundation for the Study of Diabetes (EFSD) and the Japan Diabetes Society (JDS) supports collaboration between European and Japanese diabetes researchers. The program enables...",
+    "opening_date": "28/05/2025",
+    "closing_date": "01/07/2026",
     "country": "União Europeia"
 },
 {
-    "title": "Rubicon 2025-3 (Dutch PhD graduates)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/rubicon-2025-3-dutch-phd-graduates",
-    "description": "OutlineRubicon 2025-3 is the Dutch Research Council's funding program to support international research mobility of recent PhD graduates. Applications are due on December 2, 2025.What is fundedFunding is provided for 12 - 24 months and includes the fellow's salary, fringe benefits, travel expenses...",
-    "opening_date": "12/06/2025",
-    "closing_date": "03/12/2025",
+    "title": "FENS/IBRO-PERC Exchange Fellowships Programme (neuroscience | Europe)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/fens/ibro-perc-exchange-fellowships-programme-neuroscience-europe-0",
+    "description": "OutlineThe FENS/IBRO-PERC Exchange Fellowships Programme from the Federation of European Neuroscience Societies (FENS) and the International Brain Research Organization (IBRO) support masters, PhD students and postdoctoral neuroscientists to foster and broaden the scope of their methodological...",
+    "opening_date": "22/05/2025",
+    "closing_date": "15/10/2026",
     "country": "União Europeia"
 },
 {
-    "title": "Reseanslag | Travel grants (Sweden | Parkinson's disease)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/reseanslag-travel-grants-sweden-parkinsons-disease",
-    "description": "OutlineThe Reseanslag, travel grants, from the Parkinsonfonden support Sweden-based Parkinson's disease researchers in conferences and other activities. There are two deadlines each year. The next applications close on December 1, 2025.What is fundedThe grant provides:For conference travel within...",
-    "opening_date": "12/06/2025",
-    "closing_date": "01/12/2025",
+    "title": "The Rhodes Scholarships for China (inbound to the UK)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/rhodes-scholarships-china-inbound-uk",
+    "description": "OutlineThe Rhodes Scholarship is a fully funded, full-time, postgraduate award which enables talented young people from around the world to study at the University of Oxford in the United Kingdom. The Rhodes Scholarships for China offers four scholarships each year, in conjunction with the Oxford...",
+    "opening_date": "22/05/2025",
+    "closing_date": "31/08/2026",
     "country": "União Europeia"
 },
 {
-    "title": "Reseanslag - Forskningsvistelse | Travel grants - Research Stays (Sweden | Parkinson's disease)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/reseanslag-forskningsvistelse-travel-grants-research-stays-sweden-parkinsons-disease",
-    "description": "OutlineThe Reseanslag - Forskningsvistelse, travel grant for research stays, from the Parkinsonfonden supports Sweden-based Parkinson's disease researchers. Applications are open to doctoral students and postdoctoral researchers.There are two deadlines each year. The next applications close on...",
-    "opening_date": "05/06/2025",
-    "closing_date": "01/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Safe Haven Fellowship (Netherlands | scholars at risk)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/safe-haven-fellowship-netherlands-scholars-risk",
-    "description": "OutlineThe Safe Haven Fellowship from the Netherlands Institute for Advanced Study in the Humanities and Social Science (NIAS) offers temporary relocation and support to scholars, artists, writers, and journalists facing conflict-related restrictions on their work. Those who are facing severe...",
-    "opening_date": "05/06/2025",
-    "closing_date": "31/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Researchers at Risk funding programme in Poland",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/researchers-risk-funding-programme-poland",
-    "description": "The programme provides financial support, covering the salary costs of full-time researchers at Polish universities, scientific institutes or research institutes for two years. It is addressed to experienced postdoctoral researchers, regardless of age, field of science or country of origin. The...",
-    "opening_date": "07/05/2025",
-    "closing_date": "15/12/2025",
+    "title": "Rhodes Scholarships for the Commonwealth Caribbean",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/rhodes-scholarships-commonwealth-caribbean",
+    "description": "OutlineThe Rhodes Scholarship is a fully funded, full-time, postgraduate award that enables talented young people from around the world to study at the University of Oxford in the United Kingdom. The Rhodes Scholarships for the Commonwealth Caribbean offers one scholarship each year. Jamaican...",
+    "opening_date": "08/05/2025",
+    "closing_date": "18/09/2026",
     "country": "União Europeia"
 },
 {
@@ -600,11 +792,19 @@
     "country": "União Europeia"
 },
 {
-    "title": "Access2 Partnerships (A2P) Scheme 2025",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/access2-partnerships-a2p-scheme-2025",
-    "description": "Xjenza Malta has launched the Access2 Partnerships (A2P) Scheme 2025 to enable Malta-based researchers and innovators to participate in transnational R&I project under Horizon Europe Partnerships where Malta is not an official funding partner.The A2P Scheme offers you the opportunity to: Secure up...",
-    "opening_date": "25/03/2025",
-    "closing_date": "25/03/2025",
+    "title": "Ute and György Széll International Scholarship (social science & humanities | Germany)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/ute-and-gyorgy-szell-international-scholarship-social-science-humanities-germany",
+    "description": "OutlineThe Ute and György Széll International Scholarship from the Hans Böckler Stiftung supports outstanding international PhD-students in Social Sciences and Humanities a six months-stay not only at a German university or research institute, but also at a foundation or archive. There is no limit...",
+    "opening_date": "12/03/2025",
+    "closing_date": "30/07/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Georg Forster Research Fellowship for Sustainable Development (postdoctoral researchers from developing countries working in Germany)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/georg-forster-research-fellowship-sustainable-development-postdoctoral-researchers",
+    "description": "OutlineThe Georg Forster Research Fellowship for Sustainable Development from the Alexander von Humboldt Foundation provides fellowship funding for postdoctoral researchers from developing countries to conduct research in Germany. Researchers from all academic disciplines working on sustainable...",
+    "opening_date": "07/03/2025",
+    "closing_date": "01/10/2026",
     "country": "União Europeia"
 },
 {
@@ -620,7 +820,7 @@
     "link": "https://euraxess.ec.europa.eu/jobs/funding/corporate-partnership-programme-fellowships-molecular-biology-europe",
     "description": "OutlineThe Corporate Partnership Programme Fellowships from the European Molecular Biology Laboratory (EMBL) support junior-level scientific visitors to carry out experimental projects with an EMBL host research group, thereby allowing them to build new networks and experience the international and...",
     "opening_date": "12/02/2025",
-    "closing_date": "31/12/2025",
+    "closing_date": "12/02/2025",
     "country": "União Europeia"
 },
 {
@@ -628,7 +828,7 @@
     "link": "https://euraxess.ec.europa.eu/jobs/funding/theoryembl-theoretical-and-mathematical-modelling-aspects-biology-europe",
     "description": "OutlineThe Theory@EMBL fellowship programme from the European Molecular Biology Laboratory (EMBL) provides researchers working on theoretical and mathematical modeling aspects of biology with financial and organizational support for visits to any of EMBL’s sites. The goal is to support the...",
     "opening_date": "12/02/2025",
-    "closing_date": "31/12/2025",
+    "closing_date": "31/12/2026",
     "country": "União Europeia"
 },
 {
@@ -640,11 +840,19 @@
     "country": "União Europeia"
 },
 {
-    "title": "European Innovation Council Support Scheme",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/european-innovation-council-support-scheme-0",
-    "description": "Xjenza Malta is receiving proposals under the European Innovation Council Support Scheme. The aim of the scheme is to support applicants applying to Open and Challenges calls and who will apply for the cut-off dates as stated in the Horizon Europe EIC work programme.The European Innovation Council...",
-    "opening_date": "09/01/2025",
-    "closing_date": "09/12/2025",
+    "title": "Funded Regular and Junior Fellowships at the Hanse-Wissenschaftskolleg in Germany",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/funded-regular-and-junior-fellowships-hanse-wissenschaftskolleg-germany",
+    "description": "OutlineThe Hanse-Wissenschaftskolleg (HWK) in Delmenhorst is an Institute for Advanced Study in the Northwest of Germany. Its Fellowship program offers outstanding researchers the opportunity to focus on research without the distraction of everyday routines in academia, to interact with colleagues...",
+    "opening_date": "17/01/2025",
+    "closing_date": "15/07/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Dieter Schumacher International PhD Scholarship (economics | Germany)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/dieter-schumacher-international-phd-scholarship-economics-germany",
+    "description": "OutlineThe Dieter Schumacher International PhD Scholarship from the Hans Böckler Stiftung supports outstanding international PhD students in Economics to conduct a 12 to 24-month stay at a German university or research institute. The scholarship program is open to doctoral students under the age of...",
+    "opening_date": "04/12/2024",
+    "closing_date": "30/07/2026",
     "country": "União Europeia"
 },
 {
@@ -664,14 +872,6 @@
     "country": "União Europeia"
 },
 {
-    "title": "Doctoral INPhINIT fellowships – incoming call 2026 (Spain, Portugal | STEM)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/doctoral-inphinit-fellowships-incoming-call-2026-spain-portugal-stem",
-    "description": "OutlineThe Doctoral INPhINIT fellowships from the ”la Caixa” Foundation support talented students of any nationality to pursue a doctorate in a STEM discipline at research centres of excellence in Spain or Portugal. STEM areas include: technology, engineering, physics, mathematics, health and life...",
-    "opening_date": "19/11/2024",
-    "closing_date": "28/01/2026",
-    "country": "União Europeia"
-},
-{
     "title": "ELIAS Mobility Program (computer sciences | Europe)",
     "link": "https://euraxess.ec.europa.eu/jobs/funding/elias-mobility-program-computer-sciences-europe",
     "description": "OutlineThe ELIAS Mobility Program from the Horizon under the ELLIS network provides financial support to European-based PhD students and postdocs wanting to collaborate with leading institutions within machine learning and artificial intelligence-driven research fields. Applications are assessed on...",
@@ -688,35 +888,11 @@
     "country": "União Europeia"
 },
 {
-    "title": "Weave-UNISONO",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/weave-unisono",
-    "description": "The National Science Centre (NCN) hereby announces the multilateral Weave-UNISONO call for bilateral or trilateral research projects performed in accordance with the Lead Agency Procedure (“LAP”) by the research teams from Austria, the Czech Republic, Slovenia, Switzerland, Germany, Luxembourg...",
-    "opening_date": "25/10/2024",
-    "closing_date": "31/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "IMPRESS-U",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/impress-u-0",
-    "description": "The National Science Centre (NCN)is launching the International Multilateral Partnerships for Resilient Education and Science System in Ukraine (IMPRESS-U). IMPRESS-U is a call for research projects and is carried out in a multilateral collaboration under the IMPRESS-U programme pursuant to the Lead...",
-    "opening_date": "25/10/2024",
-    "closing_date": "31/12/2025",
-    "country": "União Europeia"
-},
-{
     "title": "Reaserch Components under Polish Returns NAWA 2023",
     "link": "https://euraxess.ec.europa.eu/jobs/funding/reaserch-components-under-polish-returns-nawa-2023",
     "description": "The National Science Centre (NCN) is pleased to invite proposals for funding of Research Components in projects funded by the Polish National Agency for Academic Exchange (“NAWA”).Proposals must be submitted electronically via the OSF submission system available at",
     "opening_date": "25/10/2024",
     "closing_date": "25/10/2024",
-    "country": "União Europeia"
-},
-{
-    "title": "ERA Fellowships – Green Hydrogen: Call for Applications for international PhD students (green hydrogen | international researchers to Germany)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/era-fellowships-green-hydrogen-call-applications-international-phd-students-green",
-    "description": "OutlineThe Call for Applications for international PhD students under the ERA Fellowships – Green Hydrogen program from the German Academic Exchange Service (DAAD) supports international PhD researchers in studies and internships in any topics related to Green Hydrogen (GH2) in Germany. The...",
-    "opening_date": "23/10/2024",
-    "closing_date": "23/10/2024",
     "country": "União Europeia"
 },
 {
@@ -744,6 +920,22 @@
     "country": "União Europeia"
 },
 {
+    "title": "Science by Women (African female researchers in Spain)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/science-women-african-female-researchers-spain",
+    "description": "OutlineThe Science by Women program is supported by the Fundación Mujeres por África | Women for Africa Foundation and facilitates the research training and academic development of female researchers from Africa. The program supports senior women researchers in Africa to take part in a 6-month...",
+    "opening_date": "27/08/2024",
+    "closing_date": "30/06/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "Georg Forster Research Award (experienced researchers from developing countries in Germany)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/georg-forster-research-award-experienced-researchers-developing-countries-germany",
+    "description": "OutlineThe Georg Forster Research Fellowship from the Alexander von Humboldt Foundation provides fellowship funding for highly qualified, experienced researchers from developing countries to conduct research in Germany. Researchers from all academic disciplines whose research supports their...",
+    "opening_date": "21/08/2024",
+    "closing_date": "31/10/2026",
+    "country": "União Europeia"
+},
+{
     "title": "Personal research funding schemes in Estonia",
     "link": "https://euraxess.ec.europa.eu/jobs/funding/personal-research-funding-schemes-estonia",
     "description": "Outline Personal research grants are funding allocated for a high-quality R&D project carried out by a person or a research group working at an R&D institution. What is funded A postdoctoral research grant, aimed at supporting the launch of a research career of the people with a doctoral degree...",
@@ -768,51 +960,11 @@
     "country": "União Europeia"
 },
 {
-    "title": "Postdoctoral positions in the frames of National Programme \"Young scientists and postdoctoral researchers - 2\"  Second stage",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/postdoctoral-positions-frames-national-programme-young-scientists-and-postdoctoral-0",
-    "description": "Under the program \"YOUNG SCIENTISTS AND POSTDOCTORAL FELLOWS\" stage 2, 7 young scientists and 4 postdoctoral fellows have been approved, with protocol number 37/22.07.2024 from a regular meeting of the Academic Council of Medical University - PlevenPostdoctoral positions in the frames of National...",
-    "opening_date": "06/06/2024",
-    "closing_date": "31/12/2025",
-    "country": "União Europeia"
-},
-{
     "title": "ANNOUNCEMENT FOR THE AWARD OF ONE RESEARCH SCHOLARSHIP DEVELOPING A SOLUTION FOR EMPLOYEES WITH REDUCED MOBILITY - PORTIC-MCH 001-DESIGN IND",
     "link": "https://euraxess.ec.europa.eu/jobs/funding/announcement-award-one-research-scholarship-developing-solution-employees-reduced",
     "description": "Outline A call is open for (number) 1 research grant(s), under the Project within the scope of the RESEARCH STUDY WITH A VIEW TO DEVELOPING A SOLUTION FOR EMPLOYEES WITH REDUCED MOBILITY Project, coordinated BY PORTIC'S PORTO DESIGN FACTORY (PDF), financed by the CONTINENTAL HYPERMERKETS MODEL (MCH)...",
     "opening_date": "03/06/2024",
     "closing_date": "03/06/2024",
-    "country": "União Europeia"
-},
-{
-    "title": "FlowDyn - PhD Scholarships",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/flowdyn-phd-scholarships",
-    "description": "Outline FlowDyn team needs 6 PhD candidates for an Irish Doctoral Cohort on Offshore Dynamic Cables University College Dublin with University College Cork and Munster Technological University is leading Ireland’s first national doctoral cohort on offshore dynamic cables. The lifetime of the PhD is...",
-    "opening_date": "27/02/2024",
-    "closing_date": "27/02/2024",
-    "country": "União Europeia"
-},
-{
-    "title": "FlashFloodBreaker - PhD Scholarship Hydrological Modelling  Sustainable Infrastructure Research & Innovation Group (SIRIG) School of Building & Civil Engineering MTU Cork Campus",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/flashfloodbreaker-phd-scholarship-hydrological-modelling-sustainable-infrastructure",
-    "description": "Outline FlashFloodBreaker - PhD Scholarship - Hydrological Modelling Sustainable Infrastructure Research & Innovation Group (SIRIG) School of Building & Civil Engineering, MTU Cork Campus PhD Scholarship The MTU Sustainable Infrastructure Research & Innovation Group (SIRIG), School of Building &...",
-    "opening_date": "22/02/2024",
-    "closing_date": "22/02/2024",
-    "country": "União Europeia"
-},
-{
-    "title": "FlashFloodBreaker - PhD Scholarship Machine Learning  NIMBUS Research Centre and the Sustainable Infrastructure Research & Innovation Group (SIRIG) MTU Cork Campus",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/flashfloodbreaker-phd-scholarship-machine-learning-nimbus-research-centre-and",
-    "description": "Outline PhD Scholarship The MTU NIMBUS Research Centre and the Sustainable Infrastructure Research & Innovation Group (SIRIG) are pleased to offer a PhD scholarship for research in the area of machine learning and data science. The scholarship is set within the Flash Flood Breaker Project which is a...",
-    "opening_date": "22/02/2024",
-    "closing_date": "22/02/2024",
-    "country": "União Europeia"
-},
-{
-    "title": "MSCA-COFUND Doctoral Fellowships, \"BIOTIN\" Open CALL-2 Announcement - Academic Year 2024-2025 (Deadline Extended)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/msca-cofund-doctoral-fellowships-biotin-open-call-2-announcement-academic-year-2024",
-    "description": "Outline Biomedical Technologies and Innovation (BIOTIN) Doctoral Programme - Second Call for Applications BIOTIN doctoral programme features an international, interdisciplinary and intersectoral approach to provide 9 doctoral candidates (DCs) a unique blend of research training skills in the...",
-    "opening_date": "02/11/2023",
-    "closing_date": "10/01/2024",
     "country": "União Europeia"
 },
 {
@@ -826,7 +978,7 @@
 {
     "title": "Humboldt Research Fellowship (international researchers in Germany)",
     "link": "https://euraxess.ec.europa.eu/jobs/funding/humboldt-research-fellowship-international-researchers-germany",
-    "description": "OutlineThe Alexander von Humboldt Foundation´s Humboldt Research Fellowships are for postdoctoral and experienced researchers of all nationalities and all disciplines to conduct research in Germany (researchers who are German nationals may only apply if you have been abroad for longer than 10 years)...",
+    "description": "OutlineThe Alexander von Humboldt Foundation´s Humboldt Research Fellowships are for postdoctoral and experienced researchers of all nationalities and all disciplines to conduct research in Germany (researchers who are German nationals may only apply if they have been abroad for longer than 10 years...",
     "opening_date": "04/10/2023",
     "closing_date": "04/10/2023",
     "country": "União Europeia"
@@ -840,11 +992,11 @@
     "country": "União Europeia"
 },
 {
-    "title": "EMBO New Venture Fellowships (life sciences)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/embo-new-venture-fellowships-life-sciences",
-    "description": "Outline The New Venture Fellowships from the European Molecular Biology Organization (EMBO) support early career researchers to develop their expertise in a new field of research. Applicants may use the award to fund exchange to another laboratory in EMBC Member States, Associated Member States or...",
-    "opening_date": "18/09/2023",
-    "closing_date": "18/09/2023",
+    "title": "Kekulé Fellowship (chemistry PhD in Germany)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/kekule-fellowship-chemistry-phd-germany",
+    "description": "OutlineThe Kekulé Fellowship from the Fonds der Chemischen Industrie (FCI) funds PhD candidates in Germany working in chemistry or chemistry-related life science research. Students of any nationality who have completed their studies in Germany are also eligible to apply. There are three application...",
+    "opening_date": "22/09/2023",
+    "closing_date": "01/11/2026",
     "country": "União Europeia"
 },
 {
@@ -856,35 +1008,11 @@
     "country": "União Europeia"
 },
 {
-    "title": "DDSA Visit Grant",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/ddsa-visit-grant",
-    "description": "Outline As part of the DDSA Fellowship Programme, the Danish Data Science Academy provides funding for national and international bachelor’s and master’s degree students, PhD students and postdoctoral researchers to spend time with new research groups of interest in Denmark. The purpose of the grant...",
-    "opening_date": "08/03/2023",
-    "closing_date": "08/03/2023",
-    "country": "União Europeia"
-},
-{
-    "title": "European Innovation Council Support Scheme – Now Open!",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/european-innovation-council-support-scheme-now-open",
-    "description": "The Malta Council for Science and Technology (MCST) is pleased to announce the launch of the European Innovation Council (EIC) Support Scheme. EIC Work Programme 2023 The European Commission adopted the 2023 work programme of the European Innovation Council. It opens funding opportunities worth over...",
-    "opening_date": "15/02/2023",
-    "closing_date": "15/02/2023",
-    "country": "União Europeia"
-},
-{
-    "title": "Grants for PhD students and postdocs in quantitative fields",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/grants-phd-students-and-postdocs-quantitative-fields",
-    "description": "Are you a PhD student or postdoc in a quantitative discipline? Do you need support funding something that will assist your research? If so, we can help. Every month we give away £2,000 in grant money to early career researchers – and are especially interested in applications that are difficult to...",
-    "opening_date": "11/01/2023",
-    "closing_date": "11/01/2023",
-    "country": "União Europeia"
-},
-{
-    "title": "Immediate Postdoctoral Basic Science Research Fellowships (UK cardiovascular research)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/immediate-postdoctoral-basic-science-research-fellowships-uk-cardiovascular-research-0",
-    "description": "OutlineThe Immediate Postdoctoral Basic Science Research Fellowships from the British Heart Foundation provide postdoctoral funding for newly qualified postdoctoral researchers to develop their independent research careers at an established UK cardiovascular research center. The Fellowship must not...",
-    "opening_date": "27/12/2022",
-    "closing_date": "27/12/2022",
+    "title": "Early Career Lecture Courses (life sciences)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/early-career-lecture-courses-life-sciences",
+    "description": "OutlineThe EMBO Practical Courses Grants are funded by the European Molecular Biology Organization (EMBO) to support practical courses in the life sciences that promote scientific knowledge exchange among researchers and core facilities staff. There are two application rounds per year. The next...",
+    "opening_date": "29/03/2023",
+    "closing_date": "01/07/2026",
     "country": "União Europeia"
 },
 {
@@ -896,51 +1024,11 @@
     "country": "União Europeia"
 },
 {
-    "title": "Turku Intersectoral Excellence Scheme (humanities and social sciences Finland)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/turku-intersectoral-excellence-scheme-humanities-and-social-sciences-finland",
-    "description": "OutlineThe Turku Intersectoral Excellence Scheme (TIES) is a co-fund scheme between the University of Turku’s Turku Institute for Advanced Studies (TIAS) and the European Union’s Marie Sklodowska-Curie Actions (MSCA). The Scheme supports outstanding researchers in the humanities and social sciences...",
-    "opening_date": "18/11/2022",
-    "closing_date": "09/01/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "PhD scholarship in Computer Science in Paris: Model Checking for Malware (Virus) Detection",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-scholarship-computer-science-paris-model-checking-malware-virus-detection",
-    "description": "Outline Model Checking for Malware (Virus) Detection: The number of malwares that produced incidents in 2010 is more than 1.5 billion. A malware may bring serious damage, e.g., the worm MyDoom slowed down global internet access by ten percent in 2004. Authorities investigating the 2008 crash of...",
-    "opening_date": "18/11/2022",
-    "closing_date": "31/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "EMBO Postdoctoral Fellowships (life sciences)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/embo-postdoctoral-fellowships-life-sciences-1",
-    "description": "OutlineThe EMBO Postdoctoral Fellowships support excellent postdoctoral researchers in the life sciences working in European laboratories. The award includes a stipend for up to two years and additional benefits. International exchange is compulsory as part of this program. Applications are open to...",
-    "opening_date": "31/10/2022",
-    "closing_date": "23/01/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "2 DAAD PhD Scholarships for international graduate students at the integrated Graduate School Solvation Science within RESOLV",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/daad-phd-scholarships-international-graduate-students-integrated-graduate-school-0",
-    "description": "The iGSS seeks to attract top-level and highly motivated graduate students who will work in an inspiring and exciting research environment. The graduate program combines cutting-edge research with a curriculum of lectures, colloquia, and workshops, augmented by international experiences.YOUR...",
-    "opening_date": "12/10/2022",
-    "closing_date": "07/12/2025",
-    "country": "União Europeia"
-},
-{
-    "title": "Branco Weiss Fellowship (postdocs worldwide – all disciplines)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/branco-weiss-fellowship-postdocs-worldwide-%E2%80%93-all-disciplines",
-    "description": "OutlineThe Branco Weiss Fellowship is funded by The Society in Science and coordinated by ETH Zurich. The Fellowship supports excellent postdoctoral researchers worldwide, to pursue their innovative research projects anywhere in the world. The Fellowship provides funding up to 600,000 CHF over 5...",
-    "opening_date": "10/10/2022",
-    "closing_date": "15/01/2026",
-    "country": "União Europeia"
-},
-{
-    "title": "PhD Fellowship (Europe biomedicine)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-fellowship",
-    "description": "OutlineThe PhD Fellowship in biomedicine is funded by Boehringer Ingelheim Fonds for junior researchers worldwide. Applicants who are European citizens may undertake their PhD globally; non-European applicants must conduct their PhD research in Europe. Europe is defined by geography and includes...",
-    "opening_date": "06/10/2022",
-    "closing_date": "06/10/2022",
+    "title": "IUBMB Wood-Whelan Research Fellowships (scientific exchange)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/iubmb-wood-whelan-research-fellowships-scientific-exchange",
+    "description": "OutlineThe IUBMB’s Wood-Whelan Research Fellowships facilitate scientific exchange by sponsoring young biochemists and molecular biologists’ visits to another laboratory for specific training purposes. The applicant must be from one of the IUBMB member countries (see full list of countries). There...",
+    "opening_date": "13/10/2022",
+    "closing_date": "15/09/2026",
     "country": "União Europeia"
 },
 {
@@ -976,6 +1064,14 @@
     "country": "União Europeia"
 },
 {
+    "title": "Heinrich Böll Doctoral Scholarships (all disciplines | Germany)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/heinrich-b%C3%B6ll-doctoral-scholarships-germany-all-disciplines",
+    "description": "OutlineThe Heinrich Böll Scholarships by the Heinrich Böll Stiftung (The Green Political Foundation) support doctoral students in all disciplines in Germany. Applicants need to be proficient in German (at least B2 Level or DSH2). Furthermore, applicants need proof of admission to doctoral studies...",
+    "opening_date": "25/05/2022",
+    "closing_date": "01/09/2026",
+    "country": "União Europeia"
+},
+{
     "title": "Visiting Postdoc / Assistant/ Associate /Professor /Chair Professor",
     "link": "https://euraxess.ec.europa.eu/jobs/funding/visiting-postdoc-assistant-associate-professor-chair-professor-12",
     "description": "All successful applicants can expect: a one-off funding of 1 million RMB (~140K USD) for full time/ GBP 50K for part time weekly salaries starting from 15K RMB ~ 50K RMB (~2.5K to 70K USD) the opportunity to apply for a research fund of 1 to 5 million RMB (~140K to 700K USD) How to apply: https:/...",
@@ -1008,19 +1104,19 @@
     "country": "União Europeia"
 },
 {
-    "title": "Advanced Training Awards (cross-discipline postdoctoral fellowships in cardiovascular science)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/advanced-training-awards-cross-discipline-postdoctoral-fellowships-cardiovascular",
-    "description": "OutlineThe Advanced Training Awards are postdoctoral fellowships from the British Heart Foundation for recent PhD graduates interested in exploring cardiovascular science as their new field of study. Research must be conducted in the UK; there are no citizenship/residency requirements and applicants...",
-    "opening_date": "15/11/2021",
-    "closing_date": "15/11/2021",
+    "title": "CAPES-Humboldt Research Fellowship (all disciplines | researchers from Brazil in Germany)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/capes-humboldt-research-fellowship-researchers-brazil-germany",
+    "description": "OutlineThe CAPES-Humboldt Research Fellowship is a joint program from the Alexander von Humboldt Foundation and the Brazilian research funding organisation CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior) to support mobility of researchers from Brazil to conduct research in...",
+    "opening_date": "24/03/2022",
+    "closing_date": "30/11/2026",
     "country": "União Europeia"
 },
 {
-    "title": "BRIDGE Proof of Concept (Swiss research commercialization)",
-    "link": "https://euraxess.ec.europa.eu/jobs/funding/bridge-proof-concept-swiss-research-commercialization",
-    "description": "OutlineThe BRIDGE Proof of Concept grants from the Swiss National Science Foundation (SNSF) and Innosuisse – the Swiss Innovation Agency support students and postdocs in Switzerland who would like to develop their research into an application or service. Applicants who are PhD students should be...",
-    "opening_date": "02/11/2021",
-    "closing_date": "01/12/2025",
+    "title": "PhD Fellowship (biomedicine | Europe)",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/phd-fellowship-biomedicine-0",
+    "description": "OutlineThe PhD Fellowship in biomedicine is funded by the Boehringer Ingelheim Fonds for junior researchers worldwide. There are three application closing dates per year: February 1, June 1, and October 1.What is fundedCountry-dependent monthly + conference travel allowance.Duration3.5 years...",
+    "opening_date": "18/02/2022",
+    "closing_date": "01/10/2026",
     "country": "União Europeia"
 },
 {
@@ -1037,6 +1133,14 @@
     "description": "OutlineThe Cancer Research Institute‘s Irvington Postdoctoral Fellowship Program funds promising young scientists working in immunology whose projects seek to address challenges in cancer. All research must be conducted at non-profit institutions. There are no restrictions on citizenship or location...",
     "opening_date": "15/06/2021",
     "closing_date": "01/09/2026",
+    "country": "União Europeia"
+},
+{
+    "title": "National Scholarship Programme of the Slovak Republic",
+    "link": "https://euraxess.ec.europa.eu/jobs/funding/national-scholarship-programme-slovak-republic",
+    "description": "Outline The National Scholarship Programme of the Slovak Republic supports mobility of international PhD students, university teachers, researchers and artists for scholarship stays at higher education institutions and research organisations in Slovakia. The programme is funded by the Ministry of...",
+    "opening_date": "27/03/2017",
+    "closing_date": "27/03/2017",
     "country": "União Europeia"
 }
 ]

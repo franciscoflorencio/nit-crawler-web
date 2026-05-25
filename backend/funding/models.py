@@ -6,7 +6,7 @@ class FundingOpportunity(models.Model):
     # Common Fields
     title = models.CharField(max_length=500)
     description = models.TextField(null=True, blank=True)
-    link = models.URLField(null=True, blank=True)
+    link = models.URLField(max_length=1000, null=True, blank=True)
     opening_date = models.TextField(null=True, blank=True)
     closing_date = models.TextField(null=True, blank=True)
 

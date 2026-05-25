@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   CardContainer,
+  CardHeader,
   CardTitle,
   CardDescription,
+  MetaRow,
+  MetaPill,
   DetailsGrid,
   Detail,
+  CardFooter,
+  ToggleButton,
   LearnMoreButton,
 } from "./style";
 
@@ -37,83 +42,121 @@ const OpportunityCard: React.FC<OpportunityCardProps> = ({ opportunity }) => {
   const hasValue = (value: any) =>
     value !== null && value !== undefined && value !== "";
 
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const metaItems = [
+    { label: "Origem", value: opportunity.source },
+    { label: "Tipo", value: opportunity.funding_type },
+    { label: "Status", value: opportunity.opportunity_status },
+  ].filter((item) => hasValue(item.value));
+
   return (
     <CardContainer>
-      <CardTitle href={opportunity.link} target="_blank" rel="noopener noreferrer">
-        {opportunity.title}
-      </CardTitle>
+      <CardHeader>
+        <CardTitle href={opportunity.link} target="_blank" rel="noopener noreferrer">
+          {opportunity.title}
+        </CardTitle>
+      </CardHeader>
 
       {hasValue(opportunity.description) && (
         <CardDescription>{opportunity.description}</CardDescription>
       )}
 
+      {isExpanded && metaItems.length > 0 && (
+        <MetaRow>
+          {metaItems.map((item) => (
+            <MetaPill key={`${item.label}-${item.value}`}>{item.value}</MetaPill>
+          ))}
+        </MetaRow>
+      )}
+
       <DetailsGrid>
         {hasValue(opportunity.source) && (
-          <Detail>
-            <span>Source:</span> {opportunity.source}
-          </Detail>
-        )}
-        {hasValue(opportunity.funding_type) && (
-          <Detail>
-            <span>Funding Type:</span> {opportunity.funding_type}
-          </Detail>
-        )}
-        {hasValue(opportunity.opening_date) && (
-          <Detail>
-            <span>Opening Date:</span> {opportunity.opening_date}
+          <Detail className="primary-detail">
+            <span className="label">Origem:</span>
+            <span className="value">{opportunity.source}</span>
           </Detail>
         )}
         {hasValue(opportunity.closing_date) && (
-          <Detail>
-            <span>Closing Date:</span> {opportunity.closing_date}
+          <Detail className="primary-detail">
+            <span className="label">Encerramento:</span>
+            <span className="value">{opportunity.closing_date}</span>
           </Detail>
         )}
-        {hasValue(opportunity.publication_date) && (
+        {isExpanded && hasValue(opportunity.funding_type) && (
           <Detail>
-            <span>Published On:</span> {opportunity.publication_date}
+            <span className="label">Tipo:</span>
+            <span className="value">{opportunity.funding_type}</span>
           </Detail>
         )}
-        {hasValue(opportunity.funders) && (
+        {isExpanded && hasValue(opportunity.opening_date) && (
           <Detail>
-            <span>Funders:</span> {opportunity.funders}
+            <span className="label">Abertura:</span>
+            <span className="value">{opportunity.opening_date}</span>
           </Detail>
         )}
-        {hasValue(opportunity.total_fund) && (
+        {isExpanded && hasValue(opportunity.publication_date) && (
           <Detail>
-            <span>Total Fund:</span> ${opportunity.total_fund.toLocaleString()}
+            <span className="label">Publicado em:</span>
+            <span className="value">{opportunity.publication_date}</span>
           </Detail>
         )}
-        {hasValue(opportunity.award_range) && (
+        {isExpanded && hasValue(opportunity.funders) && (
           <Detail>
-            <span>Award Range:</span> {opportunity.award_range}
+            <span className="label">Financiador:</span>
+            <span className="value">{opportunity.funders}</span>
           </Detail>
         )}
-        {hasValue(opportunity.opportunity_status) && (
+        {isExpanded && hasValue(opportunity.total_fund) && (
           <Detail>
-            <span>Status:</span> {opportunity.opportunity_status}
+            <span className="label">Valor:</span>
+            <span className="value">${opportunity.total_fund.toLocaleString()}</span>
           </Detail>
         )}
-        {hasValue(opportunity.institution) && (
+        {isExpanded && hasValue(opportunity.award_range) && (
           <Detail>
-            <span>Institution:</span> {opportunity.institution}
+            <span className="label">Faixa:</span>
+            <span className="value">{opportunity.award_range}</span>
           </Detail>
         )}
-        {hasValue(opportunity.city) && (
+        {isExpanded && hasValue(opportunity.opportunity_status) && (
           <Detail>
-            <span>City:</span> {opportunity.city}
+            <span className="label">Status:</span>
+            <span className="value">{opportunity.opportunity_status}</span>
+          </Detail>
+        )}
+        {isExpanded && hasValue(opportunity.institution) && (
+          <Detail>
+            <span className="label">Instituicao:</span>
+            <span className="value">{opportunity.institution}</span>
+          </Detail>
+        )}
+        {isExpanded && hasValue(opportunity.city) && (
+          <Detail>
+            <span className="label">Cidade:</span>
+            <span className="value">{opportunity.city}</span>
           </Detail>
         )}
       </DetailsGrid>
 
-      {hasValue(opportunity.link) && (
-        <LearnMoreButton
-          href={opportunity.link}
-          target="_blank"
-          rel="noopener noreferrer"
+      <CardFooter>
+        <ToggleButton
+          type="button"
+          onClick={() => setIsExpanded((prev) => !prev)}
+          aria-expanded={isExpanded}
         >
-          Learn More
-        </LearnMoreButton>
-      )}
+          {isExpanded ? "Ver menos" : "Ver mais"}
+        </ToggleButton>
+        {hasValue(opportunity.link) && (
+          <LearnMoreButton
+            href={opportunity.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver detalhes
+          </LearnMoreButton>
+        )}
+      </CardFooter>
     </CardContainer>
   );
 };
