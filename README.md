@@ -21,6 +21,7 @@ This project uses modern web development technologies, including **React**, **St
 2. **Dynamic Pages**
 
    - **About Us**: Provides detailed information about the NIT-Far and its goals.
+   - **Opportunities**: Lists funding calls with smart filters, map insights, and expandable cards.
    - **Articles**: Displays a list of articles dynamically fetched from the backend.
    - **Projects**: Displays a list of ongoing or completed projects, also fetched from the backend.
 
@@ -43,6 +44,9 @@ This project uses modern web development technologies, including **React**, **St
 1. **API Endpoints**
 
    - `/api/articles/`: Fetches a list of articles.
+   - `/api/opportunities/`: Fetches a list of funding opportunities.
+   - `/api/opportunities/country-counts/`: Country aggregation for the map.
+   - `/api/filterable-fields/`: Filterable values for the Opportunities UI.
    - `/api/projects/`: Fetches a list of projects.
 
 2. **Models**
@@ -156,7 +160,17 @@ This repository ships with a Docker Compose stack that starts PostgreSQL, the Dj
    ```
 7. Access the backend API at `http://localhost:8000/api/` and the admin panel at `http://localhost:8000/admin/`.
 
-8. Optional: configure Postgres manually
+8. Import opportunities (optional):
+    - Import a single JSON file:
+       ```bash
+       python manage.py import_scrapy_data /data/scrapy_output/msca.json --source MSCA
+       ```
+    - Import all JSON files in the folder:
+       ```bash
+       python manage.py import_scrapy_batch --path /data/scrapy_output
+       ```
+
+9. Optional: configure Postgres manually
     - Set the following environment variables before running the server:
        ```zsh
        export DB_ENGINE=django.db.backends.postgresql

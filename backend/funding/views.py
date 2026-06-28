@@ -1,19 +1,17 @@
 from rest_framework import viewsets
 from rest_framework.views import APIView
 from django.db.models import Q
-from django.db.models import Count
+from django.db.models import Count, QuerySet
 from .models import FundingOpportunity
 from .serializers import FundingOpportunitySerializer
 from .pagination import LargeResultsSetPagination
-from datetime import datetime, date
+from datetime import datetime
 from rest_framework.response import Response
 
 
-def _filter_queryset(request):
+def _filter_queryset(request) -> QuerySet:
     queryset = FundingOpportunity.objects.all().order_by("-id")
     params = request.query_params
-
-    # No automatic exclusion of expired opportunities
 
     search_query = params.get("search", None)
     if search_query:
@@ -22,7 +20,11 @@ def _filter_queryset(request):
             for f in FundingOpportunity._meta.get_fields()
             if (
                 hasattr(f, "get_internal_type")
-                and f.get_internal_type() in ["CharField", "TextField", "URLField"]
+                and f.get_internal_type() in [
+                    "CharField",
+                    "TextField",
+                    "URLField",
+                ]
             )
         ]
 
@@ -38,7 +40,9 @@ def _filter_queryset(request):
         value = params.get(field, None)
         if value:
             if field == "country":
-                country_values = [v.strip() for v in value.split(",") if v.strip()]
+                country_values = [
+                    v.strip() for v in value.split(",") if v.strip()
+                ]
                 if len(country_values) > 1:
                     queryset = queryset.filter(country__in=country_values)
                 else:
@@ -71,7 +75,9 @@ class FilterableFieldsView(APIView):
                 unique_values = FundingOpportunity.objects.values_list(
                     field_name, flat=True
                 ).distinct()
-                sorted_values = sorted([value for value in unique_values if value])
+                sorted_values = sorted(
+                    [value for value in unique_values if value]
+                )
                 if sorted_values:
                     filter_data[field_name] = sorted_values
             except Exception:
@@ -81,10 +87,11 @@ class FilterableFieldsView(APIView):
 
 
 class FundingOpportunityViewSet(viewsets.ModelViewSet):
+    queryset = FundingOpportunity.objects.all()
     serializer_class = FundingOpportunitySerializer
     pagination_class = LargeResultsSetPagination
 
-    def get_queryset(self):
+    def get_queryset(self):  # type: ignore
         return _filter_queryset(self.request)
 
 

@@ -17,3 +17,65 @@ venv/
 
 # Scrapy specific
 .scrapy/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Python / packaging
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+__pypackages__/
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+
+# Environment variables / secrets
+.env
+.env.*
+backend/.env
+
+# Node / frontend
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+frontend/dist/
+
+# Docker
+docker-compose.override.yml
+*.local.yml
+
+# Logs, tests and coverage
+*.log
+.coverage
+coverage/
+htmlcov/
+.pytest_cache/
+
+# Editor / tooling caches
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Secrets / keys
+*.pem
+*.key
+secrets.json
+

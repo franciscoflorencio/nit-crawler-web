@@ -12,7 +12,10 @@ logger = logging.getLogger(__name__)
 
 
 class Command(BaseCommand):
-    help = "Loads funding opportunities from all JSON files in the results_spiders folder."
+    help = (
+        "Loads funding opportunities from all JSON files in the "
+        "results_spiders folder."
+    )
 
     def handle(self, *args, **kwargs):
         # Construct the path to the crawler's results directory
@@ -34,7 +37,8 @@ class Command(BaseCommand):
             )
             self.stdout.write(
                 self.style.WARNING(
-                    "Please ensure the path is correct relative to your Django project."
+                    "Please ensure the path is correct relative to "
+                    "your Django project."
                 )
             )
             return
@@ -62,14 +66,17 @@ class Command(BaseCommand):
                     data = json.load(f)
             except (json.JSONDecodeError, IOError) as e:
                 self.stdout.write(
-                    self.style.ERROR(f"Could not read or parse {filename}: {e}")
+                    self.style.ERROR(
+                        f"Could not read or parse {filename}: {e}"
+                    )
                 )
                 continue
 
             if not isinstance(data, list):
                 self.stdout.write(
                     self.style.WARNING(
-                        f"Skipping {filename}: JSON file does not contain a list of items."
+                        f"Skipping {filename}: JSON file does not contain "
+                        "a list of items."
                     )
                 )
                 continue
@@ -78,12 +85,14 @@ class Command(BaseCommand):
                 link = item.get("link")
                 if not link:
                     logger.warning(
-                        f"Skipping item in {filename} due to missing link: {item.get('title', 'No Title')}"
+                        f"Skipping item in {filename} due to missing link: "
+                        f"{item.get('title', 'No Title')}"
                     )
                     continue
 
-                # Create or update the record using the link as a unique identifier
-                opportunity, created = FundingOpportunity.objects.update_or_create(
+                # Create or update the record using the link as a identifier
+                qs = FundingOpportunity.objects
+                opportunity, created = qs.update_or_create(
                     link=link,
                     defaults={
                         "title": item.get("title", "No Title Provided"),
@@ -95,7 +104,9 @@ class Command(BaseCommand):
                         "funders": item.get("funders"),
                         "funders_url": item.get("funders_url"),
                         "funding_type": item.get("funding_type"),
-                        "total_fund": self.clean_decimal(item.get("total_fund")),
+                        "total_fund": self.clean_decimal(
+                            item.get("total_fund")
+                        ),
                         "award_range": item.get("award_range"),
                         "publication_date": item.get("publication_date"),
                         "observation": item.get("observation"),
@@ -109,12 +120,18 @@ class Command(BaseCommand):
 
                 if created:
                     self.stdout.write(
-                        self.style.SUCCESS(f"  Created: {opportunity.title[:70]}...")
+                        self.style.SUCCESS(
+                            f"  Created: {opportunity.title[:70]}..."
+                        )
                     )
                 else:
-                    self.stdout.write(f"  Updated: {opportunity.title[:70]}...")
+                    self.stdout.write(
+                        f"  Updated: {opportunity.title[:70]}..."
+                    )
 
-        self.stdout.write(self.style.SUCCESS("\nFinished loading all opportunities."))
+        self.stdout.write(
+            self.style.SUCCESS("\nFinished loading all opportunities.")
+        )
 
     def clean_decimal(self, value):
         """
@@ -131,6 +148,6 @@ class Command(BaseCommand):
             return Decimal(cleaned_value)
         except (InvalidOperation, ValueError):
             # Log a warning if the value cannot be converted
-            self.stderr.write(self.style.WARNING(f"Invalid total_fund value: {value}"))
+            msg = f"Invalid total_fund value: {value}"
+            self.stderr.write(self.style.WARNING(msg))
             return None
-        
